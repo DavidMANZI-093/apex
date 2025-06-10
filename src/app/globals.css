@@ -1,0 +1,14 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss";
+
+body {
+  font-family: var(--font-rubik);
+}
+
+@theme {
+  --color-french-grey: "#adb3b9";
+  --color-verdigris: "#64b3b2";
+  --color-white: "#ffffff";
+  --color-midnight-green: "#284c59";
+  --color-tiffany-blue: "#6ddad3";
+}

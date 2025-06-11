@@ -8,7 +8,7 @@ const rubik = Rubik({
 })
 
 export const metadata: Metadata = {
-  title: "Apex Constructions",
+  title: "APEX Constructions",
   description:
     "A leading construction consultancy and advanced surveying firm, " +
     "delivering precision-driven solutions through drone technology, " +

@@ -18,3 +18,33 @@ body {
   --color-midnight-green: rgb(40, 76, 89);
   --color-tiffany-blue: rgb(109, 218, 211);
 }
+
+/* Animation keyframes */
+@keyframes frameFocus {
+  0% {
+    transform: scale(1);
+    z-index: 0;
+  }
+  25% {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  50% {
+    transform: scale(1);
+    z-index: 0;
+  }
+  75% {
+    transform: scale(1);
+    z-index: 0;
+  }
+  100% {
+    transform: scale(1);
+    z-index: 0;
+  }
+}
+
+/* Animation classes */
+/* .frame-focus-1 { animation: frameFocus 12s ease-in-out infinite; }
+.frame-focus-2 { animation: frameFocus 12s ease-in-out infinite 3s; }
+.frame-focus-3 { animation: frameFocus 12s ease-in-out infinite 6s; } */
+

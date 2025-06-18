@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="home" className="!pt-16 min-h-screen flex items-center bg-gradient-to-br from-white to-tiffany-blue/5">
+    <section id="home" className="!pt-16 flex items-center bg-gradient-to-br from-white to-tiffany-blue/5">
         <div className="container !mx-auto !px-4 sm:!px-6 lg:!px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="flex flex-col gap-8">
@@ -19,14 +19,14 @@ const Hero = () => {
                 </div>
 
                 <div className="relative">
-                    <div className="aspect-video bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
-                        {/* <Image
+                    <div className="h-fit bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
+                        <Image
                             src="/placeholder.svg"
                             alt="Drone surveying construction site"
-                            className="w-full h-full object-contain rounded-2xl"
+                            className="w-full h-full object-cover rounded-2xl"
                             width={0}
                             height={0}
-                        /> */}
+                        />
                     </div>
                 </div>
             </div>

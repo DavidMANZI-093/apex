@@ -1,4 +1,5 @@
 import Button from "./ui/button";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -14,6 +15,18 @@ const Hero = () => {
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Button href="/contact">Get a Free Consultation</Button>
                         <Button href="/contact" variant="outline">Explore Our Services</Button>
+                    </div>
+                </div>
+
+                <div className="relative">
+                    <div className="aspect-video bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
+                        {/* <Image
+                            src="/placeholder.svg"
+                            alt="Drone surveying construction site"
+                            className="w-full h-full object-contain rounded-2xl"
+                            width={0}
+                            height={0}
+                        /> */}
                     </div>
                 </div>
             </div>

@@ -56,7 +56,7 @@ const Header = () => {
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => {
                 return (
-                  <a key={link.name} href={link.href} className="text-midnight-green hover:!text-verdigris !text-[15px] transition-colors duration-200">
+                  <a key={link.name} href={link.href} className="text-midnight-green hover:!text-verdigris !text-[15px] !text-center transition-colors duration-200">
                     {link.name}
                   </a>
                 );

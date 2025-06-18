@@ -6,6 +6,7 @@ const Hero = () => {
                 <div className="gap-8">
                     <div className="gap-4">
                         <h1 className="!text-4xl md:!text-5xl lg:!text-6xl font-bold !text-midnight-green leading-tight">Your Trusted Partner in <span className="text-verdigris">Construction Consultancy</span> & Advanced Surveying Solutions</h1>
+                        <p className="!text-lg !text-french-grey max-w-2xl">Delivering precision, innovation, and reliability through expert cosultancy and drone powered surveying.</p>
                     </div>
                 </div>
             </div>

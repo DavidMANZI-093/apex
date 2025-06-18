@@ -13,7 +13,7 @@ const Hero = () => {
 
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Button href="/contact">Get a Free Consultation</Button>
-                        <Button href="/contact">Explore Our Services</Button>
+                        <Button href="/contact" variant="outline">Explore Our Services</Button>
                     </div>
                 </div>
             </div>

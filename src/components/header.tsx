@@ -14,6 +14,7 @@ const Header = () => {
     {name: "Contact", href: "/contact"},
   ];
 
+  // Testing
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (

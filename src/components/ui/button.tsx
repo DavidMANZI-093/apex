@@ -9,7 +9,7 @@ type Props = {
 
 const Button = (props: Props) => {
   return (
-    <button className={props.className? props.className : "!py-2 !px-4 !rounded-lg !bg-verdigris hover:!bg-tiffany-blue !text-white !text-[15px] transition-colors duration-200" + (props.variant === "outline" ? " !border !border-verdigris !bg-transparent !text-verdigris" : "") + (props.variant === "outline" ? " !border !border-verdigris !bg-transparent !text-verdigris" : "")}>
+    <button className={props.className ? props.className : `!py-2 !px-4 !rounded-lg !bg-verdigris hover:!bg-tiffany-blue !text-white !text-[15px] transition-colors duration-200 ${props.variant === "outline" ? "border border-tiffany-blue bg-transparent !text-tiffany-blue hover:bg-tiffany-blue hover:!text-white" : ""}`}>
         {props.children}
     </button>
   );

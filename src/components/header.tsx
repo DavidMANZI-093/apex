@@ -1,67 +1,57 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import NavLink from "./nav-link"
-import { Button, ButtonIcon, ButtonLink } from "./buttons"
-import {MessageSquareText, Menu, X, Home, Info, Briefcase, Box} from "lucide-react"
-import { useState, useEffect } from "react"
-
-const links = [
-    { href: "/", text: "Home", icon: Home },
-    { href: "/about", text: "About", icon: Info },
-    { href: "/services", text: "Services", icon: Briefcase },
-    { href: "/projects", text: "Projects", icon: Box },
-    { href: "/testimonials", text: "Testimonials", icon: MessageSquareText },
-]
+import Image from "next/image";
+import Button from "./ui/button";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    const handleResize = () => {
-        if (window.innerWidth >= 768) {
-            setIsOpen(false)
-        }
-    }
+  const navLinks = [
+    {name: "Home", href: "/"},
+    {name: "About", href: "/about"},
+    {name: "Services", href: "/services"},
+    {name: "Projects", href: "/projects"},
+    {name: "Contact", href: "/contact"},
+  ];
 
-    useEffect(() => {
-        window.addEventListener("resize", handleResize)
-        return () => {
-            window.removeEventListener("resize", handleResize)
-        }
-    }, [])
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="relative w-full h-16 md:!px-8 !px-4 !py-4 flex items-center z-4 justify-between">
-        <div className="flex items-center gap-2">
-            <Image src="/icon1.png" alt="APEX Constructions" width={32} height={32} />
-            <p className="font-normal text-base">
-                <span className="font-semibold text-midnight-green/90">APEX</span>
-                <span className="font-medium text-french-grey">Constructions</span>
-            </p>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-french-grey/20">
+      <div className="container !mx-auto !px-4 sm:!px-6 lg:!px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <Image src="/web-app-manifest-192x192.png" alt="APEX icon" width={40} height={40}/>
+            <span className="flex">
+                <p className="text-xl font-bold text-midnight-green">APEX</p>
+                {/* <p className="text-xl font-medium text-french-grey">Constructions</p> */}
+            </span>
+          </div>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+            {navLinks.map((link) => {
+              return (
+                <a key={link.name} href={link.href} className="!text-[15px] !text-midnight-green hover:!text-verdigris transition-colors duration-200">
+                  {link.name}
+                </a>
+              );
+            })}
+            <Button href="/contact">Get Consultation</Button>
+          </nav>
+
+          {/* Mobile Navigation */}
+          <button className="md:hidden p-2 cursor-pointer" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? (
+              <X className="w-6 h-6 text-midnight-green" />
+            ) : (
+              <Menu className="w-6 h-6 text-midnight-green" />
+            )}
+          </button>
         </div>
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-4 mx-2">
-            {links.map((link) => (
-                <NavLink key={link.href} href={link.href} text={link.text} />
-            ))}
-            <Button text="Get in touch" icon={MessageSquareText} />
-        </div>
-        {/* Mobile Menu */}
-        <div className="md:hidden">
-            <ButtonIcon icon={isOpen ? X : Menu} onClick={() => setIsOpen(!isOpen)} />
-        </div>
-        <div className={`${isOpen ? "fixed" : "hidden"} top-16 left-0 backdrop-blur-sm w-screen h-screen`}>
-            
-        </div>
-        <div className={`absolute ${isOpen ? "!h-fit flex flex-col" : "!h-0 hidden"} w-fit top-[70px] gap-2 !pr-6 right-0 z-5`}>
-            <ul className="relative bg-white w-fit rounded overflow-hidden !shadow-lg shadow-midnight-green">
-                {links.map((link) => (
-                    <ButtonLink key={link.href} href={link.href} text={link.text} icon={link.icon} />
-                ))}
-            </ul>
-            <Button shadow text="Get in touch" icon={MessageSquareText} />
-        </div>
+      </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

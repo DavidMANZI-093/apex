@@ -49,6 +49,22 @@ const Header = () => {
             )}
           </button>
         </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden !py-4 botder-t border-french-grey/20">
+            <nav className="flex flex-col gap-4">
+              {navLinks.map((link) => {
+                return (
+                  <a key={link.name} href={link.href} className="text-midnight-green hover:!text-verdigris !text-[15px] transition-colors duration-200">
+                    {link.name}
+                  </a>
+                );
+              })}
+              <Button href="/contact">Get Consultation</Button>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );

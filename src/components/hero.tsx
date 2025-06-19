@@ -18,7 +18,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="relative bg-red-900">
+                <div className="relative">
                     <div className="h-fit bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
                         <Image src="/placeholder.svg" alt="Drone surveying construction site" className="w-full h-full object-cover rounded-2xl" width={0} height={0}/>
                     </div>

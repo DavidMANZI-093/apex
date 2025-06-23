@@ -6,7 +6,7 @@ const Home = () => {
     <main className="relative flex flex-col w-full h-full z-0 bg-white">
     <Header />
     <Hero />
-    <Hero />
+    {/* <Hero /> */}
     </main>
   );
 }

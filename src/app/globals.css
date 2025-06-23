@@ -19,3 +19,7 @@ body {
   --color-midnight-green: rgb(40, 76, 89);
   --color-tiffany-blue: rgb(109, 218, 211);
 }
+
+.bg-placeholder {
+    background-image: url('/placeholder.png');
+}

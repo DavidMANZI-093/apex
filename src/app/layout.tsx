@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`fixed top-0 left-0 right-0 bottom-0 w-screen h-screen flex ${inter.variable} antialiased`}
+        className={`absolute w-screen min-h-screen h-fit flex ${inter.variable} antialiased`}
       >
         {children}
       </body>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative flex w-full min-h-screen h-fit items-center !pt-16 bg-gradient-to-br from-white to-tiffany-blue/10">
+    <section id="home" className="relative flex w-full h-full !pt-16 bg-gradient-to-br from-white to-tiffany-blue/10">
         <div className="relative flex container !mx-auto !px-4 sm:!px-6 lg:!px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="flex flex-col gap-8">

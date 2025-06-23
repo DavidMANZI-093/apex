@@ -4,9 +4,9 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section id="home" className="relative flex max-w-full h-full !pt-16 bg-gradient-to-br from-white to-tiffany-blue/10">
-        {/* <div className="relative flex container !mx-auto !px-4 sm:!px-6 lg:!px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="flex flex-col gap-8">
+        <div className="relative w-full flex container !mx-auto !px-4 sm:!px-6 lg:!px-8">
+            <div className="relative grid lg:grid-cols-2 gap-12 items-center">
+                <div className="relative flex flex-col gap-8">
                     <div className="flex flex-col gap-4">
                         <h1 className="!text-2xl md:!text-3xl lg:!text-4xl font-bold !text-midnight-green leading-tight">Your Trusted Partner in <span className="text-verdigris">Construction Consultancy</span> & Advanced Surveying Solutions</h1>
                         <p className="!text-base !text-french-grey max-w-2xl">Delivering precision, innovation, and reliability through expert cosultancy and drone powered surveying.</p>
@@ -19,12 +19,12 @@ const Hero = () => {
                 </div>
 
                 <div className="relative flex">
-                    <div className="h-fit bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
+                    <div className="relative h-fit bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center w-full">
                         <Image src="/placeholder.svg" alt="Drone surveying construction site" className="w-full h-full object-cover rounded-2xl" width={0} height={0}/>
                     </div>
                 </div>
             </div>
-        </div> */}
+        </div>
     </section>
   );
 }

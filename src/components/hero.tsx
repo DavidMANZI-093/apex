@@ -19,7 +19,7 @@ const Hero = () => {
                 </div>
 
                 <div className="relative flex">
-                    <div className="relative bg-placeholder w-full h-fit bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
+                    <div className="relative bg-placeholder min-w-full min-h-full h-full bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
                     ...
                     </div>
                 </div>

@@ -18,7 +18,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="relative flex">
+                <div className="relative flex w-full h-full bg-placeholder">...
                     {/* <div className="relative bg-placeholder w-full h-fit bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
                         <Image src="/placeholder.svg" alt="Drone surveying construction site" className="w-full h-full object-cover rounded-2xl" width={0} height={0}/>
                     </div> */}

@@ -52,7 +52,7 @@ const about = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="flex flex-col gap-1 items-center sm:!text-center sm:items-start">
             <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Vision</h3>
-            <p className="text-french-grey leading-relaxed sm:!text-center">
+            <p className="text-french-grey leading-relaxed !text-center sm:!text-left">
               {"To redefine the construction and surveying industry " +
                 "by integrating traditional practices with innovative " +
                 "technologies such as drone mapping and aerial inspections."}
@@ -61,7 +61,7 @@ const about = () => {
 
           <div className="flex flex-col gap-1 items-center sm:items-start">
             <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Mission</h3>
-            <p className="text-french-grey leading-relaxed sm:!text-center">
+            <p className="text-french-grey leading-relaxed !text-center sm:!text-left">
               {"To deliver accurate, cost-effective, and timely solutions " +
                 "that empower our clients to make informed decisions " +
                 "and execute successful projects."}

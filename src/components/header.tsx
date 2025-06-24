@@ -7,11 +7,11 @@ import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const navLinks = [
-    {name: "Home", href: "/"},
-    {name: "About", href: "/about"},
-    {name: "Services", href: "/services"},
-    {name: "Projects", href: "/projects"},
-    {name: "Contact", href: "/contact"},
+    {name: "Home", href: "#home"},
+    {name: "About", href: "#about"},
+    {name: "Services", href: "#services"},
+    {name: "Projects", href: "#projects"},
+    {name: "Contact", href: "#contact"},
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

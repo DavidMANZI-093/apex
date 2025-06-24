@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
 
-const rubik = Rubik({
-  variable: "--font-rubik",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -37,12 +36,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`h-screen w-screen bg-white absolute z-0 ${rubik.variable} antialiased`}
+        className={`relative flex ${inter.variable} antialiased`}
       >
-        <div className="relative flex flex-col h-full w-full">
-          <Header />
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );

@@ -1,14 +1,15 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss";
+@import "tw-animate-css";
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 body {
-  font-family: var(--font-rubik);
+  font-family: var(--font-inter);
 }
 
 @theme {
@@ -19,32 +20,9 @@ body {
   --color-tiffany-blue: rgb(109, 218, 211);
 }
 
-/* Animation keyframes */
-@keyframes frameFocus {
-  0% {
-    transform: scale(1);
-    z-index: 0;
-  }
-  25% {
-    transform: scale(1.1);
-    z-index: 1;
-  }
-  50% {
-    transform: scale(1);
-    z-index: 0;
-  }
-  75% {
-    transform: scale(1);
-    z-index: 0;
-  }
-  100% {
-    transform: scale(1);
-    z-index: 0;
-  }
+.bg-placeholder {
+    background-image: url('/placeholder.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-/* Animation classes */
-/* .frame-focus-1 { animation: frameFocus 12s ease-in-out infinite; }
-.frame-focus-2 { animation: frameFocus 12s ease-in-out infinite 3s; }
-.frame-focus-3 { animation: frameFocus 12s ease-in-out infinite 6s; } */
-

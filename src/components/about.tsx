@@ -32,7 +32,7 @@ const about = () => {
   return (
     <section
       id="about"
-      className="relative flex !min-w-full !w-full min-h-screen !pt-24 lg:!pt-32 bg-white"
+      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-white"
     >
       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
@@ -50,18 +50,18 @@ const about = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="flex flex-col gap-1 items-center sm:!text-center sm:items-start">
+          <div className="flex flex-col gap-1 items-center">
             <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Vision</h3>
-            <p className="text-french-grey leading-relaxed !text-center sm:!text-left">
+            <p className="text-french-grey leading-relaxed !text-center">
               {"To redefine the construction and surveying industry " +
                 "by integrating traditional practices with innovative " +
                 "technologies such as drone mapping and aerial inspections."}
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 items-center sm:items-start">
+          <div className="flex flex-col gap-1 items-center">
             <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Mission</h3>
-            <p className="text-french-grey leading-relaxed !text-center sm:!text-left">
+            <p className="text-french-grey leading-relaxed !text-center">
               {"To deliver accurate, cost-effective, and timely solutions " +
                 "that empower our clients to make informed decisions " +
                 "and execute successful projects."}
@@ -73,13 +73,13 @@ const about = () => {
           <h3 className="!text-2xl !font-medium !text-midnight-green/70 !text-center mb-12">
             Our Core Values
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="flex flex-col text-center space-y-4 items-center">
+              <div key={index} className="flex flex-col text-center gap-2 items-center">
                 <div className="w-16 h-16 bg-verdigris/10 rounded-full flex items-center justify-center mx-auto">
                   <value.icon className="w-8 h-8 text-verdigris" />
                 </div>
-                <h4 className="font-semibold text-midnight-green">
+                <h4 className="!font-medium !text-midnight-green/70">
                   {value.name}
                 </h4>
                 <p className="text-sm text-french-grey">{value.description}</p>

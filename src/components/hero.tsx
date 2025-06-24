@@ -1,9 +1,8 @@
 import Button from "./ui/button";
-import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative flex !min-w-full !w-full min-h-screen !pt-16 bg-gradient-to-br from-white to-tiffany-blue/30">
+    <section id="home" className="relative flex !min-w-full !w-full min-h-screen !pt-16 bg-gradient-to-br from-white to-tiffany-blue/5">
         <div className="relative w-full flex container !mx-auto !px-4 sm:!px-6 lg:!px-8">
             <div className="relative grid lg:grid-cols-2 gap-12 items-center">
                 <div className="relative flex flex-col gap-8">
@@ -19,10 +18,7 @@ const Hero = () => {
                 </div>
 
                 <div className="relative flex w-full h-full !py-16">
-                    <div className="relative w-full h-full bg-placeholder rounded-2xl min-h-[500px]"></div>
-                    {/* <div className="relative bg-placeholder w-full h-fit bg-gradient-to-br from-verdigris/20 to-tiffany-blue/20 rounded-2xl flex items-center justify-center">
-                        <Image src="/placeholder.svg" alt="Drone surveying construction site" className="w-full h-full object-cover rounded-2xl" width={0} height={0}/>
-                    </div> */}
+                    <div className="relative w-full h-full bg-placeholder rounded-2xl min-h-[350px]"></div>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ const Hero = () => {
                 <div className="relative flex flex-col gap-8">
                     <div className="flex flex-col gap-4 lg:!py-0 !py-8">
                         <h1 className="!text-2xl md:!text-3xl lg:!text-4xl font-bold !text-midnight-green leading-tight">Your Trusted Partner in <span className="text-verdigris">Construction Consultancy</span> & Advanced Surveying Solutions</h1>
-                        <p className="!text-base !text-french-grey max-w-2xl leading-relaxed">Delivering precision, innovation, and reliability through expert cosultancy and drone powered surveying.</p>
+                        <p className="!text-lg !text-french-grey max-w-2xl leading-relaxed">Delivering precision, innovation, and reliability through expert cosultancy and drone powered surveying.</p>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">

@@ -49,7 +49,7 @@ const about = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 justify-items-center gap-12 mb-16">
           <div className="flex flex-col gap-1 items-center sm:items-start">
             <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Vision</h3>
             <p className="text-french-grey leading-relaxed">

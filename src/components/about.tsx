@@ -51,7 +51,7 @@ const about = () => {
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div className="flex flex-col gap-1">
-            <h3 className="!text-2xl !text-midnight-green/70">Our Vision</h3>
+            <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Vision</h3>
             <p className="text-french-grey leading-relaxed">
               {"To redefine the construction and surveying industry " +
                 "by integrating traditional practices with innovative " +
@@ -59,8 +59,8 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1">
-            <h3 className="!text-2xl !text-midnight-green/70">Our Mission</h3>
+          <div className="flex flex-col gap-1 items-center">
+            <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Mission</h3>
             <p className="text-french-grey leading-relaxed">
               {"To deliver accurate, cost-effective, and timely solutions " +
                 "that empower our clients to make informed decisions " +

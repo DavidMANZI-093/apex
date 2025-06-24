@@ -18,8 +18,8 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="relative flex w-full h-full !pb-12 lg:!py-16">
-                    <div className="relative w-full h-full bg-placeholder rounded-2xl min-h-[350px]"></div>
+                <div className="relative flex items-center w-full h-full !pb-12 lg:!py-16">
+                    <div className="relative w-full h-full bg-placeholder rounded-2xl min-h-[350px] max-h-[500px]"></div>
                 </div>
             </div>
         </div>

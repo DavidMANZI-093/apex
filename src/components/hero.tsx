@@ -1,3 +1,4 @@
+import { ArrowRight, Search } from "lucide-react";
 import Button from "./ui/button";
 
 const Hero = () => {
@@ -12,8 +13,8 @@ const Hero = () => {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Button href="/contact">Get a Free Consultation</Button>
-                        <Button href="/contact" variant="outline">Explore Our Services</Button>
+                        <Button href="/contact" iconPosition="right" icon={ArrowRight}>Get&nbsp;a&nbsp;Free&nbsp;Consultation</Button>
+                        <Button href="/contact" iconPosition="left" icon={Search} variant="outline">Explore&nbsp;Our&nbsp;Services</Button>
                     </div>
                 </div>
 

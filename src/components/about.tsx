@@ -59,7 +59,7 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 items-center">
+          <div className="flex flex-col gap-1 items-center sm:items-start">
             <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Mission</h3>
             <p className="text-french-grey leading-relaxed">
               {"To deliver accurate, cost-effective, and timely solutions " +

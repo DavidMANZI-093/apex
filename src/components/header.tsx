@@ -53,10 +53,10 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden !py-4 botder-t border-french-grey/20">
-            <nav className="flex flex-col gap-4">
+            <nav className="flex flex-col gap-1 transition-colors duration-200">
               {navLinks.map((link) => {
                 return (
-                  <a key={link.name} href={link.href} className="text-midnight-green hover:!text-verdigris !text-[15px] !text-center transition-colors duration-200">
+                  <a key={link.name} href={link.href} className="!text-midnight-green/70 !py-2 !rounded-lg hover:!text-verdigris/70 hover:bg-verdigris/10 !text-[15px] !text-center transition-colors duration-200">
                     {link.name}
                   </a>
                 );

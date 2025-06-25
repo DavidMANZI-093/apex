@@ -36,9 +36,7 @@ const about = () => {
     >
       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
-          <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">
-            Who We Are
-          </h2>
+          <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">Who We Are</h2>
           <p className="text-french-grey leading-relaxed">
             {"APEX is a professional consultancy firm specialized " +
               "in construction project management, topographic and land " +

@@ -49,18 +49,18 @@ const CardEx = (props: PropsEx) => {
         
           <div className='flex flex-col gap-6 !p-6'>
             <div className='flex flex-col justify-center gap-1'>
-                <h4 className='!text-lg !font-medium !text-midnight-green/70'>{props.name}</h4>
+                <h4 className='!text-xl !font-medium !text-midnight-green/90'>{props.name}</h4>
                 <div className='flex items-center gap-2'>
-                    <MapPin className='w-5 h-5 text-french-grey' />
-                    <p className='text-french-grey'>{props.location}</p>
+                    <MapPin className='w-4 h-4 text-french-grey' />
+                    <p className='text-sm text-french-grey'>{props.location}</p>
                 </div>
             </div>
 
-            <div>
-                <h5>Services Rendered</h5>
-                <ul>
+            <div className='flex flex-col gap-2'>
+                <h5 className='!font-medium !text-midnight-green/90'>Services Rendered</h5>
+                <ul className='flex gap-2 flex-wrap'>
                     {props.services.map((service, index) => (
-                        <li className='!p-1 rounded bg-verdigris/10' key={index}>{service}</li>
+                        <li className='text-xs !py-0.5 !px-2.5 rounded-xl font-medium !text-verdigris bg-verdigris/10' key={index}>{service}</li>
                     ))}
                 </ul>
             </div>

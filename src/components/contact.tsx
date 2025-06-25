@@ -14,6 +14,18 @@ const Contact = () => {
             "with us? Reach out today!"}
           </p>
         </div>
+
+        <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact form */}
+            <div className="flex flex-col">
+                <h4>Send us a message</h4>
+                <p>
+                    {"Fill out the form below and we'll get back " +
+                    "to you within 24 hours."}
+                </p>
+            </div>
+          
+        </div>
       </div>
     </section>
   )

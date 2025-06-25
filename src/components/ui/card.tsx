@@ -1,4 +1,4 @@
-import { Calendar, CheckCircle, LucideIcon, MapPin } from 'lucide-react'
+import { Calendar, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react'
 import React from 'react'
 
 type Props = {
@@ -83,4 +83,39 @@ const CardEx = (props: PropsEx) => {
     )
   }
 
-export {Card, CardEx};
+  type PropsTx = {
+    quote: string;
+    author: string;
+    position: string;
+    company: string;
+    rating: number;
+  }
+
+  const CardTx = (props: PropsTx) => {
+    return (
+      <div className='flex flex-col !p-6 gap-4 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
+          <div className='flex items-center gap-2'>
+            {Array.from({ length: (props.rating) }, (_, index) => (
+              <Star key={index} className='w-4 h-4 fill-amber-500 text-transparent' />
+            ))}
+            {Array.from({ length: (5 - props.rating) }, (_, index) => (
+              <Star key={index} className='w-4 h-4 fill-french-grey/60 text-transparent' />
+            ))}<span className='leading-relaxed text-xs text-french-grey'>({props.rating}/5)</span>
+
+          </div>
+          
+          <Quote className='w-9 h-9 text-verdigris/50' />
+          
+          <p className='text-sm italic text-french-grey'>&quot;{props.quote}&quot;</p>
+
+          <hr className="!border-t-french-grey/40" />
+
+          <div className='flex flex-col'>
+            <h4 className='!font-medium !text-midnight-green/90'>{props.author}</h4>
+            <p className='text-sm text-french-grey'>{props.position}, {props.company}</p>
+          </div>
+      </div>
+    )
+  }
+
+export {Card, CardEx, CardTx};

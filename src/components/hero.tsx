@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRight, Search } from "lucide-react";
 import Button from "./ui/button";
 
@@ -14,7 +16,7 @@ const Hero = () => {
 
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Button href="/contact" iconPosition="right" icon={ArrowRight}>Get&nbsp;a&nbsp;Free&nbsp;Consultation</Button>
-                        <Button href="/contact" iconPosition="left" icon={Search} variant="outline">Explore&nbsp;Our&nbsp;Services</Button>
+                        <Button onClick={() => {window.location.href = "#services"}} iconPosition="left" icon={Search} variant="outline">Explore&nbsp;Our&nbsp;Services</Button>
                     </div>
                 </div>
 

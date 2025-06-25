@@ -44,7 +44,7 @@ const Contact = () => {
                     placeholder="Your full name"
                   />
                 </div>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col w-full gap-2">
                   <label
                     className="!text-sm !font-medium !text-midnight-green/70"
                     htmlFor="company"
@@ -60,7 +60,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-2">
                 <div className="flex flex-col w-full gap-2">
                   <label
                     className="!text-sm !font-medium !text-midnight-green/70"

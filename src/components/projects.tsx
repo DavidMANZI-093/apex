@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-tiffany-blue/5"
+      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-white"
     >
       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">

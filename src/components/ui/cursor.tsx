@@ -27,11 +27,12 @@ const Cursor = () => {
   return (
     <span
       ref={cursorRef}
-      className="fixed pointer-events-none z-0 w-16 h-16 rounded-full bg-midnight-green/10 backdrop-blur-sm transition-all duration-300 ease-out"
+      className="fixed pointer-events-none z-0 w-128 h-128 rounded-full backdrop-blur-sm transition-all duration-300 ease-out"
       style={{
         transform: 'translate(-50%, -50%)',
         left: '0',
-        top: '0'
+        top: '0',
+        backgroundImage: 'radial-gradient(circle at center, rgba(109, 218, 211, 0.2) 0%, rgba(255, 255, 255, 0) 70%)'
       }}
     />
   );

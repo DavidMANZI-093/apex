@@ -1,62 +1,40 @@
-import { Building, Map, Drone, Eye } from "lucide-react";
-import Card from "./ui/card";
+import { Card, CardEx } from "./ui/card";
 
 const Portfolio = () => {
-
-    const services = [
-        {
-          icon: Building,
-          title: "Construction Consultancy",
-          description:
-            "We offer end-to-end consulting services to ensure your construction project is strategically planned, efficiently executed, and fully compliant.",
-          deliverables: [
-            "Feasibility Studies",
-            "Project Planning & Cost Estimation",
-            "Contract Management",
-            "Quality Assurance & Risk Assessment",
-            "Construction Monitoring & Reporting",
-          ],
-        },
-        {
-          icon: Map,
-          title: "Topographic and Land Surveying",
-          description:
-            "Comprehensive surveying services using advanced equipment and techniques for accurate land measurement and mapping.",
-          deliverables: [
-            "Contour Maps",
-            "Digital Terrain Models (DTMs)",
-            "Boundary & Cadastral Surveys",
-            "Cut & Fill Volume Calculations",
-            "GIS Mapping",
-          ],
-        },
-        {
-          icon: Drone,
-          title: "Drone-Based Surveying",
-          description:
-            "Cutting-edge aerial surveying solutions using advanced drone technology for efficient and accurate data collection.",
-          deliverables: [
-            "Large-Scale Topographic Surveys",
-            "Construction Progress Mapping",
-            "3D Site Modeling",
-            "Orthomosaic Map Generation",
-            "Environmental & Agricultural Surveys",
-          ],
-        },
-        {
-          icon: Eye,
-          title: "Site Supervision with Drone Support",
-          description:
-            "Advanced site monitoring and supervision services enhanced with drone technology for comprehensive project oversight.",
-          deliverables: [
-            "Remote Construction Monitoring",
-            "High-Resolution Aerial Imagery",
-            "Weekly/Monthly Progress Reports",
-            "Asset Tracking",
-            "Inspection of Hard-to-Reach Areas",
-          ],
-        },
-      ]
+  const projects = [
+    {
+      name: "Kigali Commercial Complex",
+      location: "Kigali, Rwanda",
+      services: ["Construction Consultancy", "Site Supervision"],
+      timeline: "18 months",
+      outcomes: "Completed 2 weeks ahead of schedule with 15% cost savings",
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      name: "Rural Road Infrastructure Survey",
+      location: "Eastern Province, Rwanda",
+      services: ["Drone Surveying", "Topographic Mapping"],
+      timeline: "6 months",
+      outcomes: "Mapped 150km of rural roads with 99.8% accuracy",
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      name: "Agricultural Land Assessment",
+      location: "Southern Province, Rwanda",
+      services: ["Land Surveying", "GIS Mapping"],
+      timeline: "4 months",
+      outcomes: "Optimized land use planning for 500+ hectares",
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      name: "Urban Development Project",
+      location: "Musanze, Rwanda",
+      services: ["Construction Consultancy", "Drone Monitoring"],
+      timeline: "12 months",
+      outcomes: "Zero safety incidents with real-time progress tracking",
+      image: "/placeholder.svg?height=300&width=400",
+    },
+  ];
 
   return (
     <section
@@ -65,10 +43,12 @@ const Portfolio = () => {
     >
       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
-          <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">Our Services</h2>
+          <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">
+            Our Services
+          </h2>
           <p className="text-french-grey leading-relaxed">
             {"We provide comprehensive construction consultancy and " +
-            "surveying solutions tailored to meet your project needs."}
+              "surveying solutions tailored to meet your project needs."}
           </p>
         </div>
 
@@ -79,7 +59,7 @@ const Portfolio = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Portfolio;

@@ -28,9 +28,9 @@ const Contact = () => {
               </p>
             </div>
 
-            <div>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="gap-2">
+            <div className="flex flex-col gap-4">
+              <div className="grid sm:grid-cols-2 gap-12">
+                <div className="flex flex-col w-full gap-2">
                   <label
                     className="!text-sm !font-medium !text-midnight-green/70"
                     htmlFor="fullName"
@@ -38,13 +38,13 @@ const Contact = () => {
                     Full Name
                   </label>
                   <input
-                    className="!text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
                     id="fullName"
                     type="text"
                     placeholder="Your full name"
                   />
                 </div>
-                <div className="gap-2">
+                <div className="flex flex-col gap-2">
                   <label
                     className="!text-sm !font-medium !text-midnight-green/70"
                     htmlFor="company"
@@ -52,7 +52,7 @@ const Contact = () => {
                     Company/Organization
                   </label>
                   <input
-                    className="!text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
                     id="company"
                     type="text"
                     placeholder="Your company"
@@ -61,7 +61,7 @@ const Contact = () => {
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="gap-2">
+                <div className="flex flex-col w-full gap-2">
                   <label
                     className="!text-sm !font-medium !text-midnight-green/70"
                     htmlFor="email"
@@ -69,13 +69,13 @@ const Contact = () => {
                     Email
                   </label>
                   <input
-                    className="!text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
                     id="email"
                     type="email"
                     placeholder="your@email.com"
                   />
                 </div>
-                <div className="gap-2">
+                <div className="flex flex-col gap-2">
                   <label
                     className="!text-sm !font-medium !text-midnight-green/70"
                     htmlFor="phone"
@@ -83,14 +83,14 @@ const Contact = () => {
                     Phone Number
                   </label>
                   <input
-                    className="!text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
                     id="phone"
                     placeholder="+250 7XX XXX XXX"
                   />
                 </div>
               </div>
 
-              <div className="gap-2">
+              <div className="flex flex-col gap-2">
                 <label
                   className="!text-sm !font-medium !text-midnight-green/70"
                   htmlFor="message"
@@ -98,7 +98,7 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  className="!p-2 !rounded-lg !border !border-french-grey/30"
+                  className="flex w-full !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
                   id="message"
                   placeholder="Tell us about your project or inquiry..."
                   rows={5}

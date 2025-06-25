@@ -14,8 +14,27 @@ const Cursor = () => {
       }
     };
 
+    const handleMouseLeave = () => {
+      if (cursorRef.current) {
+        cursorRef.current.style.opacity = '0';
+      }
+    };
+
+    const handleMouseEnter = () => {
+      if (cursorRef.current) {
+        cursorRef.current.style.opacity = '1';
+      }
+    };
+
     document.addEventListener('mousemove', handleMouseMove);
-    return () => document.removeEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseleave', handleMouseLeave);
+    document.addEventListener('mouseenter', handleMouseEnter);
+    
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseleave', handleMouseLeave);
+      document.removeEventListener('mouseenter', handleMouseEnter);
+    };
   }, []);
 
   return (
@@ -26,6 +45,8 @@ const Cursor = () => {
         transform: 'translate(-50%, -50%)',
         left: '0',
         top: '0',
+        opacity: '1',
+        transition: 'opacity 0.2s ease-out',
         backgroundImage: 'radial-gradient(circle at center, rgba(109, 218, 211, 0.2) 0%, rgba(255, 255, 255, 0) 70%)'
       }}
     />

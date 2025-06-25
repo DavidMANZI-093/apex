@@ -47,12 +47,12 @@ const CardEx = (props: PropsEx) => {
       <div className='grid grid-rows-2 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
           <div className='rounded-t-lg w-full bg-placeholder'></div>
         
-          <div className='flex flex-col gap-6'>
+          <div className='flex flex-col gap-6 !p-6'>
             <div className='flex flex-col justify-center gap-1'>
-                <h4>{props.name}</h4>
+                <h4 className='!text-lg !font-medium !text-midnight-green/70'>{props.name}</h4>
                 <div className='flex items-center gap-2'>
-                    <MapPin className='w-6 h-6 text-verdigris' />
-                    <p>{props.location}</p>
+                    <MapPin className='w-5 h-5 text-french-grey' />
+                    <p className='text-french-grey'>{props.location}</p>
                 </div>
             </div>
 

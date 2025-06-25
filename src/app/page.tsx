@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import Services from "@/components/services";
+import Projects from "@/components/projects";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <About />
       <Services />
+      <Projects />
     </main>
   );
 };

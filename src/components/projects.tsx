@@ -1,6 +1,6 @@
-import { Card, CardEx } from "./ui/card";
+import { CardEx } from "./ui/card";
 
-const Portfolio = () => {
+const Projects = () => {
   const projects = [
     {
       name: "Kigali Commercial Complex",
@@ -38,7 +38,7 @@ const Portfolio = () => {
 
   return (
     <section
-      id="portfolio"
+      id="projects"
       className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-tiffany-blue/5"
     >
       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
@@ -54,8 +54,8 @@ const Portfolio = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <Card key={index} {...service} />
+          {projects.map((project, index) => (
+            <CardEx key={index} {...project} />
           ))}
         </div>
       </div>
@@ -63,4 +63,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

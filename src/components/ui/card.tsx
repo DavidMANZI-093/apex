@@ -10,7 +10,7 @@ type Props = {
 
 const Card = (props: Props) => {
   return (
-    <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
+    <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
         <div className='flex flex-col w-fit justify-center !p-3 !rounded-lg !bg-verdigris/10'>
             <props.icon className='w-6 h-6 text-verdigris' />
         </div>
@@ -44,7 +44,7 @@ type PropsEx = {
 
 const CardEx = (props: PropsEx) => {
     return (
-      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
+      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
           <div className='rounded-t-lg w-full bg-placeholder'></div>
         
           <div className='flex flex-col gap-4 !p-6'>
@@ -93,7 +93,7 @@ const CardEx = (props: PropsEx) => {
 
   const CardTx = (props: PropsTx) => {
     return (
-      <div className='flex flex-col !p-6 gap-4 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
+      <div className='flex flex-col !p-6 gap-4 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
           <div className='flex items-center gap-2'>
             {Array.from({ length: (props.rating) }, (_, index) => (
               <Star key={index} className='w-4 h-4 fill-amber-500 text-transparent' />

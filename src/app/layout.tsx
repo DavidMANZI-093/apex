@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "APEX Constructions",
+  title: "APEX - Construction Consultancy & Advanced Surveying Solutions",
   description:
     "A leading construction consultancy and advanced surveying firm, " +
     "delivering precision-driven solutions through drone technology, " +

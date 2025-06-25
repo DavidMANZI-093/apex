@@ -1,4 +1,4 @@
-import { LucideIcon } from 'lucide-react'
+import { LucideIcon, MapPin } from 'lucide-react'
 import React from 'react'
 
 type Props = {
@@ -46,6 +46,14 @@ const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-2 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
           <div className='bg-placeholder'></div>
+
+          <h4>{props.name}</h4>
+          <div className='flex items-center gap-2'>
+            <MapPin className='w-6 h-6 text-verdigris' />
+            <p>{props.location}</p>
+          </div>
+          <p>{props.timeline}</p>
+          <p>{props.outcomes}</p>
       </div>
     )
   }

@@ -45,7 +45,7 @@ type PropsEx = {
 const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-2 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
-          <div className='bg-placeholder'></div>
+          <div className='h-[300px] w-full bg-placeholder'></div>
         
           <div className='flex flex-col justify-center gap-1'>
             <h4>{props.name}</h4>

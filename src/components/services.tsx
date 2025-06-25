@@ -1,5 +1,5 @@
 import { Building, Map, Drone, Eye } from "lucide-react";
-import Card from "./ui/card";
+import { Card } from "./ui/card";
 
 const Services = () => {
 

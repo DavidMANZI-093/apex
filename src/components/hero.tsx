@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="relative grid lg:grid-cols-2 gap-12 items-center">
                 <div className="relative flex flex-col gap-8">
                     <div className="flex flex-col gap-4 lg:!py-0 !py-8">
-                        <h1 className="!text-2xl md:!text-3xl lg:!text-4xl font-bold !text-midnight-green leading-tight">Your Trusted Partner in <span className="text-verdigris">Construction Consultancy</span> & Advanced Surveying Solutions</h1>
+                        <h1 className="!text-3xl md:!text-4xl font-bold !text-midnight-green leading-tight">Your Trusted Partner in <span className="text-verdigris">Construction Consultancy</span> & Advanced Surveying Solutions</h1>
                         <p className="!text-french-grey max-w-2xl leading-relaxed">Delivering precision, innovation, and reliability through expert cosultancy and drone powered surveying.</p>
                     </div>
 

@@ -28,16 +28,17 @@ export const metadata: Metadata = {
   authors: [{ name: "APEX Constructions" }, { name: "MANZI David" }],
 };
 
+import Cursor from "@/components/ui/cursor";
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`relative flex ${inter.variable} antialiased`}
-      >
+      <body className={`${inter.variable} font-sans bg-white/5 backdrop-blur-sm`}>
+        <Cursor />
         {children}
       </body>
     </html>

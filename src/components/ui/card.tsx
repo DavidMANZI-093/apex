@@ -1,4 +1,4 @@
-import { Calendar, LucideIcon, MapPin } from 'lucide-react'
+import { Calendar, CheckCircle, LucideIcon, MapPin } from 'lucide-react'
 import React from 'react'
 
 type Props = {
@@ -71,8 +71,11 @@ const CardEx = (props: PropsEx) => {
             </div>
           
             <div>
-                <h5>Key Outcomes:</h5>
-                <p>{props.outcomes}</p>
+                <div className='flex items-center gap-2'>
+                    <CheckCircle className='w-4 h-4 text-verdigris' />
+                    <h5 className='!font-medium !text-midnight-green/90'>Key Outcomes:</h5>
+                </div>
+                <p className='!pl-6 !text-sm text-french-grey'>{props.outcomes}</p>
             </div>
           </div>
       </div>

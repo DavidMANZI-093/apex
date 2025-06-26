@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <h4 className="flex !text-lg !text-white/70">Newsletter</h4>
             <p className="text-french-grey text-sm mb-4">
               Stay updated with our latest projects and industry insights.

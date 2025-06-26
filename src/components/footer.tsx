@@ -55,10 +55,10 @@ const Footer = () => {
             <p className="text-french-grey text-sm mb-4">
               Stay updated with our latest projects and industry insights.
             </p>
-            <div className="flex space-x-2">
+            <div className="flex gap-2">
               <input
                 placeholder="Your email"
-                className="bg-white/10 border-white/20 text-white placeholder:text-french-grey"
+                className="bg-white/20 border-white/20 text-white placeholder:!text-french-grey !text-sm !p-2 !rounded-lg"
               />
               <Button>Subscribe</Button>
             </div>

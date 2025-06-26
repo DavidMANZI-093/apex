@@ -1,3 +1,4 @@
+import { Mail, MapPin, Phone } from "lucide-react";
 import Button from "./ui/button";
 
 const Contact = () => {
@@ -112,94 +113,45 @@ const Contact = () => {
 
           {/* Social Media */}
           <div className="flex flex-col gap-6 !p-8 !rounded-lg !bg-white">
-            <div className="flex flex-col">
-              <h4 className="!text-lg !font-medium !text-midnight-green/70 mb-6">
+            <h4 className="!text-lg !font-medium !text-midnight-green/70 mb-6">
                 Get in touch
-              </h4>
-              <p className="!text-sm !text-french-grey leading-relaxed">
-                {"Fill out the form below and we'll get back " +
-                  "to you within 24 hours."}
-              </p>
-            </div>
+            </h4>
 
-            <div className="flex flex-col gap-4">
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div className="flex flex-col w-full gap-2">
-                  <label
-                    className="!text-sm !font-medium !text-midnight-green/70"
-                    htmlFor="fullName"
-                  >
-                    Full Name
-                  </label>
-                  <input
-                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
-                    id="fullName"
-                    type="text"
-                    placeholder="Your full name"
-                  />
+            <div className="flex flex-col gap-6">
+              <div className="flex gap-2">
+                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
+                  <Phone className="w-5 h-5 text-verdigris" />
                 </div>
-                <div className="flex flex-col w-full gap-2">
-                  <label
-                    className="!text-sm !font-medium !text-midnight-green/70"
-                    htmlFor="company"
-                  >
-                    Company/Organization
-                  </label>
-                  <input
-                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
-                    id="company"
-                    type="text"
-                    placeholder="Your company"
-                  />
+                <div className="flex flex-col gap-1">
+                  <p className="!text-sm !font-medium !text-midnight-green/70">Phone</p>
+                  <p className="!text-sm !text-french-grey">+250 793 245 612</p>
                 </div>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div className="flex flex-col w-full gap-2">
-                  <label
-                    className="!text-sm !font-medium !text-midnight-green/70"
-                    htmlFor="email"
-                  >
-                    Email
-                  </label>
-                  <input
-                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
-                    id="email"
-                    type="email"
-                    placeholder="your@email.com"
-                  />
+              <div className="flex gap-2">
+                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-verdigris" />
                 </div>
-                <div className="flex flex-col gap-2">
-                  <label
-                    className="!text-sm !font-medium !text-midnight-green/70"
-                    htmlFor="phone"
-                  >
-                    Phone Number
-                  </label>
-                  <input
-                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
-                    id="phone"
-                    placeholder="+250 7XX XXX XXX"
-                  />
+                <div className="flex flex-col gap-1">
+                  <p className="!text-sm !font-medium !text-midnight-green/70">Email</p>
+                  <p className="!text-sm !text-french-grey">info@apexrwanda.com</p>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label
-                  className="!text-sm !font-medium !text-midnight-green/70"
-                  htmlFor="message"
-                >
-                  Message
-                </label>
-                <textarea
-                  className="flex w-full !h-24 !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
-                  id="message"
-                  placeholder="Tell us about your project or inquiry..."
-                  rows={5}
-                />
+              <div className="flex gap-2">
+                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-verdigris" />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="!text-sm !font-medium !text-midnight-green/70">Address</p>
+                  <p className="!text-sm !text-french-grey">Kigali, Rwanda</p>
+                </div>
               </div>
             </div>
-            <Button>Send Message</Button>
+
+            <div>
+              <h5>Follow us</h5>
+            </div>
           </div>
         </div>
       </div>

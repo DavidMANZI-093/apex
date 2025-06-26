@@ -1,0 +1,1624 @@
+diff --git a/.gitignore b/.gitignore
+index 9c8a03f..5ef6a52 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -39,5 +39,3 @@ yarn-error.log*
+ # typescript
+ *.tsbuildinfo
+ next-env.d.ts
+-
+-.vercel
+diff --git a/README.md b/README.md
+index e69de29..06cdcc7 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1,111 @@
++# APEX
++
++A modern, scalable, and high-performance web application boilerplate built with the latest web technologies. This project serves as a starting point for building feature-rich applications with Next.js 15.
++
++## Key Features
++
++- **Next.js 15:** Leverages the latest features of Next.js, including the App Router for robust routing and server components.
++- **React 19:** Built on the newest version of React for a declarative and efficient UI.
++- **TypeScript:** Full TypeScript support for type safety and improved developer experience.
++- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
++- **Radix UI:** Provides high-quality, accessible UI components.
++- **Lucide React:** A beautiful and consistent icon set.
++- **ESLint:** Integrated for code quality and consistency.
++
++## Tech Stack
++
++- **Framework:** [Next.js](https://nextjs.org/) 15
++- **UI Library:** [React](https://react.dev/) 19
++- **Language:** [TypeScript](https://www.typescriptlang.org/)
++- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
++- **UI Components:** [Radix UI](https://www.radix-ui.com/)
++- **Icons:** [Lucide React](https://lucide.dev/)
++- **Linting:** [ESLint](https://eslint.org/)
++
++## Getting Started
++
++Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
++
++### Prerequisites
++
++Make sure you have the following installed on your machine:
++
++- [Node.js](https://nodejs.org/en/) (v18.x or later)
++- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/)
++
++### Installation
++
++1. Clone the repository:
++
++   ```bash
++   git clone https://github.com/DavidMANZI-093/apex.git
++   ```
++
++2. Navigate to the project directory:
++
++   ```bash
++   cd apex
++   ```
++
++3. Install the dependencies:
++
++   ```bash
++   npm install
++   ```
++
++### Running the Application
++
++To run the application in development mode, use the following command:
++
++```bash
++npm run dev
++```
++
++Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
++
++## Available Scripts
++
++In the project directory, you can run:
++
++- `npm run dev`: Runs the app in the development mode with Turbopack.
++- `npm run build`: Builds the app for production to the `.next` folder.
++- `npm run start`: Starts a Next.js production server.
++- `npm run lint`: Lints the source code using ESLint.
++
++## Project Structure
++
++The project follows a standard Next.js App Router structure:
++
++```text
++apex/
++├── .next/
++├── node_modules/
++├── public/
++│   └── ... # Static assets
++├── src/
++│   ├── app/
++│   │   ├── globals.css
++│   │   ├── layout.tsx
++│   │   └── page.tsx
++│   ├── components/
++│   │   └── ... # Reusable components
++├── .gitignore
++├── next.config.ts
++├── package.json
++├── postcss.config.mjs
++├── README.md
++└── tsconfig.json
++```
++
++- `src/app/`: Contains all the routes, pages, and layouts for the application.
++- `src/components/`: Contains all the reusable UI components.
++- `public/`: Contains static files like images and fonts.
++
++## Author
++
++- **MANZI David**
++- **GitHub:** [@DavidMANZI-093](https://github.com/DavidMANZI-093)
++
++## License
++
++This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+diff --git a/diff.patch b/diff.patch
+new file mode 100644
+index 0000000..eda389f
+--- /dev/null
++++ b/diff.patch
+@@ -0,0 +1,809 @@
++diff --git a/.gitignore b/.gitignore
++index 9c8a03f..5ef6a52 100644
++--- a/.gitignore
+++++ b/.gitignore
++@@ -39,5 +39,3 @@ yarn-error.log*
++ # typescript
++ *.tsbuildinfo
++ next-env.d.ts
++-
++-.vercel
++diff --git a/README.md b/README.md
++index e69de29..06cdcc7 100644
++--- a/README.md
+++++ b/README.md
++@@ -0,0 +1,111 @@
+++# APEX
+++
+++A modern, scalable, and high-performance web application boilerplate built with the latest web technologies. This project serves as a starting point for building feature-rich applications with Next.js 15.
+++
+++## Key Features
+++
+++- **Next.js 15:** Leverages the latest features of Next.js, including the App Router for robust routing and server components.
+++- **React 19:** Built on the newest version of React for a declarative and efficient UI.
+++- **TypeScript:** Full TypeScript support for type safety and improved developer experience.
+++- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+++- **Radix UI:** Provides high-quality, accessible UI components.
+++- **Lucide React:** A beautiful and consistent icon set.
+++- **ESLint:** Integrated for code quality and consistency.
+++
+++## Tech Stack
+++
+++- **Framework:** [Next.js](https://nextjs.org/) 15
+++- **UI Library:** [React](https://react.dev/) 19
+++- **Language:** [TypeScript](https://www.typescriptlang.org/)
+++- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+++- **UI Components:** [Radix UI](https://www.radix-ui.com/)
+++- **Icons:** [Lucide React](https://lucide.dev/)
+++- **Linting:** [ESLint](https://eslint.org/)
+++
+++## Getting Started
+++
+++Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+++
+++### Prerequisites
+++
+++Make sure you have the following installed on your machine:
+++
+++- [Node.js](https://nodejs.org/en/) (v18.x or later)
+++- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/)
+++
+++### Installation
+++
+++1. Clone the repository:
+++
+++   ```bash
+++   git clone https://github.com/DavidMANZI-093/apex.git
+++   ```
+++
+++2. Navigate to the project directory:
+++
+++   ```bash
+++   cd apex
+++   ```
+++
+++3. Install the dependencies:
+++
+++   ```bash
+++   npm install
+++   ```
+++
+++### Running the Application
+++
+++To run the application in development mode, use the following command:
+++
+++```bash
+++npm run dev
+++```
+++
+++Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+++
+++## Available Scripts
+++
+++In the project directory, you can run:
+++
+++- `npm run dev`: Runs the app in the development mode with Turbopack.
+++- `npm run build`: Builds the app for production to the `.next` folder.
+++- `npm run start`: Starts a Next.js production server.
+++- `npm run lint`: Lints the source code using ESLint.
+++
+++## Project Structure
+++
+++The project follows a standard Next.js App Router structure:
+++
+++```text
+++apex/
+++├── .next/
+++├── node_modules/
+++├── public/
+++│   └── ... # Static assets
+++├── src/
+++│   ├── app/
+++│   │   ├── globals.css
+++│   │   ├── layout.tsx
+++│   │   └── page.tsx
+++│   ├── components/
+++│   │   └── ... # Reusable components
+++├── .gitignore
+++├── next.config.ts
+++├── package.json
+++├── postcss.config.mjs
+++├── README.md
+++└── tsconfig.json
+++```
+++
+++- `src/app/`: Contains all the routes, pages, and layouts for the application.
+++- `src/components/`: Contains all the reusable UI components.
+++- `public/`: Contains static files like images and fonts.
+++
+++## Author
+++
+++- **MANZI David**
+++- **GitHub:** [@DavidMANZI-093](https://github.com/DavidMANZI-093)
+++
+++## License
+++
+++This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
++diff --git a/package-lock.json b/package-lock.json
++index 858b82b..0a267c3 100644
++--- a/package-lock.json
+++++ b/package-lock.json
++@@ -9,14 +9,13 @@
++       "version": "0.1.0",
++       "dependencies": {
++         "@radix-ui/react-slot": "^1.2.3",
++-        "@vercel/analytics": "^1.5.0",
++-        "@vercel/speed-insights": "^1.2.0",
++         "class-variance-authority": "^0.7.1",
++         "clsx": "^2.1.1",
++         "lucide-react": "^0.523.0",
++         "next": "15.3.4",
++         "react": "^19.1.0",
++         "react-dom": "^19.1.0",
+++        "react-icons": "^5.5.0",
++         "tailwind-merge": "^3.3.1"
++       },
++       "devDependencies": {
++@@ -1894,79 +1893,6 @@
++         "win32"
++       ]
++     },
++-    "node_modules/@vercel/analytics": {
++-      "version": "1.5.0",
++-      "resolved": "https://registry.npmjs.org/@vercel/analytics/-/analytics-1.5.0.tgz",
++-      "integrity": "sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==",
++-      "license": "MPL-2.0",
++-      "peerDependencies": {
++-        "@remix-run/react": "^2",
++-        "@sveltejs/kit": "^1 || ^2",
++-        "next": ">= 13",
++-        "react": "^18 || ^19 || ^19.0.0-rc",
++-        "svelte": ">= 4",
++-        "vue": "^3",
++-        "vue-router": "^4"
++-      },
++-      "peerDependenciesMeta": {
++-        "@remix-run/react": {
++-          "optional": true
++-        },
++-        "@sveltejs/kit": {
++-          "optional": true
++-        },
++-        "next": {
++-          "optional": true
++-        },
++-        "react": {
++-          "optional": true
++-        },
++-        "svelte": {
++-          "optional": true
++-        },
++-        "vue": {
++-          "optional": true
++-        },
++-        "vue-router": {
++-          "optional": true
++-        }
++-      }
++-    },
++-    "node_modules/@vercel/speed-insights": {
++-      "version": "1.2.0",
++-      "resolved": "https://registry.npmjs.org/@vercel/speed-insights/-/speed-insights-1.2.0.tgz",
++-      "integrity": "sha512-y9GVzrUJ2xmgtQlzFP2KhVRoCglwfRQgjyfY607aU0hh0Un6d0OUyrJkjuAlsV18qR4zfoFPs/BiIj9YDS6Wzw==",
++-      "hasInstallScript": true,
++-      "license": "Apache-2.0",
++-      "peerDependencies": {
++-        "@sveltejs/kit": "^1 || ^2",
++-        "next": ">= 13",
++-        "react": "^18 || ^19 || ^19.0.0-rc",
++-        "svelte": ">= 4",
++-        "vue": "^3",
++-        "vue-router": "^4"
++-      },
++-      "peerDependenciesMeta": {
++-        "@sveltejs/kit": {
++-          "optional": true
++-        },
++-        "next": {
++-          "optional": true
++-        },
++-        "react": {
++-          "optional": true
++-        },
++-        "svelte": {
++-          "optional": true
++-        },
++-        "vue": {
++-          "optional": true
++-        },
++-        "vue-router": {
++-          "optional": true
++-        }
++-      }
++-    },
++     "node_modules/acorn": {
++       "version": "8.15.0",
++       "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz",
++@@ -5215,6 +5141,15 @@
++         "react": "^19.1.0"
++       }
++     },
+++    "node_modules/react-icons": {
+++      "version": "5.5.0",
+++      "resolved": "https://registry.npmjs.org/react-icons/-/react-icons-5.5.0.tgz",
+++      "integrity": "sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==",
+++      "license": "MIT",
+++      "peerDependencies": {
+++        "react": "*"
+++      }
+++    },
++     "node_modules/react-is": {
++       "version": "16.13.1",
++       "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
++diff --git a/package.json b/package.json
++index 41621c2..7da4f26 100644
++--- a/package.json
+++++ b/package.json
++@@ -10,14 +10,13 @@
++   },
++   "dependencies": {
++     "@radix-ui/react-slot": "^1.2.3",
++-    "@vercel/analytics": "^1.5.0",
++-    "@vercel/speed-insights": "^1.2.0",
++     "class-variance-authority": "^0.7.1",
++     "clsx": "^2.1.1",
++     "lucide-react": "^0.523.0",
++     "next": "15.3.4",
++     "react": "^19.1.0",
++     "react-dom": "^19.1.0",
+++    "react-icons": "^5.5.0",
++     "tailwind-merge": "^3.3.1"
++   },
++   "devDependencies": {
++diff --git a/src/app/globals.css b/src/app/globals.css
++index db9cfcf..462a76f 100644
++--- a/src/app/globals.css
+++++ b/src/app/globals.css
++@@ -13,6 +13,10 @@ body {
++   font-family: var(--font-inter);
++ }
++ 
+++input:focus-visible {
+++    outline: none !important;
+++}
+++
++ @theme {
++   --color-french-grey: rgb(173, 179, 185);
++   --color-verdigris: rgb(100, 179, 178);
++diff --git a/src/app/layout.tsx b/src/app/layout.tsx
++index fa10386..961bcfa 100644
++--- a/src/app/layout.tsx
+++++ b/src/app/layout.tsx
++@@ -1,8 +1,6 @@
++ import type { Metadata } from "next";
++ import { Inter } from "next/font/google";
++ import "./globals.css";
++-import { Analytics } from "@vercel/analytics/react";
++-import { SpeedInsights } from "@vercel/speed-insights/next";
++ 
++ const inter = Inter({
++   variable: "--font-inter",
++@@ -10,7 +8,7 @@ const inter = Inter({
++ });
++ 
++ export const metadata: Metadata = {
++-  title: "APEX - Construction Consultancy & Surveying Solutions",
+++  title: "APEX - Construction Consultancy & Advanced Surveying Solutions",
++   description:
++     "A leading construction consultancy and advanced surveying firm, " +
++     "delivering precision-driven solutions through drone technology, " +
++@@ -41,8 +39,6 @@ export default function RootLayout({
++         className={`relative flex ${inter.variable} antialiased`}
++       >
++         {children}
++-        <Analytics />
++-        <SpeedInsights />
++       </body>
++     </html>
++   );
++diff --git a/src/app/manifest.json b/src/app/manifest.json
++index ccf313a..20bbcae 100644
++--- a/src/app/manifest.json
+++++ b/src/app/manifest.json
++@@ -1,6 +1,6 @@
++ {
++-  "name": "MyWebSite",
++-  "short_name": "MySite",
+++  "name": "APEX",
+++  "short_name": "APEX",
++   "icons": [
++     {
++       "src": "/web-app-manifest-192x192.png",
++diff --git a/src/app/page.tsx b/src/app/page.tsx
++index 32a0e0e..23f51ab 100644
++--- a/src/app/page.tsx
+++++ b/src/app/page.tsx
++@@ -3,6 +3,9 @@ import Hero from "@/components/hero";
++ import About from "@/components/about";
++ import Services from "@/components/services";
++ import Projects from "@/components/projects";
+++import Testimonials from "@/components/testimonials";
+++import Contact from "@/components/contact";
+++import Footer from "@/components/footer";
++ 
++ const Home = () => {
++   return (
++@@ -12,6 +15,9 @@ const Home = () => {
++       <About />
++       <Services />
++       <Projects />
+++      <Testimonials />
+++      <Contact />
+++      <Footer />
++     </main>
++   );
++ };
++diff --git a/src/components/contact.tsx b/src/components/contact.tsx
++new file mode 100644
++index 0000000..f73ce10
++--- /dev/null
+++++ b/src/components/contact.tsx
++@@ -0,0 +1,179 @@
+++import { Mail, MapPin, Phone } from "lucide-react";
+++import Button from "./ui/button";
+++import { LuLinkedin } from "react-icons/lu";
+++import { FiFacebook, FiInstagram } from "react-icons/fi";
+++import { RiTwitterXLine } from "react-icons/ri";
+++
+++const Contact = () => {
+++  return (
+++    <section
+++      id="contact"
+++      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-white/5"
+++    >
+++      <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
+++        <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
+++          <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">
+++            Let&apos;s Work Together
+++          </h2>
+++          <p className="text-french-grey leading-relaxed">
+++            {"Interested in our services or looking to partner " +
+++              "with us? Reach out today!"}
+++          </p>
+++        </div>
+++
+++        <div className="grid lg:grid-cols-2 gap-12">
+++          {/* Contact form */}
+++          <div className="flex flex-col gap-6 !p-8 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md">
+++            <div className="flex flex-col">
+++              <h4 className="!text-lg !font-medium !text-midnight-green/70 mb-6">
+++                Send us a message
+++              </h4>
+++              <p className="!text-sm !text-french-grey leading-relaxed">
+++                {"Fill out the form below and we'll get back " +
+++                  "to you within 24 hours."}
+++              </p>
+++            </div>
+++
+++            <div className="flex flex-col gap-4">
+++              <div className="grid sm:grid-cols-2 gap-6">
+++                <div className="flex flex-col w-full gap-2">
+++                  <label
+++                    className="!text-sm !font-medium !text-midnight-green/70"
+++                    htmlFor="fullName"
+++                  >
+++                    Full Name
+++                  </label>
+++                  <input
+++                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+++                    id="fullName"
+++                    type="text"
+++                    placeholder="Your full name"
+++                  />
+++                </div>
+++                <div className="flex flex-col w-full gap-2">
+++                  <label
+++                    className="!text-sm !font-medium !text-midnight-green/70"
+++                    htmlFor="company"
+++                  >
+++                    Company/Organization
+++                  </label>
+++                  <input
+++                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+++                    id="company"
+++                    type="text"
+++                    placeholder="Your company"
+++                  />
+++                </div>
+++              </div>
+++
+++              <div className="grid sm:grid-cols-2 gap-6">
+++                <div className="flex flex-col w-full gap-2">
+++                  <label
+++                    className="!text-sm !font-medium !text-midnight-green/70"
+++                    htmlFor="email"
+++                  >
+++                    Email
+++                  </label>
+++                  <input
+++                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+++                    id="email"
+++                    type="email"
+++                    placeholder="your@email.com"
+++                  />
+++                </div>
+++                <div className="flex flex-col gap-2">
+++                  <label
+++                    className="!text-sm !font-medium !text-midnight-green/70"
+++                    htmlFor="phone"
+++                  >
+++                    Phone Number
+++                  </label>
+++                  <input
+++                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+++                    id="phone"
+++                    placeholder="+250 7XX XXX XXX"
+++                  />
+++                </div>
+++              </div>
+++
+++              <div className="flex flex-col gap-2">
+++                <label
+++                  className="!text-sm !font-medium !text-midnight-green/70"
+++                  htmlFor="message"
+++                >
+++                  Message
+++                </label>
+++                <textarea
+++                  className="flex w-full !h-24 !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+++                  id="message"
+++                  placeholder="Tell us about your project or inquiry..."
+++                  rows={5}
+++                />
+++              </div>
+++            </div>
+++            <Button>Send Message</Button>
+++          </div>
+++
+++          {/* Social Media */}
+++          <div className="flex flex-col gap-6 !p-8 !rounded-lg !bg-white">
+++            <h4 className="!text-lg !font-medium !text-midnight-green/70 mb-6">
+++                Get in touch
+++            </h4>
+++
+++            <div className="flex flex-col gap-6">
+++              <div className="flex gap-2">
+++                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
+++                  <Phone className="w-5 h-5 text-verdigris" />
+++                </div>
+++                <div className="flex flex-col gap-1">
+++                  <p className="!text-sm !font-medium !text-midnight-green/70">Phone</p>
+++                  <p className="!text-sm !text-french-grey">+250 793 245 612</p>
+++                </div>
+++              </div>
+++
+++              <div className="flex gap-2">
+++                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
+++                  <Mail className="w-5 h-5 text-verdigris" />
+++                </div>
+++                <div className="flex flex-col gap-1">
+++                  <p className="!text-sm !font-medium !text-midnight-green/70">Email</p>
+++                  <p className="!text-sm !text-french-grey">info@apexrwanda.com</p>
+++                </div>
+++              </div>
+++
+++              <div className="flex gap-2">
+++                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
+++                  <MapPin className="w-5 h-5 text-verdigris" />
+++                </div>
+++                <div className="flex flex-col gap-1">
+++                  <p className="!text-sm !font-medium !text-midnight-green/70">Address</p>
+++                  <p className="!text-sm !text-french-grey">Kigali, Rwanda</p>
+++                </div>
+++              </div>
+++            </div>
+++
+++            <div className="flex flex-col gap-2">
+++              <h5 className="!text-lg !font-medium !text-midnight-green/70">Follow us</h5>
+++              <div className="flex gap-2">
+++                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+++                  <LuLinkedin className="w-5 h-5" />
+++                </a>
+++                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+++                  <FiFacebook className="w-5 h-5" />
+++                </a>
+++                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.instagram.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+++                  <FiInstagram className="w-5 h-5" />
+++                </a>
+++                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.twitter.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+++                  <RiTwitterXLine className="w-5 h-5" />
+++                </a>
+++              </div>
+++            </div>
+++          </div>
+++        </div>
+++      </div>
+++    </section>
+++  );
+++};
+++
+++export default Contact;
++diff --git a/src/components/footer.tsx b/src/components/footer.tsx
++new file mode 100644
++index 0000000..fec42ad
++--- /dev/null
+++++ b/src/components/footer.tsx
++@@ -0,0 +1,74 @@
+++import Image from "next/image";
+++import Button from "./ui/button";
+++
+++const Footer = () => {
+++  const quickLinks = [
+++    { name: "Home", href: "#home" },
+++    { name: "About", href: "#about" },
+++    { name: "Services", href: "#services" },
+++    { name: "Projects", href: "#projects" },
+++    { name: "Contact", href: "#contact" },
+++  ];
+++
+++  return (
+++    <footer className="relative flex h-fit !w-full !py-12 bg-midnight-green">
+++      <div className="relative w-full flex flex-col gap-10 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
+++        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+++          {/* Company Info */}
+++          <div className="flex flex-col gap-6">
+++            <div className="flex items-center gap-3">
+++              <Image
+++                src="/web-app-manifest-192x192.png"
+++                alt="APEX icon"
+++                width={40}
+++                height={40}
+++              />
+++              <p className="text-xl font-bold text-white">APEX</p>
+++            </div>
+++            <p className="flex !text-sm leading-relaxed text-french-grey">
+++              {"Professional construction consultancy and drone-powered " +
+++                "surveying solutions across Rwanda. Delivering precision, " +
+++                "innovation, and reliability."}
+++            </p>
+++          </div>
+++
+++          {/* Quick Links */}
+++          <div className="flex flex-col md:items-center gap-2">
+++            <h4 className="!text-lg !text-white/70">Quick Links</h4>
+++            <ul className="flex flex-col">
+++              {quickLinks.map((link, index) => (
+++                <li className="!list-inside" key={index}>
+++                  <a
+++                    href={link.href}
+++                    className="!text-sm !text-french-grey hover:!text-tiffany-blue transition-colors"
+++                  >
+++                    {link.name}
+++                  </a>
+++                </li>
+++              ))}
+++            </ul>
+++          </div>
+++
+++          {/* Newsletter */}
+++          <div className="flex flex-col gap-3">
+++            <h4 className="flex !text-lg !text-white/70">Newsletter</h4>
+++            <p className="flex text-french-grey text-sm mb-4">
+++              Stay updated with our latest projects and industry insights.
+++            </p>
+++            <div className="flex flex-wrap items-center gap-4">
+++              <input
+++                placeholder="Your email"
+++                className="flex !bg-white/10 !border !border-white/20 !text-white placeholder:!text-french-grey !text-sm !p-2 !rounded-lg"
+++              />
+++              <Button>Subscribe</Button>
+++            </div>
+++          </div>
+++        </div>
+++        <hr className="!border !border-french-grey/20" />
+++        <p className="!text-center !text-french-grey !text-sm">Copyright &copy; {new Date().getFullYear()} APEX. All rights reserved.</p>
+++      </div>
+++    </footer>
+++  );
+++};
+++
+++export default Footer;
++diff --git a/src/components/header.tsx b/src/components/header.tsx
++index 0dafc10..d933bec 100644
++--- a/src/components/header.tsx
+++++ b/src/components/header.tsx
++@@ -37,7 +37,7 @@ const Header = () => {
++                 </a>
++               );
++             })}
++-            <Button href="/contact">Get Consultation</Button>
+++            <Button onClick={() => {window.location.href = "#contact"}}>Get Consultation</Button>
++           </nav>
++ 
++           {/* Mobile Navigation */}
++@@ -61,7 +61,7 @@ const Header = () => {
++                   </a>
++                 );
++               })}
++-              <Button href="/contact">Get Consultation</Button>
+++              <Button onClick={() => {window.location.href = "#contact"}}>Get Consultation</Button>
++             </nav>
++           </div>
++         )}
++diff --git a/src/components/hero.tsx b/src/components/hero.tsx
++index 109dfd8..c6abe9f 100644
++--- a/src/components/hero.tsx
+++++ b/src/components/hero.tsx
++@@ -1,4 +1,3 @@
++-
++ "use client";
++ 
++ import { ArrowRight, Search } from "lucide-react";
++@@ -16,8 +15,8 @@ const Hero = () => {
++                     </div>
++ 
++                     <div className="flex flex-col sm:flex-row gap-4">
++-                        <Button onClick={() => window.location.href = "#contact"} iconPosition="right" icon={ArrowRight}>Get&nbsp;a&nbsp;Free&nbsp;Consultation</Button>
++-                        <Button onClick={() => window.location.href = "#services"} iconPosition="left" icon={Search} variant="outline">Explore&nbsp;Our&nbsp;Services</Button>
+++                        <Button onClick={() => {window.location.href = "#contact"}} iconPosition="right" icon={ArrowRight}>Get&nbsp;a&nbsp;Free&nbsp;Consultation</Button>
+++                        <Button onClick={() => {window.location.href = "#services"}} iconPosition="left" icon={Search} variant="outline">Explore&nbsp;Our&nbsp;Services</Button>
++                     </div>
++                 </div>
++ 
++diff --git a/src/components/services.tsx b/src/components/services.tsx
++index 9127964..82ba2a6 100644
++--- a/src/components/services.tsx
+++++ b/src/components/services.tsx
++@@ -66,7 +66,7 @@ const Services = () => {
++       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
++         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
++           <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">Our Services</h2>
++-          <p className="!text-base text-french-grey leading-relaxed">
+++          <p className="text-french-grey leading-relaxed">
++             {"We provide comprehensive construction consultancy and " +
++             "surveying solutions tailored to meet your project needs."}
++           </p>
++diff --git a/src/components/testimonials.tsx b/src/components/testimonials.tsx
++new file mode 100644
++index 0000000..efc8768
++--- /dev/null
+++++ b/src/components/testimonials.tsx
++@@ -0,0 +1,57 @@
+++import { CardTx } from "./ui/card";
+++
+++const Testimonials = () => {
+++  const testimonials = [
+++    {
+++      quote:
+++        "Their drone-assisted supervision helped us save time and money while maintaining high-quality construction standards.",
+++      author: "Jane Doe",
+++      position: "Project Manager",
+++      company: "XYZ Ltd.",
+++      rating: 4,
+++    },
+++    {
+++      quote:
+++        "APEX's topographic surveying was incredibly accurate and delivered ahead of schedule. Their professionalism is unmatched.",
+++      author: "John Smith",
+++      position: "Development Director",
+++      company: "ABC Construction",
+++      rating: 3,
+++    },
+++    {
+++      quote:
+++        "The 3D modeling and progress mapping provided invaluable insights for our project management team.",
+++      author: "Sarah Johnson",
+++      position: "Site Engineer",
+++      company: "BuildRight Corp",
+++      rating: 5,
+++    },
+++  ];
+++
+++  return (
+++    <section
+++      id="testimonials"
+++      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-tiffany-blue/5"
+++    >
+++      <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
+++        <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
+++          <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">
+++            What Our Clients Say
+++          </h2>
+++          <p className="text-french-grey leading-relaxed">
+++            {"Don't just take our word for it. Here's what our " +
+++              "satisfied clients have to say about our services."}
+++          </p>
+++        </div>
+++
+++        <div className="grid md:grid-cols-3 gap-4">
+++          {testimonials.map((testimonial, index) => (
+++            <CardTx key={index} {...testimonial} />
+++          ))}
+++        </div>
+++      </div>
+++    </section>
+++  );
+++};
+++
+++export default Testimonials;
++diff --git a/src/components/ui/button.tsx b/src/components/ui/button.tsx
++index 6685812..ef0fbea 100644
++--- a/src/components/ui/button.tsx
+++++ b/src/components/ui/button.tsx
++@@ -1,5 +1,3 @@
++-"use client";
++-
++ import { LucideIcon } from 'lucide-react';
++ import React from 'react';
++ 
++diff --git a/src/components/ui/card.tsx b/src/components/ui/card.tsx
++index 4bacd65..64cceb9 100644
++--- a/src/components/ui/card.tsx
+++++ b/src/components/ui/card.tsx
++@@ -1,4 +1,4 @@
++-import { Calendar, CheckCircle, LucideIcon, MapPin } from 'lucide-react'
+++import { Calendar, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react'
++ import React from 'react'
++ 
++ type Props = {
++@@ -10,7 +10,7 @@ type Props = {
++ 
++ const Card = (props: Props) => {
++   return (
++-    <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
+++    <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
++         <div className='flex flex-col w-fit justify-center !p-3 !rounded-lg !bg-verdigris/10'>
++             <props.icon className='w-6 h-6 text-verdigris' />
++         </div>
++@@ -44,7 +44,7 @@ type PropsEx = {
++ 
++ const CardEx = (props: PropsEx) => {
++     return (
++-      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
+++      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
++           <div className='rounded-t-lg w-full bg-placeholder'></div>
++         
++           <div className='flex flex-col gap-4 !p-6'>
++@@ -83,4 +83,39 @@ const CardEx = (props: PropsEx) => {
++     )
++   }
++ 
++-export {Card, CardEx};
++\ No newline at end of file
+++  type PropsTx = {
+++    quote: string;
+++    author: string;
+++    position: string;
+++    company: string;
+++    rating: number;
+++  }
+++
+++  const CardTx = (props: PropsTx) => {
+++    return (
+++      <div className='flex flex-col !p-6 gap-4 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
+++          <div className='flex items-center gap-2'>
+++            {Array.from({ length: (props.rating) }, (_, index) => (
+++              <Star key={index} className='w-4 h-4 fill-amber-500 text-transparent' />
+++            ))}
+++            {Array.from({ length: (5 - props.rating) }, (_, index) => (
+++              <Star key={index} className='w-4 h-4 fill-french-grey/60 text-transparent' />
+++            ))}<span className='leading-relaxed text-xs text-french-grey'>({props.rating}/5)</span>
+++
+++          </div>
+++          
+++          <Quote className='w-9 h-9 text-verdigris/50' />
+++          
+++          <p className='text-sm italic text-french-grey'>&quot;{props.quote}&quot;</p>
+++
+++          <hr className="!border-t-french-grey/40" />
+++
+++          <div className='flex flex-col'>
+++            <h4 className='!font-medium !text-midnight-green/90'>{props.author}</h4>
+++            <p className='text-sm text-french-grey'>{props.position}, {props.company}</p>
+++          </div>
+++      </div>
+++    )
+++  }
+++
+++export {Card, CardEx, CardTx};
++\ No newline at end of file
+diff --git a/package-lock.json b/package-lock.json
+index 858b82b..0a267c3 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -9,14 +9,13 @@
+       "version": "0.1.0",
+       "dependencies": {
+         "@radix-ui/react-slot": "^1.2.3",
+-        "@vercel/analytics": "^1.5.0",
+-        "@vercel/speed-insights": "^1.2.0",
+         "class-variance-authority": "^0.7.1",
+         "clsx": "^2.1.1",
+         "lucide-react": "^0.523.0",
+         "next": "15.3.4",
+         "react": "^19.1.0",
+         "react-dom": "^19.1.0",
++        "react-icons": "^5.5.0",
+         "tailwind-merge": "^3.3.1"
+       },
+       "devDependencies": {
+@@ -1894,79 +1893,6 @@
+         "win32"
+       ]
+     },
+-    "node_modules/@vercel/analytics": {
+-      "version": "1.5.0",
+-      "resolved": "https://registry.npmjs.org/@vercel/analytics/-/analytics-1.5.0.tgz",
+-      "integrity": "sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==",
+-      "license": "MPL-2.0",
+-      "peerDependencies": {
+-        "@remix-run/react": "^2",
+-        "@sveltejs/kit": "^1 || ^2",
+-        "next": ">= 13",
+-        "react": "^18 || ^19 || ^19.0.0-rc",
+-        "svelte": ">= 4",
+-        "vue": "^3",
+-        "vue-router": "^4"
+-      },
+-      "peerDependenciesMeta": {
+-        "@remix-run/react": {
+-          "optional": true
+-        },
+-        "@sveltejs/kit": {
+-          "optional": true
+-        },
+-        "next": {
+-          "optional": true
+-        },
+-        "react": {
+-          "optional": true
+-        },
+-        "svelte": {
+-          "optional": true
+-        },
+-        "vue": {
+-          "optional": true
+-        },
+-        "vue-router": {
+-          "optional": true
+-        }
+-      }
+-    },
+-    "node_modules/@vercel/speed-insights": {
+-      "version": "1.2.0",
+-      "resolved": "https://registry.npmjs.org/@vercel/speed-insights/-/speed-insights-1.2.0.tgz",
+-      "integrity": "sha512-y9GVzrUJ2xmgtQlzFP2KhVRoCglwfRQgjyfY607aU0hh0Un6d0OUyrJkjuAlsV18qR4zfoFPs/BiIj9YDS6Wzw==",
+-      "hasInstallScript": true,
+-      "license": "Apache-2.0",
+-      "peerDependencies": {
+-        "@sveltejs/kit": "^1 || ^2",
+-        "next": ">= 13",
+-        "react": "^18 || ^19 || ^19.0.0-rc",
+-        "svelte": ">= 4",
+-        "vue": "^3",
+-        "vue-router": "^4"
+-      },
+-      "peerDependenciesMeta": {
+-        "@sveltejs/kit": {
+-          "optional": true
+-        },
+-        "next": {
+-          "optional": true
+-        },
+-        "react": {
+-          "optional": true
+-        },
+-        "svelte": {
+-          "optional": true
+-        },
+-        "vue": {
+-          "optional": true
+-        },
+-        "vue-router": {
+-          "optional": true
+-        }
+-      }
+-    },
+     "node_modules/acorn": {
+       "version": "8.15.0",
+       "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz",
+@@ -5215,6 +5141,15 @@
+         "react": "^19.1.0"
+       }
+     },
++    "node_modules/react-icons": {
++      "version": "5.5.0",
++      "resolved": "https://registry.npmjs.org/react-icons/-/react-icons-5.5.0.tgz",
++      "integrity": "sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==",
++      "license": "MIT",
++      "peerDependencies": {
++        "react": "*"
++      }
++    },
+     "node_modules/react-is": {
+       "version": "16.13.1",
+       "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
+diff --git a/package.json b/package.json
+index 41621c2..7da4f26 100644
+--- a/package.json
++++ b/package.json
+@@ -10,14 +10,13 @@
+   },
+   "dependencies": {
+     "@radix-ui/react-slot": "^1.2.3",
+-    "@vercel/analytics": "^1.5.0",
+-    "@vercel/speed-insights": "^1.2.0",
+     "class-variance-authority": "^0.7.1",
+     "clsx": "^2.1.1",
+     "lucide-react": "^0.523.0",
+     "next": "15.3.4",
+     "react": "^19.1.0",
+     "react-dom": "^19.1.0",
++    "react-icons": "^5.5.0",
+     "tailwind-merge": "^3.3.1"
+   },
+   "devDependencies": {
+diff --git a/src/app/globals.css b/src/app/globals.css
+index db9cfcf..462a76f 100644
+--- a/src/app/globals.css
++++ b/src/app/globals.css
+@@ -13,6 +13,10 @@ body {
+   font-family: var(--font-inter);
+ }
+ 
++input:focus-visible {
++    outline: none !important;
++}
++
+ @theme {
+   --color-french-grey: rgb(173, 179, 185);
+   --color-verdigris: rgb(100, 179, 178);
+diff --git a/src/app/layout.tsx b/src/app/layout.tsx
+index fa10386..961bcfa 100644
+--- a/src/app/layout.tsx
++++ b/src/app/layout.tsx
+@@ -1,8 +1,6 @@
+ import type { Metadata } from "next";
+ import { Inter } from "next/font/google";
+ import "./globals.css";
+-import { Analytics } from "@vercel/analytics/react";
+-import { SpeedInsights } from "@vercel/speed-insights/next";
+ 
+ const inter = Inter({
+   variable: "--font-inter",
+@@ -10,7 +8,7 @@ const inter = Inter({
+ });
+ 
+ export const metadata: Metadata = {
+-  title: "APEX - Construction Consultancy & Surveying Solutions",
++  title: "APEX - Construction Consultancy & Advanced Surveying Solutions",
+   description:
+     "A leading construction consultancy and advanced surveying firm, " +
+     "delivering precision-driven solutions through drone technology, " +
+@@ -41,8 +39,6 @@ export default function RootLayout({
+         className={`relative flex ${inter.variable} antialiased`}
+       >
+         {children}
+-        <Analytics />
+-        <SpeedInsights />
+       </body>
+     </html>
+   );
+diff --git a/src/app/manifest.json b/src/app/manifest.json
+index ccf313a..20bbcae 100644
+--- a/src/app/manifest.json
++++ b/src/app/manifest.json
+@@ -1,6 +1,6 @@
+ {
+-  "name": "MyWebSite",
+-  "short_name": "MySite",
++  "name": "APEX",
++  "short_name": "APEX",
+   "icons": [
+     {
+       "src": "/web-app-manifest-192x192.png",
+diff --git a/src/app/page.tsx b/src/app/page.tsx
+index 32a0e0e..23f51ab 100644
+--- a/src/app/page.tsx
++++ b/src/app/page.tsx
+@@ -3,6 +3,9 @@ import Hero from "@/components/hero";
+ import About from "@/components/about";
+ import Services from "@/components/services";
+ import Projects from "@/components/projects";
++import Testimonials from "@/components/testimonials";
++import Contact from "@/components/contact";
++import Footer from "@/components/footer";
+ 
+ const Home = () => {
+   return (
+@@ -12,6 +15,9 @@ const Home = () => {
+       <About />
+       <Services />
+       <Projects />
++      <Testimonials />
++      <Contact />
++      <Footer />
+     </main>
+   );
+ };
+diff --git a/src/components/contact.tsx b/src/components/contact.tsx
+new file mode 100644
+index 0000000..f73ce10
+--- /dev/null
++++ b/src/components/contact.tsx
+@@ -0,0 +1,179 @@
++import { Mail, MapPin, Phone } from "lucide-react";
++import Button from "./ui/button";
++import { LuLinkedin } from "react-icons/lu";
++import { FiFacebook, FiInstagram } from "react-icons/fi";
++import { RiTwitterXLine } from "react-icons/ri";
++
++const Contact = () => {
++  return (
++    <section
++      id="contact"
++      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-white/5"
++    >
++      <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
++        <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
++          <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">
++            Let&apos;s Work Together
++          </h2>
++          <p className="text-french-grey leading-relaxed">
++            {"Interested in our services or looking to partner " +
++              "with us? Reach out today!"}
++          </p>
++        </div>
++
++        <div className="grid lg:grid-cols-2 gap-12">
++          {/* Contact form */}
++          <div className="flex flex-col gap-6 !p-8 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md">
++            <div className="flex flex-col">
++              <h4 className="!text-lg !font-medium !text-midnight-green/70 mb-6">
++                Send us a message
++              </h4>
++              <p className="!text-sm !text-french-grey leading-relaxed">
++                {"Fill out the form below and we'll get back " +
++                  "to you within 24 hours."}
++              </p>
++            </div>
++
++            <div className="flex flex-col gap-4">
++              <div className="grid sm:grid-cols-2 gap-6">
++                <div className="flex flex-col w-full gap-2">
++                  <label
++                    className="!text-sm !font-medium !text-midnight-green/70"
++                    htmlFor="fullName"
++                  >
++                    Full Name
++                  </label>
++                  <input
++                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
++                    id="fullName"
++                    type="text"
++                    placeholder="Your full name"
++                  />
++                </div>
++                <div className="flex flex-col w-full gap-2">
++                  <label
++                    className="!text-sm !font-medium !text-midnight-green/70"
++                    htmlFor="company"
++                  >
++                    Company/Organization
++                  </label>
++                  <input
++                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
++                    id="company"
++                    type="text"
++                    placeholder="Your company"
++                  />
++                </div>
++              </div>
++
++              <div className="grid sm:grid-cols-2 gap-6">
++                <div className="flex flex-col w-full gap-2">
++                  <label
++                    className="!text-sm !font-medium !text-midnight-green/70"
++                    htmlFor="email"
++                  >
++                    Email
++                  </label>
++                  <input
++                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
++                    id="email"
++                    type="email"
++                    placeholder="your@email.com"
++                  />
++                </div>
++                <div className="flex flex-col gap-2">
++                  <label
++                    className="!text-sm !font-medium !text-midnight-green/70"
++                    htmlFor="phone"
++                  >
++                    Phone Number
++                  </label>
++                  <input
++                    className="flex !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
++                    id="phone"
++                    placeholder="+250 7XX XXX XXX"
++                  />
++                </div>
++              </div>
++
++              <div className="flex flex-col gap-2">
++                <label
++                  className="!text-sm !font-medium !text-midnight-green/70"
++                  htmlFor="message"
++                >
++                  Message
++                </label>
++                <textarea
++                  className="flex w-full !h-24 !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
++                  id="message"
++                  placeholder="Tell us about your project or inquiry..."
++                  rows={5}
++                />
++              </div>
++            </div>
++            <Button>Send Message</Button>
++          </div>
++
++          {/* Social Media */}
++          <div className="flex flex-col gap-6 !p-8 !rounded-lg !bg-white">
++            <h4 className="!text-lg !font-medium !text-midnight-green/70 mb-6">
++                Get in touch
++            </h4>
++
++            <div className="flex flex-col gap-6">
++              <div className="flex gap-2">
++                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
++                  <Phone className="w-5 h-5 text-verdigris" />
++                </div>
++                <div className="flex flex-col gap-1">
++                  <p className="!text-sm !font-medium !text-midnight-green/70">Phone</p>
++                  <p className="!text-sm !text-french-grey">+250 793 245 612</p>
++                </div>
++              </div>
++
++              <div className="flex gap-2">
++                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
++                  <Mail className="w-5 h-5 text-verdigris" />
++                </div>
++                <div className="flex flex-col gap-1">
++                  <p className="!text-sm !font-medium !text-midnight-green/70">Email</p>
++                  <p className="!text-sm !text-french-grey">info@apexrwanda.com</p>
++                </div>
++              </div>
++
++              <div className="flex gap-2">
++                <div className="w-11 h-11 bg-verdigris/10 rounded-lg flex items-center justify-center">
++                  <MapPin className="w-5 h-5 text-verdigris" />
++                </div>
++                <div className="flex flex-col gap-1">
++                  <p className="!text-sm !font-medium !text-midnight-green/70">Address</p>
++                  <p className="!text-sm !text-french-grey">Kigali, Rwanda</p>
++                </div>
++              </div>
++            </div>
++
++            <div className="flex flex-col gap-2">
++              <h5 className="!text-lg !font-medium !text-midnight-green/70">Follow us</h5>
++              <div className="flex gap-2">
++                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/apexrwanda" target="_blank" rel="noopener noreferrer">
++                  <LuLinkedin className="w-5 h-5" />
++                </a>
++                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
++                  <FiFacebook className="w-5 h-5" />
++                </a>
++                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.instagram.com/apexrwanda" target="_blank" rel="noopener noreferrer">
++                  <FiInstagram className="w-5 h-5" />
++                </a>
++                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.twitter.com/apexrwanda" target="_blank" rel="noopener noreferrer">
++                  <RiTwitterXLine className="w-5 h-5" />
++                </a>
++              </div>
++            </div>
++          </div>
++        </div>
++      </div>
++    </section>
++  );
++};
++
++export default Contact;
+diff --git a/src/components/footer.tsx b/src/components/footer.tsx
+new file mode 100644
+index 0000000..fec42ad
+--- /dev/null
++++ b/src/components/footer.tsx
+@@ -0,0 +1,74 @@
++import Image from "next/image";
++import Button from "./ui/button";
++
++const Footer = () => {
++  const quickLinks = [
++    { name: "Home", href: "#home" },
++    { name: "About", href: "#about" },
++    { name: "Services", href: "#services" },
++    { name: "Projects", href: "#projects" },
++    { name: "Contact", href: "#contact" },
++  ];
++
++  return (
++    <footer className="relative flex h-fit !w-full !py-12 bg-midnight-green">
++      <div className="relative w-full flex flex-col gap-10 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
++        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
++          {/* Company Info */}
++          <div className="flex flex-col gap-6">
++            <div className="flex items-center gap-3">
++              <Image
++                src="/web-app-manifest-192x192.png"
++                alt="APEX icon"
++                width={40}
++                height={40}
++              />
++              <p className="text-xl font-bold text-white">APEX</p>
++            </div>
++            <p className="flex !text-sm leading-relaxed text-french-grey">
++              {"Professional construction consultancy and drone-powered " +
++                "surveying solutions across Rwanda. Delivering precision, " +
++                "innovation, and reliability."}
++            </p>
++          </div>
++
++          {/* Quick Links */}
++          <div className="flex flex-col md:items-center gap-2">
++            <h4 className="!text-lg !text-white/70">Quick Links</h4>
++            <ul className="flex flex-col">
++              {quickLinks.map((link, index) => (
++                <li className="!list-inside" key={index}>
++                  <a
++                    href={link.href}
++                    className="!text-sm !text-french-grey hover:!text-tiffany-blue transition-colors"
++                  >
++                    {link.name}
++                  </a>
++                </li>
++              ))}
++            </ul>
++          </div>
++
++          {/* Newsletter */}
++          <div className="flex flex-col gap-3">
++            <h4 className="flex !text-lg !text-white/70">Newsletter</h4>
++            <p className="flex text-french-grey text-sm mb-4">
++              Stay updated with our latest projects and industry insights.
++            </p>
++            <div className="flex flex-wrap items-center gap-4">
++              <input
++                placeholder="Your email"
++                className="flex !bg-white/10 !border !border-white/20 !text-white placeholder:!text-french-grey !text-sm !p-2 !rounded-lg"
++              />
++              <Button>Subscribe</Button>
++            </div>
++          </div>
++        </div>
++        <hr className="!border !border-french-grey/20" />
++        <p className="!text-center !text-french-grey !text-sm">Copyright &copy; {new Date().getFullYear()} APEX. All rights reserved.</p>
++      </div>
++    </footer>
++  );
++};
++
++export default Footer;
+diff --git a/src/components/header.tsx b/src/components/header.tsx
+index 0dafc10..d933bec 100644
+--- a/src/components/header.tsx
++++ b/src/components/header.tsx
+@@ -37,7 +37,7 @@ const Header = () => {
+                 </a>
+               );
+             })}
+-            <Button href="/contact">Get Consultation</Button>
++            <Button onClick={() => {window.location.href = "#contact"}}>Get Consultation</Button>
+           </nav>
+ 
+           {/* Mobile Navigation */}
+@@ -61,7 +61,7 @@ const Header = () => {
+                   </a>
+                 );
+               })}
+-              <Button href="/contact">Get Consultation</Button>
++              <Button onClick={() => {window.location.href = "#contact"}}>Get Consultation</Button>
+             </nav>
+           </div>
+         )}
+diff --git a/src/components/hero.tsx b/src/components/hero.tsx
+index 109dfd8..c6abe9f 100644
+--- a/src/components/hero.tsx
++++ b/src/components/hero.tsx
+@@ -1,4 +1,3 @@
+-
+ "use client";
+ 
+ import { ArrowRight, Search } from "lucide-react";
+@@ -16,8 +15,8 @@ const Hero = () => {
+                     </div>
+ 
+                     <div className="flex flex-col sm:flex-row gap-4">
+-                        <Button onClick={() => window.location.href = "#contact"} iconPosition="right" icon={ArrowRight}>Get&nbsp;a&nbsp;Free&nbsp;Consultation</Button>
+-                        <Button onClick={() => window.location.href = "#services"} iconPosition="left" icon={Search} variant="outline">Explore&nbsp;Our&nbsp;Services</Button>
++                        <Button onClick={() => {window.location.href = "#contact"}} iconPosition="right" icon={ArrowRight}>Get&nbsp;a&nbsp;Free&nbsp;Consultation</Button>
++                        <Button onClick={() => {window.location.href = "#services"}} iconPosition="left" icon={Search} variant="outline">Explore&nbsp;Our&nbsp;Services</Button>
+                     </div>
+                 </div>
+ 
+diff --git a/src/components/services.tsx b/src/components/services.tsx
+index 9127964..82ba2a6 100644
+--- a/src/components/services.tsx
++++ b/src/components/services.tsx
+@@ -66,7 +66,7 @@ const Services = () => {
+       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
+         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
+           <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">Our Services</h2>
+-          <p className="!text-base text-french-grey leading-relaxed">
++          <p className="text-french-grey leading-relaxed">
+             {"We provide comprehensive construction consultancy and " +
+             "surveying solutions tailored to meet your project needs."}
+           </p>
+diff --git a/src/components/testimonials.tsx b/src/components/testimonials.tsx
+new file mode 100644
+index 0000000..efc8768
+--- /dev/null
++++ b/src/components/testimonials.tsx
+@@ -0,0 +1,57 @@
++import { CardTx } from "./ui/card";
++
++const Testimonials = () => {
++  const testimonials = [
++    {
++      quote:
++        "Their drone-assisted supervision helped us save time and money while maintaining high-quality construction standards.",
++      author: "Jane Doe",
++      position: "Project Manager",
++      company: "XYZ Ltd.",
++      rating: 4,
++    },
++    {
++      quote:
++        "APEX's topographic surveying was incredibly accurate and delivered ahead of schedule. Their professionalism is unmatched.",
++      author: "John Smith",
++      position: "Development Director",
++      company: "ABC Construction",
++      rating: 3,
++    },
++    {
++      quote:
++        "The 3D modeling and progress mapping provided invaluable insights for our project management team.",
++      author: "Sarah Johnson",
++      position: "Site Engineer",
++      company: "BuildRight Corp",
++      rating: 5,
++    },
++  ];
++
++  return (
++    <section
++      id="testimonials"
++      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-tiffany-blue/5"
++    >
++      <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
++        <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
++          <h2 className="!text-2xl md:!text-3xl !font-medium !text-midnight-green/70 mb-6">
++            What Our Clients Say
++          </h2>
++          <p className="text-french-grey leading-relaxed">
++            {"Don't just take our word for it. Here's what our " +
++              "satisfied clients have to say about our services."}
++          </p>
++        </div>
++
++        <div className="grid md:grid-cols-3 gap-4">
++          {testimonials.map((testimonial, index) => (
++            <CardTx key={index} {...testimonial} />
++          ))}
++        </div>
++      </div>
++    </section>
++  );
++};
++
++export default Testimonials;
+diff --git a/src/components/ui/button.tsx b/src/components/ui/button.tsx
+index 6685812..ef0fbea 100644
+--- a/src/components/ui/button.tsx
++++ b/src/components/ui/button.tsx
+@@ -1,5 +1,3 @@
+-"use client";
+-
+ import { LucideIcon } from 'lucide-react';
+ import React from 'react';
+ 
+diff --git a/src/components/ui/card.tsx b/src/components/ui/card.tsx
+index 4bacd65..64cceb9 100644
+--- a/src/components/ui/card.tsx
++++ b/src/components/ui/card.tsx
+@@ -1,4 +1,4 @@
+-import { Calendar, CheckCircle, LucideIcon, MapPin } from 'lucide-react'
++import { Calendar, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react'
+ import React from 'react'
+ 
+ type Props = {
+@@ -10,7 +10,7 @@ type Props = {
+ 
+ const Card = (props: Props) => {
+   return (
+-    <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
++    <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
+         <div className='flex flex-col w-fit justify-center !p-3 !rounded-lg !bg-verdigris/10'>
+             <props.icon className='w-6 h-6 text-verdigris' />
+         </div>
+@@ -44,7 +44,7 @@ type PropsEx = {
+ 
+ const CardEx = (props: PropsEx) => {
+     return (
+-      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-lg'>
++      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
+           <div className='rounded-t-lg w-full bg-placeholder'></div>
+         
+           <div className='flex flex-col gap-4 !p-6'>
+@@ -83,4 +83,39 @@ const CardEx = (props: PropsEx) => {
+     )
+   }
+ 
+-export {Card, CardEx};
+\ No newline at end of file
++  type PropsTx = {
++    quote: string;
++    author: string;
++    position: string;
++    company: string;
++    rating: number;
++  }
++
++  const CardTx = (props: PropsTx) => {
++    return (
++      <div className='flex flex-col !p-6 gap-4 !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
++          <div className='flex items-center gap-2'>
++            {Array.from({ length: (props.rating) }, (_, index) => (
++              <Star key={index} className='w-4 h-4 fill-amber-500 text-transparent' />
++            ))}
++            {Array.from({ length: (5 - props.rating) }, (_, index) => (
++              <Star key={index} className='w-4 h-4 fill-french-grey/60 text-transparent' />
++            ))}<span className='leading-relaxed text-xs text-french-grey'>({props.rating}/5)</span>
++
++          </div>
++          
++          <Quote className='w-9 h-9 text-verdigris/50' />
++          
++          <p className='text-sm italic text-french-grey'>&quot;{props.quote}&quot;</p>
++
++          <hr className="!border-t-french-grey/40" />
++
++          <div className='flex flex-col'>
++            <h4 className='!font-medium !text-midnight-green/90'>{props.author}</h4>
++            <p className='text-sm text-french-grey'>{props.position}, {props.company}</p>
++          </div>
++      </div>
++    )
++  }
++
++export {Card, CardEx, CardTx};
+\ No newline at end of file

@@ -37,7 +37,7 @@ const Header = () => {
                 </a>
               );
             })}
-            <Button href="/contact">Get Consultation</Button>
+            <Button onClick={() => {window.location.href = "#contact"}}>Get Consultation</Button>
           </nav>
 
           {/* Mobile Navigation */}
@@ -61,7 +61,7 @@ const Header = () => {
                   </a>
                 );
               })}
-              <Button href="/contact">Get Consultation</Button>
+              <Button onClick={() => {window.location.href = "#contact"}}>Get Consultation</Button>
             </nav>
           </div>
         )}

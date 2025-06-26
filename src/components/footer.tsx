@@ -22,6 +22,8 @@ const Footer = () => {
                 alt="APEX icon"
                 width={40}
                 height={40}
+                placeholder="blur"
+                priority={true}
               />
               <p className="text-xl font-bold text-white">APEX</p>
             </div>

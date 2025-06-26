@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <Image src="/web-app-manifest-192x192.png" alt="APEX icon" width={40} height={40}/>
+            <Image src="/web-app-manifest-192x192.png" alt="APEX icon" placeholder="blur" priority={true} width={40} height={40}/>
             <span className="flex">
                 <p className="text-xl font-bold text-midnight-green">APEX</p>
                 {/* <p className="text-xl font-medium text-french-grey">Constructions</p> */}

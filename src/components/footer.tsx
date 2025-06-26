@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="flex flex-col gap-2">
-            <h4 className="!text-lg !font-medium !text-white">Quick Links</h4>
+            <h4 className="!text-lg !text-white/50">Quick Links</h4>
             <ul className="flex flex-col">
               {quickLinks.map((link, index) => (
                 <li className="!list-inside" key={index}>

@@ -89,6 +89,7 @@ const CardEx = (props: PropsEx) => {
     position: string;
     company: string;
     rating: number;
+    image: string;
   };
 
   const CardTx = (props: PropsTx) => {
@@ -105,14 +106,14 @@ const CardEx = (props: PropsEx) => {
           </div>
           
           <Quote className='w-9 h-9 text-verdigris/50' />
+
+          <p className='text-sm italic wra text-french-grey'>&quot;{props.quote}&quot;</p>
           
-          <p className='text-sm italic text-french-grey'>&quot;{props.quote}&quot;</p>
-
           <hr className="!border-t-french-grey/40" />
-
-          <div className='flex flex-col'>
-            <h4 className='!font-medium !text-midnight-green/90'>{props.author}</h4>
-            <p className='text-sm text-french-grey'>{props.position}, {props.company}</p>
+            
+          <div className='flex flex-col gap-1 !ml-2'>
+              <h4 className='!font-medium !text-midnight-green/90'>{props.author}</h4>
+              <p className='text-sm text-french-grey'>{props.position}, {props.company}</p>
           </div>
       </div>
     )

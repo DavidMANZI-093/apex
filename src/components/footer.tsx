@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <footer className="relative flex h-fit !w-full !py-12 bg-midnight-green">
-      <div className="relative w-full flex flex-col gap-10 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
+      <div className="relative w-full flex flex-col gap-10 container !mx-auto !px-4 sm:!px-6 lg:!px-8 xl:!px-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="flex flex-col gap-6">

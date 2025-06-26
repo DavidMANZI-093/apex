@@ -89,7 +89,6 @@ const CardEx = (props: PropsEx) => {
     position: string;
     company: string;
     rating: number;
-    image: string;
   };
 
   const CardTx = (props: PropsTx) => {

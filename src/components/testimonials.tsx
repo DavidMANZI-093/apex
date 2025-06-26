@@ -8,8 +8,7 @@ const Testimonials = () => {
       author: "Jane Doe",
       position: "Project Manager",
       company: "XYZ Ltd.",
-      rating: 4,
-      image: "/profile-1.jpg"
+      rating: 4
     },
     {
       quote:
@@ -17,8 +16,7 @@ const Testimonials = () => {
       author: "John Smith",
       position: "Development Director",
       company: "ABC Construction",
-      rating: 3,
-      image: "/profile-2.webp"
+      rating: 3
     },
     {
       quote:
@@ -26,8 +24,7 @@ const Testimonials = () => {
       author: "Sarah Johnson",
       position: "Site Engineer",
       company: "BuildRight Corp",
-      rating: 5,
-      image: "/profile-3.webp"
+      rating: 5
     },
   ];
 

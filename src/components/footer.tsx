@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="relative flex h-fit !w-full !p-12 bg-midnight-green">
       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="flex flex-col md:col-span-2 gap-6">
             <div className="flex items-center gap-3">
@@ -50,15 +50,15 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h4 className="!text-lg !text-white/70">Newsletter</h4>
+          <div className="flex flex-col gap-2">
+            <h4 className="flex !text-lg !text-white/70">Newsletter</h4>
             <p className="text-french-grey text-sm mb-4">
               Stay updated with our latest projects and industry insights.
             </p>
-            <div className="flex gap-2">
+            <div className="flex items-center gap-2">
               <input
                 placeholder="Your email"
-                className="!bg-white/10 !border !border-white/20 !text-white placeholder:!text-french-grey !text-sm !p-2 !rounded-lg"
+                className="flex !bg-white/10 !border !border-white/20 !text-white placeholder:!text-french-grey !text-sm !p-2 !rounded-lg"
               />
               <Button>Subscribe</Button>
             </div>

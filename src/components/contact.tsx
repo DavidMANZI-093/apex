@@ -1,6 +1,8 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Button from "./ui/button";
 import { LuLinkedin } from "react-icons/lu";
+import { FiFacebook, FiInstagram } from "react-icons/fi";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const Contact = () => {
   return (
@@ -153,14 +155,17 @@ const Contact = () => {
             <div>
               <h5>Follow us</h5>
               <div className="flex gap-2">
-                <a href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/apexrwanda" target="_blank" rel="noopener noreferrer">
                   <LuLinkedin className="w-5 h-5 text-verdigris" />
                 </a>
                 <a href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
-                  <LuLinkedin className="w-5 h-5 text-verdigris" />
+                  <FiFacebook className="w-5 h-5 text-verdigris" />
                 </a>
-                <a href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
-                  <LuLinkedin className="w-5 h-5 text-verdigris" />
+                <a href="https://www.instagram.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                  <FiInstagram className="w-5 h-5 text-verdigris" />
+                </a>
+                <a href="https://www.twitter.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                  <RiTwitterXLine className="w-5 h-5 text-verdigris" />
                 </a>
               </div>
             </div>

@@ -13,6 +13,10 @@ body {
   font-family: var(--font-inter);
 }
 
+input:focus-visible {
+    outline: none !important;
+}
+
 @theme {
   --color-french-grey: rgb(173, 179, 185);
   --color-verdigris: rgb(100, 179, 178);

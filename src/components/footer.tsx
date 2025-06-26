@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
-          <div className="flex flex-col md:col-span-2 gap-6">
+          <div className="flex flex-col md:col-sp2 gap-6">
             <div className="flex items-center gap-3">
               <Image
                 src="/web-app-manifest-192x192.png"
@@ -64,6 +64,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <hr className="!border !border-french-grey/20" />
+        <p className="!text-center !text-french-grey !text-sm">&copy; {new Date().getFullYear()} APEX. All rights reserved.</p>
       </div>
     </footer>
   );

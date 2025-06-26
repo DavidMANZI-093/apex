@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./ui/button";
 
 const Footer = () => {
   const quickLinks = [
@@ -46,6 +47,21 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h4 className="!text-lg !text-white/70">Newsletter</h4>
+            <p className="text-french-grey text-sm mb-4">
+              Stay updated with our latest projects and industry insights.
+            </p>
+            <div className="flex space-x-2">
+              <input
+                placeholder="Your email"
+                className="bg-white/10 border-white/20 text-white placeholder:text-french-grey"
+              />
+              <Button>Subscribe</Button>
+            </div>
           </div>
         </div>
       </div>

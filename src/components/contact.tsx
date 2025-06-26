@@ -152,19 +152,19 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-              <h5 className="!text-lg !font-medium !text-midnight-green/70 mb-6">Follow us</h5>
+            <div className="flex flex-col gap-2">
+              <h5 className="!text-lg !font-medium !text-midnight-green/70">Follow us</h5>
               <div className="flex gap-2">
-                <a className="w-11 h-11 bg-verdigris/10 text-black hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/apexrwanda" target="_blank" rel="noopener noreferrer">
                   <LuLinkedin className="w-5 h-5" />
                 </a>
-                <a className="w-11 h-11 bg-verdigris/10 text-black hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
                   <FiFacebook className="w-5 h-5" />
                 </a>
-                <a className="w-11 h-11 bg-verdigris/10 text-black hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.instagram.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.instagram.com/apexrwanda" target="_blank" rel="noopener noreferrer">
                   <FiInstagram className="w-5 h-5" />
                 </a>
-                <a className="w-11 h-11 bg-verdigris/10 text-black hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.twitter.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a className="w-11 h-11 bg-verdigris/10 !text-midnight-green/80 hover:!bg-verdigris hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.twitter.com/apexrwanda" target="_blank" rel="noopener noreferrer">
                   <RiTwitterXLine className="w-5 h-5" />
                 </a>
               </div>

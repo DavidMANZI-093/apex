@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="flex gap-2">
               <input
                 placeholder="Your email"
-                className="bg-white/20 border-white/20 text-white placeholder:!text-french-grey !text-sm !p-2 !rounded-lg"
+                className="!bg-white/10 !border !border-white/20 !text-white placeholder:!text-french-grey !text-sm !p-2 !rounded-lg"
               />
               <Button>Subscribe</Button>
             </div>

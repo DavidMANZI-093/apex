@@ -44,7 +44,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-3">
+        <div className="grid md:grid-cols-3 gap-4">
           {testimonials.map((testimonial, index) => (
             <CardTx key={index} {...testimonial} />
           ))}

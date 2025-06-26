@@ -32,6 +32,8 @@ export const metadata: Metadata = {
 };
 
 preload("/placeholder.png");
+preload("/web-app-manifest-192x192.png");
+preload("/web-app-manifest-512x512.png");
 
 export default function RootLayout({
   children,

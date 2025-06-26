@@ -1,12 +1,12 @@
-import { Calendar, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react'
-import React from 'react'
+import { Calendar, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react';
+import React from 'react';
 
 type Props = {
     icon: LucideIcon;
     title: string;
     description: string;
     deliverables: string[];
-}
+};
 
 const Card = (props: Props) => {
   return (
@@ -31,7 +31,7 @@ const Card = (props: Props) => {
         </div>
     </div>
   )
-}
+};
 
 type PropsEx = {
     name: string;
@@ -40,7 +40,7 @@ type PropsEx = {
     timeline: string;
     outcomes: string;
     image: string;
-}
+};
 
 const CardEx = (props: PropsEx) => {
     return (
@@ -81,7 +81,7 @@ const CardEx = (props: PropsEx) => {
       </div>
       
     )
-  }
+  };
 
   type PropsTx = {
     quote: string;
@@ -89,7 +89,7 @@ const CardEx = (props: PropsEx) => {
     position: string;
     company: string;
     rating: number;
-  }
+  };
 
   const CardTx = (props: PropsTx) => {
     return (
@@ -116,6 +116,6 @@ const CardEx = (props: PropsEx) => {
           </div>
       </div>
     )
-  }
+  };
 
 export {Card, CardEx, CardTx};

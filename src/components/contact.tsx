@@ -1,3 +1,5 @@
+import Button from "./ui/button";
+
 const Contact = () => {
   return (
     <section
@@ -29,7 +31,7 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col gap-4">
-              <div className="grid sm:grid-cols-2 gap-12">
+              <div className="grid sm:grid-cols-2 gap-6">
                 <div className="flex flex-col w-full gap-2">
                   <label
                     className="!text-sm !font-medium !text-midnight-green/70"
@@ -60,7 +62,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="grid sm:grid-cols-2">
+              <div className="grid sm:grid-cols-2 gap-6">
                 <div className="flex flex-col w-full gap-2">
                   <label
                     className="!text-sm !font-medium !text-midnight-green/70"
@@ -98,13 +100,14 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  className="flex w-full !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
+                  className="flex w-full !h-24 !text-sm !p-2 !rounded-lg !border !border-french-grey/30"
                   id="message"
                   placeholder="Tell us about your project or inquiry..."
                   rows={5}
                 />
               </div>
             </div>
+            <Button>Send Message</Button>
           </div>
         </div>
       </div>

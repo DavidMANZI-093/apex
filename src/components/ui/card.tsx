@@ -1,5 +1,6 @@
 import { Calendar, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react';
 import React from 'react';
+import Image from 'next/image';
 
 type Props = {
     icon: LucideIcon;
@@ -40,12 +41,15 @@ type PropsEx = {
     timeline: string;
     outcomes: string;
     image: string;
+    blurhash: string;
 };
 
 const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
-          <div className='rounded-t-lg w-full bg-placeholder'></div>
+          <div className='rounded-t-lg w-full bg-placeholder'>
+            <Image className='!w-full !h-full !object-cover !rounded-t-lg' src={props.image} alt={props.name} width={500} height={500} blurDataURL={props.blurhash} />
+          </div>
         
           <div className='flex flex-col gap-4 !p-6'>
             <div className='flex flex-col justify-center gap-1'>

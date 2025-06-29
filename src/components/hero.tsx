@@ -22,7 +22,9 @@ const Hero = () => {
                 </div>
 
                 <div className="relative flex items-center w-full h-full !pb-12 lg:!py-16">
-                    <div className="relative w-full h-full bg-placeholder rounded-2xl min-h-[350px] max-h-[500px]"></div>
+                    <div className="relative w-full h-full bg-placeholder rounded-2xl min-h-[350px] max-h-[500px]">
+                        <video className="!absolute !flex !w-full !h-full !object-cover rounded-2xl" poster="/thumbnail-1.webp" src="/clip-1.webm" autoPlay loop muted playsInline preload="auto"></video>
+                    </div>
                 </div>
             </div>
         </div>

@@ -34,6 +34,12 @@ export const metadata: Metadata = {
 preload("/placeholder.png");
 preload("/web-app-manifest-192x192.png");
 preload("/web-app-manifest-512x512.png");
+preload("/clip-1.webm");
+preload("/project-1.jpg");
+preload("/project-2.jpeg");
+preload("/project-3.webp");
+preload("/project-4.jpg");
+preload("/thumbnail-1.webp");
 
 export default function RootLayout({
   children,

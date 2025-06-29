@@ -48,7 +48,7 @@ const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
           <div className='rounded-t-lg w-full bg-placeholder'>
-            <Image className='!w-full !h-full !object-cover !rounded-t-lg' src={props.image} alt={props.name} width={500} height={500} blurDataURL={props.blurhash} />
+            <Image className='!w-full !h-full !object-cover !rounded-t-lg' src={props.image} alt={props.name} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />
           </div>
         
           <div className='flex flex-col gap-4 !p-6'>

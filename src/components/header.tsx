@@ -52,7 +52,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden !py-4 botder-t border-french-grey/20">
+          <div className="md:hidden !py-4 border-t border-french-grey/20">
             <nav className="flex flex-col gap-1 transition-colors duration-200">
               {navLinks.map((link) => {
                 return (

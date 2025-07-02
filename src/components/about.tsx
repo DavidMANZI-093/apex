@@ -1,4 +1,4 @@
-import { Shield, Lightbulb, Award, Leaf, Users } from "lucide-react";
+import { Shield, Lightbulb, Award, Leaf, Users, Target, Compass, Handshake } from "lucide-react";
 
 const about = () => {
   const values = [
@@ -48,7 +48,10 @@ const about = () => {
         </div>
 
         <div className="flex gap-8 justify-center flex-wrap">
-          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center">
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg transition-shadow duration-200">
+            <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
+              <Target className="w-8 h-8 !text-white" />
+            </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Vision</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To redefine the construction and surveying industry " +
@@ -57,7 +60,10 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center">
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg transition-shadow duration-200">
+            <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
+              <Compass className="w-8 h-8 !text-white" />
+            </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Mission</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To deliver accurate, cost-effective, and timely solutions " +
@@ -66,7 +72,10 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center">
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg transition-shadow duration-200">
+            <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
+              <Handshake className="w-8 h-8 !text-white" />
+            </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Mission</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To maintain the highest standards of professionalism " +

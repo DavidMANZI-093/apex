@@ -1,4 +1,4 @@
-import { Shield, Lightbulb, Award, Leaf, Users, Target, Compass, Handshake } from "lucide-react";
+import { Shield, Lightbulb, Award, Leaf, Users, Target, Compass, Handshake, User } from "lucide-react";
 
 const about = () => {
   const values = [
@@ -27,6 +27,33 @@ const about = () => {
       name: "Client-Centered",
       description: "Putting our clients' needs at the heart of everything",
     },
+  ];
+
+  const team = [
+    {
+      name: "Dr. Jean Baptiste Nzeyimana",
+      position: "Managing Director & Senior Surveyor",
+      bio: "15+ years in civil enginnering and surveying, PhD in Geomatics Engineering",
+      image: "",
+    },
+    {
+      name: "Eng. Marie Claire Uwimana",
+      position: "Head of Construction Consultancy",
+      bio: "12+ years in project management, certified PMP with expertise in large-scale infrastructure",
+      image: "",
+    },
+    {
+      name: "Eric Mugisha",
+      position: "Lead Drone Operations Specialist",
+      bio: "Licensed drone pilot with 8+ years in aerial surveying and 3D mapping technologies",
+      image: "",
+    },
+    {
+      name: "Eng. Jean Claude Niyonkuru",
+      position: "Lead Surveyor",
+      bio: "10+ years in surveying and land management, certified surveyor with expertise in topographic and land surveying",
+      image: "",
+    }
   ];
 
   return (
@@ -109,15 +136,18 @@ const about = () => {
             Our Team
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {values.map((value, index) => (
+            {team.map((value, index) => (
               <div key={index} className="flex flex-col text-center gap-2 items-center group">
                 <div className="w-16 h-16 bg-dutch-white/75 group-hover:bg-indigo-dye/85 transition-colors duration-200 rounded-full flex items-center justify-center mx-auto">
-                  <value.icon className="w-8 h-8 text-slate-gray group-hover:text-white transition-colors duration-200" />
+                  <User className="w-8 h-8 text-slate-gray group-hover:text-white transition-colors duration-200" />
                 </div>
                 <h4 className="!font-medium !text-indigo-dye/85">
                   {value.name}
                 </h4>
-                <p className="text-sm text-slate-gray/80">{value.description}</p>
+                <h5 className="!font-medium !text-indigo-dye/65">
+                  {value.position}
+                </h5>
+                <p className="text-sm text-slate-gray/80">{value.bio}</p>
               </div>
             ))}
           </div>

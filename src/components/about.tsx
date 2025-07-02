@@ -76,7 +76,7 @@ const about = () => {
             <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
               <Handshake className="w-8 h-8 !text-white" />
             </span>
-            <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Mission</h3>
+            <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Commitment</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To maintain the highest standards of professionalism " +
                 "while fostering long-term partnerships build on trust, " +

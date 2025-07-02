@@ -17,7 +17,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm !border-b !border-french-grey/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm !border-b !border-slate-gray/20">
       <div className="container !mx-auto !px-4 sm:!px-6 lg:!px-8 xl:!px-16">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -41,22 +41,22 @@ const Header = () => {
           </nav>
 
           {/* Mobile Navigation */}
-          <button className="md:hidden p-2 cursor-pointer" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden !p-2 cursor-pointer hover:!bg-indigo-dye/5 !rounded-lg transition-colors duration-200" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? (
-              <X className="w-6 h-6 text-midnight-green" />
+              <X className="w-6 h-6 text-indigo-dye/70" />
             ) : (
-              <Menu className="w-6 h-6 text-midnight-green" />
+              <Menu className="w-6 h-6 text-indigo-dye/70" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden !py-4 border-t border-french-grey/20">
+          <div className="md:hidden !py-4 !border-t !border-slate-gray/20">
             <nav className="flex flex-col gap-1 transition-colors duration-200">
               {navLinks.map((link) => {
                 return (
-                  <a key={link.name} href={link.href} className="!text-midnight-green/70 !py-2 !rounded-lg hover:!text-verdigris/70 hover:bg-verdigris/10 !text-[15px] !text-center transition-colors duration-200">
+                  <a key={link.name} href={link.href} className="!text-indigo-dye/70 !py-2 !rounded-lg hover:bg-indigo-dye/5 !text-[15px] !text-center transition-colors duration-200">
                     {link.name}
                   </a>
                 );

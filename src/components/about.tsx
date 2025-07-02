@@ -103,6 +103,25 @@ const about = () => {
             ))}
           </div>
         </div>
+
+        <div className="flex flex-col gap-8">
+          <h3 className="!text-2xl !font-medium !text-indigo-dye/85 !text-center mb-12">
+            Our Team
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <div key={index} className="flex flex-col text-center gap-2 items-center group">
+                <div className="w-16 h-16 bg-dutch-white/75 group-hover:bg-indigo-dye/85 transition-colors duration-200 rounded-full flex items-center justify-center mx-auto">
+                  <value.icon className="w-8 h-8 text-slate-gray group-hover:text-white transition-colors duration-200" />
+                </div>
+                <h4 className="!font-medium !text-indigo-dye/85">
+                  {value.name}
+                </h4>
+                <p className="text-sm text-slate-gray/80">{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

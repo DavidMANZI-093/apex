@@ -137,16 +137,18 @@ const about = () => {
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((value, index) => (
-              <div key={index} className="flex flex-col text-center gap-2 items-center group">
-                <div className="w-16 h-16 bg-dutch-white/75 group-hover:bg-indigo-dye/85 transition-colors duration-200 rounded-full flex items-center justify-center mx-auto">
-                  <User className="w-8 h-8 text-slate-gray group-hover:text-white transition-colors duration-200" />
+              <div key={index} className="flex flex-col text-center gap-4 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 transition-all duration-200">
+                <div className="w-16 h-16 bg-gradient-to-br from-indigo-dye/25 to-indigo-dye/85 rounded-full flex items-center justify-center mx-auto">
+                  <User className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="!font-medium !text-indigo-dye/85">
-                  {value.name}
-                </h4>
-                <h5 className="!font-medium !text-indigo-dye/65">
-                  {value.position}
-                </h5>
+                <span className="flex flex-col">
+                  <h4 className="!font-semibold !text-indigo-dye/85">
+                    {value.name}
+                  </h4>
+                  <h5 className="!text-sm !font-medium !text-indigo-dye/65">
+                    {value.position}
+                  </h5>
+                </span>
                 <p className="text-sm text-slate-gray/80">{value.bio}</p>
               </div>
             ))}

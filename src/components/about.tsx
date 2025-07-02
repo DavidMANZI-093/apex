@@ -47,9 +47,9 @@ const about = () => {
           </p>
         </div>
 
-        <div className="flex gap-12 justify-center flex-wrap">
-          <div className="flex flex-col gap-1 min-w-64 w-72 items-center">
-            <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Vision</h3>
+        <div className="flex gap-8 justify-center flex-wrap">
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center">
+            <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Vision</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To redefine the construction and surveying industry " +
                 "by integrating traditional practices with innovative " +
@@ -57,8 +57,8 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 min-w-64 w-72 items-center">
-            <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Mission</h3>
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center">
+            <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Mission</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To deliver accurate, cost-effective, and timely solutions " +
                 "that empower our clients to make informed decisions " +
@@ -66,8 +66,8 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 min-w-64 w-72 items-center">
-            <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Mission</h3>
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center">
+            <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Mission</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To maintain the highest standards of professionalism " +
                 "while fostering long-term partnerships build on trust, " +

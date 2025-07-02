@@ -13,7 +13,7 @@ body {
   font-family: var(--font-inter);
 }
 
-input:focus-visible {
+input:focus-visible, textarea:focus-visible {
     outline: none !important;
 }
 
@@ -23,6 +23,12 @@ input:focus-visible {
   --color-white: rgb(255, 255, 255);
   --color-midnight-green: rgb(40, 76, 89);
   --color-tiffany-blue: rgb(109, 218, 211);
+
+  --color-white: rgb(224, 211, 170);
+  --color-mint-cream: rgb(246, 253, 252);
+  --color-slate-gray: rgb(106, 134, 148);
+  --color-indigo-dye: rgb(17, 68, 99);
+  --color-dark-slate-gray: rgb(63, 87, 88);
 }
 
 .bg-placeholder {

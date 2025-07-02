@@ -48,7 +48,7 @@ const about = () => {
         </div>
 
         <div className="flex gap-8 justify-center flex-wrap">
-          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg transition-shadow duration-200">
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 transition-all duration-200">
             <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
               <Target className="w-8 h-8 !text-white" />
             </span>
@@ -60,7 +60,7 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg transition-shadow duration-200">
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 transition-all duration-200">
             <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
               <Compass className="w-8 h-8 !text-white" />
             </span>
@@ -72,7 +72,7 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg transition-shadow duration-200">
+          <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 transition-all duration-200">
             <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
               <Handshake className="w-8 h-8 !text-white" />
             </span>

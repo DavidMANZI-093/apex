@@ -53,7 +53,7 @@ const about = () => {
               <Target className="w-8 h-8 !text-white" />
             </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Vision</h3>
-            <p className="text-french-grey leading-relaxed !text-center">
+            <p className="text-slate-gray/80 leading-relaxed !text-center">
               {"To redefine the construction and surveying industry " +
                 "by integrating traditional practices with innovative " +
                 "technologies such as drone mapping and aerial inspections."}
@@ -65,7 +65,7 @@ const about = () => {
               <Compass className="w-8 h-8 !text-white" />
             </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Mission</h3>
-            <p className="text-french-grey leading-relaxed !text-center">
+            <p className="text-slate-gray/80 leading-relaxed !text-center">
               {"To deliver accurate, cost-effective, and timely solutions " +
                 "that empower our clients to make informed decisions " +
                 "and execute successful projects."}
@@ -77,7 +77,7 @@ const about = () => {
               <Handshake className="w-8 h-8 !text-white" />
             </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Commitment</h3>
-            <p className="text-french-grey leading-relaxed !text-center">
+            <p className="text-slate-gray/80 leading-relaxed !text-center">
               {"To maintain the highest standards of professionalism " +
                 "while fostering long-term partnerships build on trust, " +
                 "reliability, and exceptional service delivery."}
@@ -86,19 +86,19 @@ const about = () => {
         </div>
 
         <div className="flex flex-col gap-8">
-          <h3 className="!text-2xl !font-medium !text-midnight-green/70 !text-center mb-12">
+          <h3 className="!text-2xl !font-medium !text-indigo-dye/85 !text-center mb-12">
             Our Core Values
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <div key={index} className="flex flex-col text-center gap-2 items-center">
-                <div className="w-16 h-16 bg-verdigris/10 rounded-full flex items-center justify-center mx-auto">
-                  <value.icon className="w-8 h-8 text-verdigris" />
+                <div className="w-16 h-16 bg-dutch-white/75 rounded-full flex items-center justify-center mx-auto">
+                  <value.icon className="w-8 h-8 text-slate-gray" />
                 </div>
-                <h4 className="!font-medium !text-midnight-green/70">
+                <h4 className="!font-medium !text-indigo-dye/85">
                   {value.name}
                 </h4>
-                <p className="text-sm text-french-grey">{value.description}</p>
+                <p className="text-sm text-slate-gray/80">{value.description}</p>
               </div>
             ))}
           </div>

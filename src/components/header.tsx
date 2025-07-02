@@ -52,7 +52,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden !translate-y-[-100%] !opacity-0 !transition-all !duration-200 lg:!translate-y-0 lg:!opacity-100 !py-4 !border-t !border-slate-gray/20">
+          <div className="lg:hidden !py-4 !border-t !border-slate-gray/20">
             <nav className="flex flex-col gap-1 transition-colors duration-200">
               {navLinks.map((link) => {
                 return (

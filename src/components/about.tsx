@@ -47,8 +47,8 @@ const about = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="flex flex-col gap-1 items-center">
+        <div className="flex gap-12 justify-center flex-wrap">
+          <div className="flex flex-col gap-1 min-w-64 w-72 items-center">
             <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Vision</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To redefine the construction and surveying industry " +
@@ -57,12 +57,21 @@ const about = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 items-center">
+          <div className="flex flex-col gap-1 min-w-64 w-72 items-center">
             <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Mission</h3>
             <p className="text-french-grey leading-relaxed !text-center">
               {"To deliver accurate, cost-effective, and timely solutions " +
                 "that empower our clients to make informed decisions " +
                 "and execute successful projects."}
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-1 min-w-64 w-72 items-center">
+            <h3 className="!text-lg !font-medium !text-midnight-green/70">Our Mission</h3>
+            <p className="text-french-grey leading-relaxed !text-center">
+              {"To maintain the highest standards of professionalism " +
+                "while fostering long-term partnerships build on trust, " +
+                "reliability, and exceptional service delivery."}
             </p>
           </div>
         </div>

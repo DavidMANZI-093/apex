@@ -29,7 +29,7 @@ const Header = () => {
             </span>
           </div>
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+          <nav className="hidden lg:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => {
               return (
                 <a key={link.name} href={link.href} className="!text-sm font-medium !text-indigo-dye/70 hover:!text-indigo-dye/40 transition-colors duration-200">
@@ -41,7 +41,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile Navigation */}
-          <button className="md:hidden !p-2 cursor-pointer hover:!bg-indigo-dye/5 !rounded-lg transition-colors duration-200" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="lg:hidden !p-2 cursor-pointer hover:!bg-indigo-dye/5 !rounded-lg transition-colors duration-200" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? (
               <X className="w-6 h-6 text-indigo-dye/70" />
             ) : (
@@ -52,7 +52,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden !py-4 !border-t !border-slate-gray/20">
+          <div className="lg:hidden !translate-y-[-100%] !opacity-0 !transition-all !duration-200 lg:!translate-y-0 lg:!opacity-100 !py-4 !border-t !border-slate-gray/20">
             <nav className="flex flex-col gap-1 transition-colors duration-200">
               {navLinks.map((link) => {
                 return (

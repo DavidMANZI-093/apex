@@ -29,6 +29,8 @@ input:focus-visible, textarea:focus-visible {
   --color-slate-gray: rgb(106, 134, 148);
   --color-indigo-dye: rgb(17, 68, 99);
   --color-dark-slate-gray: rgb(63, 87, 88);
+
+  --font-caveat: var(--font-caveat);
 }
 
 .bg-placeholder {

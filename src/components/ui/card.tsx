@@ -128,7 +128,7 @@ const CardEx = (props: PropsEx) => {
           
           <Quote className='w-9 h-9 text-indigo-dye/60' />
 
-          <p className='text-sm italic wra text-slate-gray/80'>&quot;{props.quote}&quot;</p>
+          <p className='italc !font-caveat !font-medium !text-xl !text-slate-gray/80 group-hover:!text-indigo-dye transition-color duration-200'>&quot;{props.quote}&quot;</p>
           
           <hr className="!border-t-slate-gray/20" />
             

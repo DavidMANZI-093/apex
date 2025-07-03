@@ -12,7 +12,7 @@ const Testimonials = () => {
     },
     {
       quote:
-        "APEX's topographic surveying was incredibly accurate and delivered ahead of schedule. Their professionalism is unmatched.",
+        "Echelon Landworks' topographic surveying was incredibly accurate and delivered ahead of schedule. Their professionalism is unmatched.",
       author: "John Smith",
       position: "Development Director",
       company: "ABC Construction",

@@ -1,4 +1,4 @@
-import { Calendar, ChartNoAxesCombined, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react';
+import { Calendar, ChartNoAxesCombined, LucideIcon, MapPin, Quote, Star } from 'lucide-react';
 import React from 'react';
 import Image from 'next/image';
 
@@ -11,7 +11,7 @@ type Props = {
 
 const Card = (props: Props) => {
   return (
-    <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !shadow-slate-gray/20 !shadow-md group hover:!shadow-lg hover:!scale-101 transition-all duration-200'>
+    <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !shadow-slate-gray/20 !shadow-md group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
         <div className="flex flex-col w-fit justify-center !p-3 !rounded-lg !bg-gradient-to-br from-indigo-dye/20 to-indigo-dye/80 group-hover:!scale-110 transition-all delay-100 duration-200">
             <props.icon className='w-8 h-8 text-white' />
         </div>
@@ -51,13 +51,13 @@ type PropsEx = {
 
 const CardEx = (props: PropsEx) => {
     return (
-      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
-          <div className='flex gap-1 rounded-t-lg w-full bg-placeholder'>
-            <Image className='!w-full !h-full !object-cover !rounded-t-lg' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />
+      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !shadow-md !shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
+          <div className='flex gap-2 rounded-t-lg w-full bg-placeholder overflow-hidden'>
+            <Image className='!w-full !h-full !object-cover !rounded-t-lg group-hover:!scale-110 transition-all duration-3000 ease-in-out' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />
             <span className='absolute text-xs !py-0.5 !px-2.5 !ml-2 !mt-2 rounded-xl font-medium !text-white bg-indigo-dye'>{props.category}</span>
           </div>
         
-          <div className='flex flex-col gap-4 !p-6'>
+          <div className='flex flex-col gap-6 !p-6'>
             <div className='flex flex-col justify-center gap-1'>
                 <h4 className='!text-xl !font-medium !text-indigo-dye/85'>{props.title}</h4>
                 <ul className='flex gap-2 flex-wrap'>

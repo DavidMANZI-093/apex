@@ -7,13 +7,12 @@ type Props = {
     title: string;
     description: string;
     deliverables: string[];
-    color: string;
 };
 
 const Card = (props: Props) => {
   return (
     <div className='flex flex-col !p-8 gap-6 !rounded-lg !bg-white !shadow-slate-gray/20 !shadow-md group hover:!shadow-lg hover:!scale-101 transition-all duration-200'>
-        <div className={`flex flex-col w-fit justify-center !p-3 !rounded-lg !bg-gradient-to-br from-${props.color}/50 to-${props.color}/80 group-hover:!scale-110 transition-all delay-200 duration-300`}>
+        <div className="flex flex-col w-fit justify-center !p-3 !rounded-lg !bg-gradient-to-br from-indigo-dye/50 to-indigo-dye/80 group-hover:!scale-110 transition-all delay-200 duration-300">
             <props.icon className='w-6 h-6 text-white' />
         </div>
         <div className='flex flex-col justify-center gap-1'>

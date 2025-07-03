@@ -1,4 +1,4 @@
-import { Calendar, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react';
+import { Calendar, ChartNoAxesCombined, CheckCircle, LucideIcon, MapPin, Quote, Star } from 'lucide-react';
 import React from 'react';
 import Image from 'next/image';
 
@@ -52,7 +52,7 @@ type PropsEx = {
 const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
-          <div className='flex rounded-t-lg w-full bg-placeholder'>
+          <div className='flex gap-1 rounded-t-lg w-full bg-placeholder'>
             <Image className='!w-full !h-full !object-cover !rounded-t-lg' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />
             <span className='absolute text-xs !py-0.5 !px-2.5 !ml-2 !mt-2 rounded-xl font-medium !text-white bg-indigo-dye'>{props.category}</span>
           </div>
@@ -79,19 +79,25 @@ const CardEx = (props: PropsEx) => {
                     <p className='text-sm text-indigo-dye/85'>Timeline:</p>
                     <p className='text-sm text-slate-gray/80'>{props.timeline}</p>
                 </div>
+
+                <div className='flex gap-2 items-center'>
+                    <ChartNoAxesCombined className='w-4 h-4 text-slate-gray' />
+                    <p className='text-sm text-indigo-dye/85'>Metrics:</p>
+                    <p className='text-sm text-slate-gray/80'>{props.metrics}</p>
+                </div>
             </div>
 
-            <div className='flex gap-2'>
-                <Calendar className='w-4 h-4 text-french-grey' />
-                <p className='text-sm text-french-grey'>{props.timeline}</p>
-            </div>
-          
             <div>
                 <div className='flex items-center gap-2'>
-                    <CheckCircle className='w-4 h-4 text-verdigris' />
-                    <h5 className='!font-medium !text-midnight-green/90'>Key Outcomes:</h5>
+                    <h5 className='!font-medium !text-indigo-dye/85'>Key Outcomes:</h5>
                 </div>
-                <p className='!pl-6 !text-sm text-french-grey'>{props.outcomes}</p>
+                <ul className='!list-disc !list-inside !ml-2 !text-slate-gray'>
+                    {props.outcomes.map((outcome, index) => (
+                        <li key={index}>
+                            <span className='!text-sm !text-slate-gray/80'>{outcome}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
           </div>
       </div>

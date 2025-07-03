@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import Button from "./ui/button";
 import { LuLinkedin } from "react-icons/lu";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
@@ -148,6 +148,16 @@ const Contact = () => {
                 <div className="flex flex-col gap-1">
                   <p className="!text-sm !font-medium !text-indigo-dye/85">Address</p>
                   <p className="!text-sm !text-slate-gray/80">Kigali, Rwanda</p>
+                </div>
+              </div>
+
+              <div className="flex gap-2">
+                <div className="w-11 h-11 bg-indigo-dye/4 rounded-lg flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-indigo-dye/80" />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="!text-sm !font-medium !text-indigo-dye/85">Business Hours</p>
+                  <p className="!text-sm !text-slate-gray/80">Monday - Friday: 9:00 AM - 5:00 PM</p>
                 </div>
               </div>
             </div>

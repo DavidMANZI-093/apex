@@ -52,16 +52,17 @@ type PropsEx = {
 const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
-          <div className='rounded-t-lg w-full bg-placeholder'>
+          <div className='flex rounded-t-lg w-full bg-placeholder'>
             <Image className='!w-full !h-full !object-cover !rounded-t-lg' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />
+            <span className='absolute text-xs !py-0.5 !px-2.5 !ml-2 !mt-2 rounded-xl font-medium !text-white bg-indigo-dye'>{props.category}</span>
           </div>
         
           <div className='flex flex-col gap-4 !p-6'>
             <div className='flex flex-col justify-center gap-1'>
-                <h4 className='!text-xl !font-medium !text-midnight-green/90'>{props.title}</h4>
+                <h4 className='!text-xl !font-medium !text-indigo-dye/85'>{props.title}</h4>
                 <ul className='flex gap-2 flex-wrap'>
                     {props.services.map((service, index) => (
-                        <li className='text-xs !py-0.5 !px-2.5 rounded-xl font-medium !text-verdigris bg-verdigris/10' key={index}>{service}</li>
+                        <li className='text-xs !py-0.5 !px-2.5 rounded-xl font-medium !text-indigo-dye/70 bg-indigo-dye/5' key={index}>{service}</li>
                     ))}
                 </ul>
             </div>

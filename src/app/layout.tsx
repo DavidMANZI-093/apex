@@ -11,14 +11,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "APEX - Construction Consultancy & Surveying Solutions",
+  title: "Echelon Landworks - Construction Consultancy & Surveying Solutions",
   description:
     "A leading construction consultancy and advanced surveying firm, " +
     "delivering precision-driven solutions through drone technology, " +
     "GIS, and expert project management across Rwanda and beyond.",
   keywords: [
-    "APEX",
-    "Constructions",
+    "Echelon",
+    "Landworks",
     "Rwanda",
     "Drone",
     "Surveying",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Project",
     "Management",
   ],
-  authors: [{ name: "APEX Constructions" }, { name: "MANZI David" }],
+  authors: [{ name: "Echelon Landworks" }, { name: "MANZI David" }],
 };
 
 preload("/placeholder.png");

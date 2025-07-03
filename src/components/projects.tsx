@@ -1,4 +1,4 @@
-import { Building, Drone, Eye } from "lucide-react";
+import { Building, Drone, Eye, Map } from "lucide-react";
 import { CardEx } from "./ui/card";
 
 const Projects = () => {

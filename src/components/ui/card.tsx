@@ -68,19 +68,19 @@ const CardEx = (props: PropsEx) => {
             </div>
 
             <div className='flex flex-col gap-2'>
-                <div className='flex gap-2 items-center'>
+                <div className='flex gap-2 items-start'>
                     <MapPin className='w-4 h-4 text-slate-gray' />
                     <p className='text-sm text-indigo-dye/85'>Client:</p>
                     <p className='text-sm text-slate-gray/80'>{props.client}</p>
                 </div>
 
-                <div className='flex gap-2 items-center'>
+                <div className='flex gap-2 items-start'>
                     <Calendar className='w-4 h-4 text-slate-gray' />
                     <p className='text-sm text-indigo-dye/85'>Timeline:</p>
                     <p className='text-sm text-slate-gray/80'>{props.timeline}</p>
                 </div>
 
-                <div className='flex gap-2 items-center'>
+                <div className='flex gap-2 items-start'>
                     <ChartNoAxesCombined className='w-4 h-4 text-slate-gray' />
                     <p className='text-sm text-indigo-dye/85'>Metrics:</p>
                     <p className='text-sm text-slate-gray/80'>{props.metrics}</p>

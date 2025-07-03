@@ -53,20 +53,12 @@ const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !border !border-french-grey/30 !shadow-md'>
           <div className='rounded-t-lg w-full bg-placeholder'>
-            <Image className='!w-full !h-full !object-cover !rounded-t-lg' src={props.image} alt={props.name} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />
+            <Image className='!w-full !h-full !object-cover !rounded-t-lg' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />
           </div>
         
           <div className='flex flex-col gap-4 !p-6'>
             <div className='flex flex-col justify-center gap-1'>
-                <h4 className='!text-xl !font-medium !text-midnight-green/90'>{props.name}</h4>
-                <div className='flex items-center gap-2'>
-                    <MapPin className='w-4 h-4 text-french-grey' />
-                    <p className='text-sm text-french-grey'>{props.location}</p>
-                </div>
-            </div>
-
-            <div className='flex flex-col gap-2'>
-                <h5 className='!font-medium !text-midnight-green/90'>Services Rendered</h5>
+                <h4 className='!text-xl !font-medium !text-midnight-green/90'>{props.title}</h4>
                 <ul className='flex gap-2 flex-wrap'>
                     {props.services.map((service, index) => (
                         <li className='text-xs !py-0.5 !px-2.5 rounded-xl font-medium !text-verdigris bg-verdigris/10' key={index}>{service}</li>
@@ -74,9 +66,14 @@ const CardEx = (props: PropsEx) => {
                 </ul>
             </div>
 
+            <div className='flex flex-col gap-2'>
+                <h5 className='!font-medium !text-midnight-green/90'>{props.category}</h5>
+                
+            </div>
+
             <div className='flex gap-2'>
                 <Calendar className='w-4 h-4 text-french-grey' />
-                <p className='text-sm text-french-grey'>Timeline: {props.timeline}</p>
+                <p className='text-sm text-french-grey'>{props.timeline}</p>
             </div>
           
             <div>

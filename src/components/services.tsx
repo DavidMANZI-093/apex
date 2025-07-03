@@ -16,6 +16,7 @@ const Services = () => {
             "Quality assurance & risk assessment",
             "Real-time construction monitoring & reporting",
           ],
+          color: "indigo-dye"
         },
         {
           icon: Map,
@@ -29,6 +30,7 @@ const Services = () => {
             "Cut & fill volume calculations",
             "Advanced GIS mapping & spatial analysis",
           ],
+          color: "dutch-white"
         },
         {
           icon: Drone,
@@ -42,6 +44,7 @@ const Services = () => {
             "High-resolution orthomosaic map generation",
             "Environmental monitoring & agricultural surveys",
           ],
+          color: "indigo-dye"
         },
         {
           icon: Eye,
@@ -55,6 +58,7 @@ const Services = () => {
             "Real-time asset tracking & inventory",
             "Safety inspection of hard-to-reach areas",
           ],
+          color: "indigo-dye"
         },
       ]
 

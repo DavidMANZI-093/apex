@@ -18,6 +18,8 @@ const Projects = () => {
       ],
       metrics: "$2.5M project value, 25,000 sq.m built area",
       icon: Building,
+      image: "/project-1.jpg",
+      blurhash: "L2QF0000000000000000000000000000"
     },
     {
       title: "Rural Road Infrastructure Survey",
@@ -34,6 +36,8 @@ const Projects = () => {
       ],
       metrics: "150km mapped, 1,200 aerial images processed",
       icon: Drone,
+      image: "/project-2.jpeg",
+      blurhash: "L2QF0000000000000000000000000000"
     },
     {
       title: "Agricultural Land Assessment",
@@ -50,6 +54,8 @@ const Projects = () => {
       ],
       metrics: "500+ hectares surveyed, 3 districts covered",
       icon: Map,
+      image: "/project-3.webp",
+      blurhash: "L2QF0000000000000000000000000000"
     },
     {
       title: "Urban Development Monitoring",
@@ -66,6 +72,8 @@ const Projects = () => {
       ],
       metrics: "12 sites monitored, 144 progress reports delivered",
       icon: Eye,
+      image: "/project-4.jpg",
+      blurhash: "L2QF0000000000000000000000000000"
     },
   ];
 

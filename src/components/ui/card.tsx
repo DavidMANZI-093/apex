@@ -35,11 +35,16 @@ const Card = (props: Props) => {
 };
 
 type PropsEx = {
-    name: string;
-    location: string;
-    services: string[];
+    title: string;
+    category: string;
+    client: string;
     timeline: string;
-    outcomes: string;
+    services: string[];
+    challenge: string;
+    solution: string;
+    outcomes: string[];
+    metrics: string;
+    icon: LucideIcon;
     image: string;
     blurhash: string;
 };

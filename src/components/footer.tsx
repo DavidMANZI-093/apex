@@ -66,13 +66,13 @@ const Footer = () => {
             <p className="flex text-white/50 text-sm mb-4">
               Stay updated with our latest projects and industry insights.
             </p>
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-start gap-4">
               <input
                 placeholder="Your email"
                 className="flex !bg-white/10 !border !border-white/20 !text-white placeholder:!text-white/50 !text-sm !p-2 !rounded-lg"
               />
-              <span className="flex flex-col max-w-48 gap-1">
-                <Button>Subscribe</Button>
+              <span className="relative flex flex-col h-fit max-w-48 gap-1">
+                <Button variant="gold">Subscribe</Button>
                 <p className="flex text-white/50 text-[10px]">
                   We respect your privacy. Unsubscribe anytime.
                 </p>
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="!border !border-french-grey/20" />
-        <div className="flex justify-between items-center gap-2">
+        <div className="flex flex-col md:flex-row justify-between flex-wrap items-center gap-2">
           <div className="flex gap-2">
             <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
               <LuLinkedin className="w-5 h-5" />
@@ -96,7 +96,7 @@ const Footer = () => {
               <RiTwitterXLine className="w-5 h-5" />
             </a>
           </div>
-          <span className="flex flex-col gap-1 items-end">
+          <span className="flex flex-col gap-1 items-center md:items-end">
             <p className="flex !text-center !text-dutch-white/70 !text-sm">&copy; {new Date().getFullYear()} Echelon Landworks. All rights reserved.</p>
             <a className="flex gap-2 group" href="https://github.com/DavidMANZI-093" target="_blank" rel="noopener noreferrer">
               <FaGithub className="w-4 h-4 !text-white/50" />

@@ -8,52 +8,52 @@ const Services = () => {
           icon: Building,
           title: "Construction Consultancy",
           description:
-            "We offer end-to-end consulting services to ensure your construction project is strategically planned, efficiently executed, and fully compliant.",
+            "Comprehensive end-to-end consulting services ensuring your construction project is strategically planned, efficiently executed, and fully compliant with regulations.",
           deliverables: [
-            "Feasibility Studies",
-            "Project Planning & Cost Estimation",
-            "Contract Management",
-            "Quality Assurance & Risk Assessment",
-            "Construction Monitoring & Reporting",
+            "Pre-construction feasibility studies",
+            "Detailed project planning & cost estimation",
+            "Contract management & procurement",
+            "Quality assurance & risk assessment",
+            "Real-time construction monitoring & reporting",
           ],
         },
         {
           icon: Map,
-          title: "Topographic and Land Surveying",
+          title: "Topographic & Land Surveying",
           description:
-            "Comprehensive surveying services using advanced equipment and techniques for accurate land measurement and mapping.",
+            "Precision surveying services using state-of-the-art equipment and proven techniques for accurate land measurement, boundary determination, and comprehensive mapping.",
           deliverables: [
-            "Contour Maps",
-            "Digital Terrain Models (DTMs)",
-            "Boundary & Cadastral Surveys",
-            "Cut & Fill Volume Calculations",
-            "GIS Mapping",
+            "High-precision contour mapping",
+            "Digital terrain models (DTMs) & 3D visualization",
+            "Boundary & cadastral surveys",
+            "Cut & fill volume calculations",
+            "Advanced GIS mapping & spatial analysis",
           ],
         },
         {
           icon: Drone,
           title: "Drone-Based Surveying",
           description:
-            "Cutting-edge aerial surveying solutions using advanced drone technology for efficient and accurate data collection.",
+            "Revolutionary aerial surveying solutions leveraging advanced drone technology and photogrammetry for rapid, accurate, and cost-effective data collection over large areas.",
           deliverables: [
-            "Large-Scale Topographic Surveys",
-            "Construction Progress Mapping",
-            "3D Site Modeling",
-            "Orthomosaic Map Generation",
-            "Environmental & Agricultural Surveys",
+            "Large-scale topographic surveys (500+ hectares)",
+            "Real-time construction progress mapping",
+            "Detailed 3D site modeling & visualization",
+            "High-resolution orthomosaic map generation",
+            "Environmental monitoring & agricultural surveys",
           ],
         },
         {
           icon: Eye,
           title: "Site Supervision with Drone Support",
           description:
-            "Advanced site monitoring and supervision services enhanced with drone technology for comprehensive project oversight.",
+            "Comprehensive site monitoring and supervision services enhanced with cutting-edge drone technology for complete project oversight and quality control.",
           deliverables: [
-            "Remote Construction Monitoring",
-            "High-Resolution Aerial Imagery",
-            "Weekly/Monthly Progress Reports",
-            "Asset Tracking",
-            "Inspection of Hard-to-Reach Areas",
+            "24/7 remote construction monitoring",
+            "Ultra-high-resolution aerial imagery",
+            "Automated weekly/monthly progress reports",
+            "Real-time asset tracking & inventory",
+            "Safety inspection of hard-to-reach areas",
           ],
         },
       ]
@@ -61,7 +61,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-indigo-dye/2"
+      className="relative flex !min-w-full !w-full min-h-screen !pt-24 !pb-12 lg:!pt-32 lg:!pb-16 bg-white"
     >
       <div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8 xl:!px-16">
         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">

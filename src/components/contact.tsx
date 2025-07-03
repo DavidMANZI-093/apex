@@ -137,7 +137,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="!text-sm !font-medium !text-indigo-dye/85">Email</p>
-                  <p className="!text-sm !text-slate-gray/80">info@apexrwanda.com</p>
+                  <p className="!text-sm !text-slate-gray/80">info@echelonlandworksrwanda.com</p>
                 </div>
               </div>
 
@@ -165,16 +165,16 @@ const Contact = () => {
             <div className="flex flex-col gap-2">
               <h5 className="!text-lg !font-medium !text-indigo-dye/85">Follow us</h5>
               <div className="flex gap-2">
-                <a className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
                   <LuLinkedin className="w-5 h-5" />
                 </a>
-                <a className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.facebook.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
                   <FiFacebook className="w-5 h-5" />
                 </a>
-                <a className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.instagram.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.instagram.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
                   <FiInstagram className="w-5 h-5" />
                 </a>
-                <a className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.twitter.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+                <a className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.twitter.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
                   <RiTwitterXLine className="w-5 h-5" />
                 </a>
               </div>

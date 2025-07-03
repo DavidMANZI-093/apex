@@ -3,6 +3,7 @@ import Button from "./ui/button";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { LuLinkedin } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   const quickLinks = [
@@ -23,7 +24,7 @@ const Footer = () => {
               <Image
                 className="rounded-full"
                 src="/web-app-manifest-192x192.png"
-                alt="APEX icon"
+                alt="Echelon Landworks icon"
                 width={60}
                 height={60}
                 placeholder="blur"
@@ -44,7 +45,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="flex flex-col md:items-center gap-2">
-            <h4 className="!text-lg !text-dutch-white/70">Quick Links</h4>
+            <h4 className="!text-lg !text-dutch-white/80">Quick Links</h4>
             <ul className="flex flex-col">
               {quickLinks.map((link, index) => (
                 <li className="!list-inside" key={index}>
@@ -61,7 +62,7 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div className="flex flex-col gap-3">
-            <h4 className="flex !text-lg !text-dutch-white/70">Newsletter</h4>
+            <h4 className="flex !text-lg !text-dutch-white/80">Newsletter</h4>
             <p className="flex text-white/50 text-sm mb-4">
               Stay updated with our latest projects and industry insights.
             </p>
@@ -82,22 +83,25 @@ const Footer = () => {
         <hr className="!border !border-french-grey/20" />
         <div className="flex justify-between items-center gap-2">
           <div className="flex gap-2">
-            <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+            <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.linkedin.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
               <LuLinkedin className="w-5 h-5" />
             </a>
-            <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.facebook.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+            <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.facebook.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
               <FiFacebook className="w-5 h-5" />
             </a>
-            <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.instagram.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+            <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.instagram.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
               <FiInstagram className="w-5 h-5" />
             </a>
-            <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.twitter.com/apexrwanda" target="_blank" rel="noopener noreferrer">
+            <a className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center" href="https://www.twitter.com/echelonlandworksrwanda" target="_blank" rel="noopener noreferrer">
               <RiTwitterXLine className="w-5 h-5" />
             </a>
           </div>
           <span className="flex flex-col gap-1 items-end">
-            <p className="flex !text-center !text-french-grey !text-sm">&copy; {new Date().getFullYear()} Echelon Landworks. All rights reserved.</p>
-            <p className="flex !text-center !text-french-grey !text-sm">Proudly built by <a href="https://github.com/DavidMANZI-093" target="_blank" rel="noopener noreferrer">MANZI David</a></p>
+            <p className="flex !text-center !text-dutch-white/70 !text-sm">&copy; {new Date().getFullYear()} Echelon Landworks. All rights reserved.</p>
+            <a className="flex gap-2 group" href="https://github.com/DavidMANZI-093" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="w-4 h-4 !text-white/50" />
+              <p className="flex !text-center !text-white/50 !text-xs group-hover:underline">Proudly built by MANZI David.</p>
+            </a>
           </span>
         </div>
       </div>

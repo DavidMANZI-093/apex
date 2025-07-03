@@ -47,7 +47,13 @@ Make sure you have the following installed on your machine:
    cd apex
    ```
 
-3. Install the dependencies:
+3. Switch to the `main` or `agard` branch (`main` for APEX, `agard` for Echelon Landworks):
+
+   ```bash
+   git checkout agard
+   ```
+
+4. Install the dependencies:
 
    ```bash
    npm install

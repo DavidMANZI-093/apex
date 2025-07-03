@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Caveat, Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -10,15 +10,20 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "APEX - Construction Consultancy & Surveying Solutions",
+  title: "Echelon Landworks - Construction Consultancy & Surveying Solutions",
   description:
     "A leading construction consultancy and advanced surveying firm, " +
     "delivering precision-driven solutions through drone technology, " +
     "GIS, and expert project management across Rwanda and beyond.",
   keywords: [
-    "APEX",
-    "Constructions",
+    "Echelon",
+    "Landworks",
     "Rwanda",
     "Drone",
     "Surveying",
@@ -28,7 +33,7 @@ export const metadata: Metadata = {
     "Project",
     "Management",
   ],
-  authors: [{ name: "APEX Constructions" }, { name: "MANZI David" }],
+  authors: [{ name: "Echelon Landworks" }, { name: "MANZI David" }],
 };
 
 preload("/placeholder.png");
@@ -49,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`relative flex ${inter.variable} antialiased`}
+        className={`relative flex ${inter.variable} ${caveat.variable} antialiased`}
       >
         {children}
         <Analytics />

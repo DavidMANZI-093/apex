@@ -1,31 +1,31 @@
-import { Shield, Lightbulb, Award, Leaf, Users, Target, Compass, Handshake, User } from "lucide-react";
+import { ShieldCheck, GraduationCap, Lightbulb, Briefcase, Leaf, Target, Compass, User, Handshake } from "lucide-react";
 
 const about = () => {
   const values = [
     {
-      icon: Shield,
-      name: "Integrity",
-      description: "Honest and transparent in all our dealings",
+      icon: ShieldCheck,
+      name: "Trusted",
+      description: "8+ Years of Practical Experience",
+    },
+    {
+      icon: GraduationCap,
+      name: "Certified",
+      description: "Technically Skilled and Certified Professionals",
     },
     {
       icon: Lightbulb,
-      name: "Innovation",
-      description: "Embracing cutting-edge technology and methods",
+      name: "Innovative",
+      description: "Cutting-edge Surveying Technology",
     },
     {
-      icon: Award,
-      name: "Excellence",
-      description: "Delivering superior quality in every project",
+      icon: Briefcase,
+      name: "Proven",
+      description: "Strong Government & Private Sector Track Record",
     },
     {
       icon: Leaf,
-      name: "Sustainability",
-      description: "Committed to environmentally responsible practices",
-    },
-    {
-      icon: Users,
-      name: "Client-Centered",
-      description: "Putting our clients' needs at the heart of everything",
+      name: "Sustainable",
+      description: "Environmentally Responsible & Standards Compliant",
     },
   ];
 

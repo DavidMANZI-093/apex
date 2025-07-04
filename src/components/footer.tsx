@@ -97,7 +97,7 @@ const Footer = () => {
             </a>
           </div>
           <span className="flex flex-col gap-1 items-center md:items-end">
-            <p className="flex !text-center !text-dutch-white/70 !text-sm">&copy; {new Date().getFullYear()} Echelon Landworks. All rights reserved.</p>
+            <p className="flex !text-center !text-dutch-white/70 !text-sm">&copy; {new Date().getFullYear()} Echelon Landworks Ltd. All rights reserved.</p>
             <a className="flex gap-2 group" href="https://github.com/DavidMANZI-093" target="_blank" rel="noopener noreferrer">
               <FaGithub className="w-4 h-4 !text-white/50" />
               <p className="flex !text-center !text-white/50 !text-xs group-hover:underline">Proudly built by MANZI David.</p>

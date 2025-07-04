@@ -127,7 +127,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="!text-sm !font-medium !text-indigo-dye/85">Phone</p>
-                  <p className="!text-sm !text-slate-gray/80">+250 793 245 612</p>
+                  <p className="!text-sm !text-slate-gray/80">+250 788 609 349</p>
                 </div>
               </div>
 
@@ -137,7 +137,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="!text-sm !font-medium !text-indigo-dye/85">Email</p>
-                  <p className="!text-sm !text-slate-gray/80">info@echelonlandworksrwanda.com</p>
+                  <p className="!text-sm !text-slate-gray/80">shemakalinda11@gmail.com</p>
                 </div>
               </div>
 
@@ -147,7 +147,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="!text-sm !font-medium !text-indigo-dye/85">Address</p>
-                  <p className="!text-sm !text-slate-gray/80">Kigali, Rwanda</p>
+                  <p className="!text-sm !text-slate-gray/80">Kigali-Kicukiro, Rwanda</p>
                 </div>
               </div>
 
@@ -157,7 +157,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="!text-sm !font-medium !text-indigo-dye/85">Business Hours</p>
-                  <p className="!text-sm !text-slate-gray/80">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                  <p className="!text-sm !text-slate-gray/80">Monday - Friday: 6:00 AM - 7:00 PM</p>
                 </div>
               </div>
             </div>

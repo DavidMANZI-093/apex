@@ -44,7 +44,7 @@ type PropsEx = {
     solution: string;
     outcomes: string[];
     metrics: string;
-    icon: LucideIcon;
+    icon?: LucideIcon;
     image: string;
     blurhash: string;
 };

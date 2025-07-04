@@ -22,9 +22,9 @@ const Card = (props: Props) => {
 
         <div className='flex flex-col gap-1'>
             <h4 className='!text-base !font-medium !text-indigo-dye/85'>Key Applications:</h4>
-            <ul className='!list-disc !list-inside !text-slate-gray'>
+            <ul className='!list-disc !list-inside text-slate-gray !ml-2'>
                 {props.deliverables.map((deliverable, index) => (
-                    <li key={index}>
+                    <li className='' key={index}>
                         <span className='!text-slate-gray/80'>{deliverable}</span>
                     </li>
                 ))}

@@ -115,26 +115,29 @@ const CardEx = (props: PropsEx) => {
 
   const CardTx = (props: PropsTx) => {
     return (
-      <div className='flex flex-col !p-6 gap-4 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
-          <div className='flex items-center gap-2'>
-            {Array.from({ length: (props.rating) }, (_, index) => (
-              <Star key={index} className='w-4 h-4 fill-amber-500 text-transparent' />
-            ))}
-            {Array.from({ length: (5 - props.rating) }, (_, index) => (
-              <Star key={index} className='w-4 h-4 fill-slate-gray/20 text-transparent' />
-            ))}<span className='leading-relaxed text-xs text-slate-gray/80'>({props.rating}/5)</span>
+      <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
+          <div className='flex flex-col gap-4'>
+            <div className='flex items-center gap-2'>
+                {Array.from({ length: (props.rating) }, (_, index) => (
+                    <Star key={index} className='w-4 h-4 fill-amber-500 text-transparent' />
+                ))}
+                {Array.from({ length: (5 - props.rating) }, (_, index) => (
+                    <Star key={index} className='w-4 h-4 fill-slate-gray/20 text-transparent' />
+                ))}<span className='leading-relaxed text-xs text-slate-gray/80'>({props.rating}/5)</span>
+            </div>
+          
+            <Quote className='w-9 h-9 text-indigo-dye/60' />
 
+            <p className='italc !font-caveat !font-medium !text-xl !text-slate-gray/80 group-hover:!text-indigo-dye transition-color duration-200'>&quot;{props.quote}&quot;</p>
           </div>
           
-          <Quote className='w-9 h-9 text-indigo-dye/60' />
-
-          <p className='italc !font-caveat !font-medium !text-xl !text-slate-gray/80 group-hover:!text-indigo-dye transition-color duration-200'>&quot;{props.quote}&quot;</p>
-          
-          <hr className="!border-t-slate-gray/20" />
+          <div className='flex flex-col gap-4'>
+            <hr className="!border-t-slate-gray/20" />
             
-          <div className='flex flex-col gap-1 !ml-2'>
-              <h4 className='!font-medium !text-indigo-dye/85'>{props.author}</h4>
-              <p className='text-sm text-slate-gray/80'>{props.position}, {props.company}</p>
+            <div className='flex flex-col gap-1 !ml-2'>
+                <h4 className='!font-medium !text-indigo-dye/85'>{props.author}</h4>
+                <p className='text-sm text-slate-gray/80'>{props.position}, {props.company}</p>
+            </div>
           </div>
       </div>
     )

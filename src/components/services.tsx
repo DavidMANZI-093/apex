@@ -1,62 +1,76 @@
-import { Building, Map, Drone, Eye } from "lucide-react";
+import { Ruler, Hammer, Globe, Droplets, Eye } from "lucide-react";
 import { Card } from "./ui/card";
 
 const Services = () => {
 
     const services = [
-        {
-          icon: Building,
-          title: "Construction Consultancy",
-          description:
-            "Comprehensive end-to-end consulting services ensuring your construction project is strategically planned, efficiently executed, and fully compliant with regulations.",
-          deliverables: [
-            "Pre-construction feasibility studies",
-            "Detailed project planning & cost estimation",
-            "Contract management & procurement",
-            "Quality assurance & risk assessment",
-            "Real-time construction monitoring & reporting",
-          ],
-        },
-        {
-          icon: Map,
-          title: "Topographic & Land Surveying",
-          description:
-            "Precision surveying services using state-of-the-art equipment and proven techniques for accurate land measurement, boundary determination, and comprehensive mapping.",
-          deliverables: [
-            "High-precision contour mapping",
-            "Digital terrain models (DTMs) & 3D visualization",
-            "Boundary & cadastral surveys",
-            "Cut & fill volume calculations",
-            "Advanced GIS mapping & spatial analysis",
-          ],
-        },
-        {
-          icon: Drone,
-          title: "Drone-Based Surveying",
-          description:
-            "Revolutionary aerial surveying solutions leveraging advanced drone technology and photogrammetry for rapid, accurate, and cost-effective data collection over large areas.",
-          deliverables: [
-            "Large-scale topographic surveys (500+ hectares)",
-            "Real-time construction progress mapping",
-            "Detailed 3D site modeling & visualization",
-            "High-resolution orthomosaic map generation",
-            "Environmental monitoring & agricultural surveys",
-          ],
-        },
-        {
-          icon: Eye,
-          title: "Site Supervision with Drone Support",
-          description:
-            "Comprehensive site monitoring and supervision services enhanced with cutting-edge drone technology for complete project oversight and quality control.",
-          deliverables: [
-            "24/7 remote construction monitoring",
-            "Ultra-high-resolution aerial imagery",
-            "Automated weekly/monthly progress reports",
-            "Real-time asset tracking & inventory",
-            "Safety inspection of hard-to-reach areas",
-          ],
-        },
-      ]
+      {
+        icon: Ruler,  // precise measurement theme
+        title: "Advanced Surveying",
+        description:
+          "High-precision land and engineering surveying using GNSS, RTK, Total Stations, and UAV/Drone photogrammetry for accurate mapping and analysis.",
+        deliverables: [
+          "Topographic & Cadastral Surveys",
+          "Engineering Surveys",
+          "GNSS/DGPS, RTK & Total Station Operations",
+          "UAV/Drone Mapping & Photogrammetry",
+        ],
+      },
+      {
+        icon: Hammer,  // construction theme
+        title: "Construction Support",
+        description:
+          "Professional support throughout construction projects, ensuring sites are accurately set out, monitored, and compliant with regulations.",
+        deliverables: [
+          "Pre-construction Feasibility Studies",
+          "Detailed Project Planning & Cost Estimation",
+          "Setting Out for Building and Road Projects",
+          "Excavation Monitoring & Volume Computations",
+          "Site Grading & Level Supervision",
+          "Real-time Construction Monitoring & Reporting",
+          "Contract Management & Procurement",
+          "Quality Assurance & Risk Assessment",
+        ],
+      },
+      {
+        icon: Globe,  // geospatial/GIS theme
+        title: "Geospatial Data Analysis",
+        description:
+          "In-depth GIS mapping, remote sensing, and spatial data analysis for informed decision-making and sustainable land development.",
+        deliverables: [
+          "GIS Mapping & Remote Sensing",
+          "Spatial Planning & Land Development Analysis",
+          "Advanced GIS Mapping & Spatial Analysis",
+          "Digital Terrain Models (DTMs) & 3D Visualization",
+        ],
+      },
+      {
+        icon: Droplets,  // environment & water
+        title: "Environmental & Infrastructure Projects",
+        description:
+          "Supporting sustainable infrastructure with flood mapping, wetland restoration, and industrial zoning through advanced surveying and modeling.",
+        deliverables: [
+          "Flood Control Mapping",
+          "Wetland & Land Use Restoration Surveys",
+          "Drainage & Watercourse Delineation",
+          "Industrial Park Surveying & Zoning",
+          "Environmental Monitoring & Agricultural Surveys",
+        ],
+      },
+      {
+        icon: Eye,  // supervision & monitoring
+        title: "Site Supervision & Monitoring",
+        description:
+          "Comprehensive site oversight enhanced with drone technology, providing real-time progress tracking, quality control, and safety inspections.",
+        deliverables: [
+          "24/7 Remote Construction Monitoring",
+          "Ultra-high-resolution Aerial Imagery",
+          "Automated Weekly/Monthly Progress Reports",
+          "Real-time Asset Tracking & Inventory",
+          "Safety Inspection of Hard-to-Reach Areas",
+        ],
+      },
+    ];
 
   return (
     <section

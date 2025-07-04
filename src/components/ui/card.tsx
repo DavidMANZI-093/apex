@@ -22,9 +22,9 @@ const Card = (props: Props) => {
 
         <div className='flex flex-col gap-1'>
             <h4 className='!text-base !font-medium !text-indigo-dye/85'>Key Applications:</h4>
-            <ul className='!list-disc !list-inside !text-slate-gray'>
+            <ul className='!list-disc !list-inside text-slate-gray !ml-2'>
                 {props.deliverables.map((deliverable, index) => (
-                    <li key={index}>
+                    <li className='' key={index}>
                         <span className='!text-slate-gray/80'>{deliverable}</span>
                     </li>
                 ))}
@@ -44,7 +44,7 @@ type PropsEx = {
     solution: string;
     outcomes: string[];
     metrics: string;
-    icon: LucideIcon;
+    icon?: LucideIcon;
     image: string;
     blurhash: string;
 };
@@ -53,7 +53,7 @@ const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !shadow-md !shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
           <div className='flex gap-2 rounded-t-lg w-full bg-placeholder overflow-hidden'>
-            <Image className='!w-full !h-full !object-cover !rounded-t-lg group-hover:!scale-110 transition-all duration-3000 ease-in-out' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />
+            {props.image && <Image className='!w-full !h-full !object-cover !rounded-t-lg group-hover:!scale-110 transition-all duration-3000 ease-in-out' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />}
             <span className='absolute text-xs !py-0.5 !px-2.5 !ml-2 !mt-2 rounded-xl font-medium !text-white bg-indigo-dye'>{props.category}</span>
           </div>
         
@@ -115,26 +115,29 @@ const CardEx = (props: PropsEx) => {
 
   const CardTx = (props: PropsTx) => {
     return (
-      <div className='flex flex-col !p-6 gap-4 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
-          <div className='flex items-center gap-2'>
-            {Array.from({ length: (props.rating) }, (_, index) => (
-              <Star key={index} className='w-4 h-4 fill-amber-500 text-transparent' />
-            ))}
-            {Array.from({ length: (5 - props.rating) }, (_, index) => (
-              <Star key={index} className='w-4 h-4 fill-slate-gray/20 text-transparent' />
-            ))}<span className='leading-relaxed text-xs text-slate-gray/80'>({props.rating}/5)</span>
+      <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
+          <div className='flex flex-col gap-4'>
+            <div className='flex items-center gap-2'>
+                {Array.from({ length: (props.rating) }, (_, index) => (
+                    <Star key={index} className='w-4 h-4 fill-amber-500 text-transparent' />
+                ))}
+                {Array.from({ length: (5 - props.rating) }, (_, index) => (
+                    <Star key={index} className='w-4 h-4 fill-slate-gray/20 text-transparent' />
+                ))}<span className='leading-relaxed text-xs text-slate-gray/80'>({props.rating}/5)</span>
+            </div>
+          
+            <Quote className='w-9 h-9 text-indigo-dye/60' />
 
+            <p className='italc !font-caveat !font-medium !text-xl !text-slate-gray/80 group-hover:!text-indigo-dye transition-color duration-200'>&quot;{props.quote}&quot;</p>
           </div>
           
-          <Quote className='w-9 h-9 text-indigo-dye/60' />
-
-          <p className='italc !font-caveat !font-medium !text-xl !text-slate-gray/80 group-hover:!text-indigo-dye transition-color duration-200'>&quot;{props.quote}&quot;</p>
-          
-          <hr className="!border-t-slate-gray/20" />
+          <div className='flex flex-col gap-4'>
+            <hr className="!border-t-slate-gray/20" />
             
-          <div className='flex flex-col gap-1 !ml-2'>
-              <h4 className='!font-medium !text-indigo-dye/85'>{props.author}</h4>
-              <p className='text-sm text-slate-gray/80'>{props.position}, {props.company}</p>
+            <div className='flex flex-col gap-1 !ml-2'>
+                <h4 className='!font-medium !text-indigo-dye/85'>{props.author}</h4>
+                <p className='text-sm text-slate-gray/80'>{props.position}, {props.company}</p>
+            </div>
           </div>
       </div>
     )

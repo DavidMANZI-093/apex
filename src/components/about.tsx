@@ -1,59 +1,53 @@
-import { Shield, Lightbulb, Award, Leaf, Users, Target, Compass, Handshake, User } from "lucide-react";
+import { ShieldCheck, GraduationCap, Lightbulb, Briefcase, Leaf, Target, Compass, User, Handshake } from "lucide-react";
 
 const about = () => {
   const values = [
     {
-      icon: Shield,
-      name: "Integrity",
-      description: "Honest and transparent in all our dealings",
+      icon: ShieldCheck,
+      name: "Trusted",
+      description: "8+ Years of Practical Experience",
+    },
+    {
+      icon: GraduationCap,
+      name: "Certified",
+      description: "Technically Skilled and Certified Professionals",
     },
     {
       icon: Lightbulb,
-      name: "Innovation",
-      description: "Embracing cutting-edge technology and methods",
+      name: "Innovative",
+      description: "Cutting-edge Surveying Technology",
     },
     {
-      icon: Award,
-      name: "Excellence",
-      description: "Delivering superior quality in every project",
+      icon: Briefcase,
+      name: "Proven",
+      description: "Strong Government & Private Sector Track Record",
     },
     {
       icon: Leaf,
-      name: "Sustainability",
-      description: "Committed to environmentally responsible practices",
-    },
-    {
-      icon: Users,
-      name: "Client-Centered",
-      description: "Putting our clients' needs at the heart of everything",
+      name: "Sustainable",
+      description: "Environmentally Responsible & Standards Compliant",
     },
   ];
 
   const team = [
     {
-      name: "Dr. Jean Baptiste Nzeyimana",
-      position: "Managing Director & Senior Surveyor",
-      bio: "15+ years in civil enginnering and surveying, PhD in Geomatics Engineering",
+      name: "Elisa Shema",
+      position: "Founder & Managing Director",
+      bio: "Master's in Geo-information Science, Bachelor's in Land Surveying, Licensed Drone Pilot & GIS Specialist, over 5 years of field and consultancy experience.",
       image: "",
     },
     {
-      name: "Eng. Marie Claire Uwimana",
-      position: "Head of Construction Consultancy",
-      bio: "12+ years in project management, certified PMP with expertise in large-scale infrastructure",
+      name: "Rungano Didie",
+      position: "Urban & Regional Planning Specialist",
+      bio: "Master's in Geo-information Science, Bachelor's in Urban Planning, RUPI member, over 5 years of field and consultancy experience.",
       image: "",
     },
     {
-      name: "Eric Mugisha",
-      position: "Lead Drone Operations Specialist",
-      bio: "Licensed drone pilot with 8+ years in aerial surveying and 3D mapping technologies",
+      name: "Ruth Kabarungi",
+      position: "Permanent Secretary",
+      bio: "ACCA Certificate & Member, Bachelor's Degree in Economics.",
       image: "",
     },
-    {
-      name: "Eng. Jean Claude Niyonkuru",
-      position: "Lead Surveyor",
-      bio: "10+ years in surveying and land management, certified surveyor with expertise in topographic and land surveying",
-      image: "",
-    }
   ];
 
   return (
@@ -65,12 +59,11 @@ const about = () => {
         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
           <h2 className="!text-2xl md:!text-3xl !font-medium !text-indigo-dye/85 mb-6">Who We Are</h2>
           <p className="text-slate-gray/80 leading-relaxed">
-            {"Echelon Landworks is a professional consultancy firm specialized " +
-              "in construction project management, topographic and land " +
-              "surveying, site supervision, and cutting-edge drone " +
-              "surveying solutions. We serve public and private sector " +
-              "clients across Rwanda, offering expertise backed by " +
-              "technology, precision, and integrity."}
+            {"Echelon Landworks Ltd is a Rwandan-owned professional firm specializing " +
+            "in land surveying, geospatial technologies, and civil engineering support " +
+            "services. Established in 2017, we have delivered projects nationwide in " +
+            "infrastructure development, environmental management, and industrial site " +
+            "planning — earning a trusted reputation for precision and innovation."}
           </p>
         </div>
 
@@ -81,9 +74,9 @@ const about = () => {
             </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Vision</h3>
             <p className="text-slate-gray/80 leading-relaxed !text-center">
-              {"To redefine the construction and surveying industry " +
-                "by integrating traditional practices with innovative " +
-                "technologies such as drone mapping and aerial inspections."}
+              {"To become a national leader in high-precision land surveying and geospatial " +
+              "services, contributing to sustainable development and smart infrastructure " +
+              "planning in Rwanda and beyond."}
             </p>
           </div>
 
@@ -93,9 +86,9 @@ const about = () => {
             </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Mission</h3>
             <p className="text-slate-gray/80 leading-relaxed !text-center">
-              {"To deliver accurate, cost-effective, and timely solutions " +
-                "that empower our clients to make informed decisions " +
-                "and execute successful projects."}
+              {"To provide accurate, efficient, and technology-driven solutions in land surveying " +
+              "and construction support — ensuring client satisfaction, legal compliance, and " +
+              "sustainable land use."}
             </p>
           </div>
 
@@ -114,7 +107,7 @@ const about = () => {
 
         <div className="flex flex-col gap-8">
           <h3 className="!text-2xl !font-medium !text-indigo-dye/85 !text-center mb-12">
-            Our Core Values
+            Why Choose Us?
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (

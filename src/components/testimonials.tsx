@@ -4,27 +4,43 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote:
-        "Their drone-assisted supervision helped us save time and money while maintaining high-quality construction standards.",
-      author: "Jane Doe",
+        "Echelon Landworks Ltd demonstrated outstanding professionalism and technical expertise in supporting the Ministry's initiatives to map, survey, and digitalize industrial zones across the country. Their work on the Industrial Land Portal was instrumental in improving our land management systems. We highly appreciate their timely delivery and collaborative approach.",
+      author: "Christian Twahirwa",
+      position: "Director General of Industry & Entrepreneur Development",
+      company: "Ministry of Trade and Industry (MINICOM), Rwanda",
+      rating: 5,
+    },
+    {
+      quote:
+        "Working with Echelon Landworks Ltd during our Masoro excavation project was a seamless experience. Their precise cut-and-fill analysis and topographic support helped us stay on schedule and budget. Their team brings a great balance of innovation and field accuracy.",
+      author: "Alfred NKURIKIYIMANA",
+      position: "Managing Director",
+      company: "CLAU General Ltd",
+      rating: 5,
+    },
+    {
+      quote:
+        "Echelon Landworks brought valuable expertise in conducting detailed topographic mapping under tough conditions in Bangui. Their survey outputs were crucial for the planning and design of the waste management facility. Their professional team adapted well to international standards and multi-agency coordination.",
+      author: "Hirwa HOMIDAS",
       position: "Project Manager",
-      company: "XYZ Ltd.",
-      rating: 4
+      company: "LE REJETON (COWI Rwanda Ltd Subcontractor)",
+      rating: 5,
     },
     {
       quote:
-        "Echelon Landworks' topographic surveying was incredibly accurate and delivered ahead of schedule. Their professionalism is unmatched.",
-      author: "John Smith",
-      position: "Development Director",
-      company: "ABC Construction",
-      rating: 3
+        "We commend Echelon Landworks Ltd for their excellent geospatial work and flood risk mapping in Rutsiro District. Their analysis and field data collection informed our district planning strategies and disaster preparedness interventions. We look forward to future collaborations.",
+      author: "NULL",
+      position: "District Engineer",
+      company: "Rutsiro District - Local Government",
+      rating: 5,
     },
     {
       quote:
-        "The 3D modeling and progress mapping provided invaluable insights for our project management team.",
-      author: "Sarah Johnson",
-      position: "Site Engineer",
-      company: "BuildRight Corp",
-      rating: 5
+        "Their ability to apply remote sensing techniques such as NDVI and NDMI in monitoring wetland recovery was highly beneficial for our restoration project. Echelon Landworks Ltd is a forward-thinking company we trust for environment-related spatial analysis.",
+      author: "NULL",
+      position: "Wetland Restoration Program Coordinator",
+      company: "Wetlands Restoration Task Force - Kigali Environmental Project",
+      rating: 5,
     },
   ];
 

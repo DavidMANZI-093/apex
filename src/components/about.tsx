@@ -113,7 +113,7 @@ const about = () => {
 
         <div className="flex flex-col gap-8">
           <h3 className="!text-2xl !font-medium !text-indigo-dye/85 !text-center mb-12">
-            Our Core Values
+            Why Choose Us?
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (

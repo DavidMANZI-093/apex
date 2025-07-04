@@ -18,20 +18,25 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "Echelon Landworks - Construction Consultancy & Surveying Solutions",
   description:
-    "A leading construction consultancy and advanced surveying firm, " +
-    "delivering precision-driven solutions through drone technology, " +
-    "GIS, and expert project management across Rwanda and beyond.",
+    "Echelon Landworks Ltd is a Rwandan-based leader in land surveying, construction " +
+    "support, and geospatial solutions. We deliver accurate, efficient, and technology-driven " +
+    "services including UAV mapping, GIS analysis, and sustainable infrastructure planning.",
   keywords: [
-    "Echelon",
-    "Landworks",
+    "Echelon Landworks",
     "Rwanda",
-    "Drone",
     "Surveying",
+    "Land Survey",
+    "Drone Mapping",
+    "UAV",
     "GIS",
-    "Construction",
-    "Consultancy",
-    "Project",
-    "Management",
+    "Geospatial",
+    "Construction Support",
+    "Engineering",
+    "Topographic",
+    "Cadastral",
+    "Infrastructure",
+    "Wetland Restoration",
+    "Environmental Planning",
   ],
   authors: [{ name: "Echelon Landworks" }, { name: "MANZI David" }],
 };

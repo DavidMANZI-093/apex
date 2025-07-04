@@ -53,7 +53,7 @@ const CardEx = (props: PropsEx) => {
     return (
       <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !shadow-md !shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
           <div className='flex gap-2 rounded-t-lg w-full bg-placeholder overflow-hidden'>
-            <Image className='!w-full !h-full !object-cover !rounded-t-lg group-hover:!scale-110 transition-all duration-3000 ease-in-out' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} {...props.blurhash? {placeholder: "blur"} : {}} />
+            {props.image && <Image className='!w-full !h-full !object-cover !rounded-t-lg group-hover:!scale-110 transition-all duration-3000 ease-in-out' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />}
             <span className='absolute text-xs !py-0.5 !px-2.5 !ml-2 !mt-2 rounded-xl font-medium !text-white bg-indigo-dye'>{props.category}</span>
           </div>
         

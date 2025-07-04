@@ -31,29 +31,23 @@ const about = () => {
 
   const team = [
     {
-      name: "Dr. Jean Baptiste Nzeyimana",
-      position: "Managing Director & Senior Surveyor",
-      bio: "15+ years in civil enginnering and surveying, PhD in Geomatics Engineering",
+      name: "Elisa Shema",
+      position: "Founder & Managing Director",
+      bio: "Master's in Geo-information Science, Bachelor's in Land Surveying, Licensed Drone Pilot & GIS Specialist, over 5 years of field and consultancy experience.",
       image: "",
     },
     {
-      name: "Eng. Marie Claire Uwimana",
-      position: "Head of Construction Consultancy",
-      bio: "12+ years in project management, certified PMP with expertise in large-scale infrastructure",
+      name: "Rungano Didie",
+      position: "Urban & Regional Planning Specialist",
+      bio: "Master's in Geo-information Science, Bachelor's in Urban Planning, RUPI member, over 5 years of field and consultancy experience.",
       image: "",
     },
     {
-      name: "Eric Mugisha",
-      position: "Lead Drone Operations Specialist",
-      bio: "Licensed drone pilot with 8+ years in aerial surveying and 3D mapping technologies",
+      name: "Ruth Kabarungi",
+      position: "Permanent Secretary",
+      bio: "ACCA Certificate & Member, Bachelor's Degree in Economics.",
       image: "",
     },
-    {
-      name: "Eng. Jean Claude Niyonkuru",
-      position: "Lead Surveyor",
-      bio: "10+ years in surveying and land management, certified surveyor with expertise in topographic and land surveying",
-      image: "",
-    }
   ];
 
   return (

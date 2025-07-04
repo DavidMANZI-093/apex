@@ -65,12 +65,11 @@ const about = () => {
         <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
           <h2 className="!text-2xl md:!text-3xl !font-medium !text-indigo-dye/85 mb-6">Who We Are</h2>
           <p className="text-slate-gray/80 leading-relaxed">
-            {"Echelon Landworks is a professional consultancy firm specialized " +
-              "in construction project management, topographic and land " +
-              "surveying, site supervision, and cutting-edge drone " +
-              "surveying solutions. We serve public and private sector " +
-              "clients across Rwanda, offering expertise backed by " +
-              "technology, precision, and integrity."}
+            {"Echelon Landworks Ltd is a Rwandan-owned professional firm specializing " +
+            "in land surveying, geospatial technologies, and civil engineering support " +
+            "services. Established in 2017, we have delivered projects nationwide in " +
+            "infrastructure development, environmental management, and industrial site " +
+            "planning — earning a trusted reputation for precision and innovation."}
           </p>
         </div>
 

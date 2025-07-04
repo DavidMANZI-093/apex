@@ -80,9 +80,9 @@ const about = () => {
             </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Vision</h3>
             <p className="text-slate-gray/80 leading-relaxed !text-center">
-              {"To redefine the construction and surveying industry " +
-                "by integrating traditional practices with innovative " +
-                "technologies such as drone mapping and aerial inspections."}
+              {"To become a national leader in high-precision land surveying and geospatial " +
+              "services, contributing to sustainable development and smart infrastructure " +
+              "planning in Rwanda and beyond."}
             </p>
           </div>
 
@@ -92,9 +92,9 @@ const about = () => {
             </span>
             <h3 className="!text-lg !font-semibold !text-indigo-dye/85">Our Mission</h3>
             <p className="text-slate-gray/80 leading-relaxed !text-center">
-              {"To deliver accurate, cost-effective, and timely solutions " +
-                "that empower our clients to make informed decisions " +
-                "and execute successful projects."}
+              {"To provide accurate, efficient, and technology-driven solutions in land surveying " +
+              "and construction support — ensuring client satisfaction, legal compliance, and " +
+              "sustainable land use."}
             </p>
           </div>
 

@@ -95,8 +95,8 @@ const Clients = () => {
           ))}
         </div>
 
-        <div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
-          <h2 className="!text-2xl md:!text-3xl !font-medium !text-indigo-dye/85 mb-6">Join Rwanda&apos;s Leading Organizations</h2>
+        <div className="flex flex-col max-w-4xl !mx-auto text-center !gap-4">
+          <h2 className="!text-xl md:!text-2xl !font-medium !text-indigo-dye/85 mb-6">Join Rwanda&apos;s Leading Organizations</h2>
           <p className="!text-base text-slate-gray/80 leading-relaxed">
           {"Ready to experience the precision, innovation, and reliability " +
           "that has made us Rwanda's trusted partner" +
@@ -104,7 +104,7 @@ const Clients = () => {
           </p>
           <div className="flex gap-2 flex-wrap items-center justify-center">
             <Button onClick={() => window.location.href = "#contact"}>Start Your Project</Button>
-            <Button onClick={() => window.location.href = "#projects"}>See Our Work</Button>
+            <Button variant='outline' onClick={() => window.location.href = "#projects"}>See Our Work</Button>
           </div>
         </div>
       </div>

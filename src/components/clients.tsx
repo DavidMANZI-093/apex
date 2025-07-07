@@ -102,7 +102,7 @@ const Clients = () => {
           "that has made us Rwanda's trusted partner" +
           "in construction consultancy and surveying?"}
           </p>
-          <div className="flex gap-2 flex-wrap items-center justify-center">
+          <div className="flex gap-4 flex-wrap items-center justify-center">
             <Button onClick={() => window.location.href = "#contact"}>Start Your Project</Button>
             <Button variant='outline' onClick={() => window.location.href = "#projects"}>See Our Work</Button>
           </div>

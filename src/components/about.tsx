@@ -1,4 +1,5 @@
 import { ShieldCheck, GraduationCap, Lightbulb, Briefcase, Leaf, Target, Compass, User, Handshake } from "lucide-react";
+import Image from "next/image";
 
 const about = () => {
   const values = [
@@ -34,7 +35,7 @@ const about = () => {
       name: "Elisa Shema",
       position: "Founder & Managing Director",
       bio: "Master's in Geo-information Science, Bachelor's in Land Surveying, Licensed Drone Pilot & GIS Specialist, over 5 years of field and consultancy experience.",
-      image: "",
+      image: "/team/elisa.jpg",
     },
     {
       name: "Rungano Didie",
@@ -132,7 +133,7 @@ const about = () => {
             {team.map((value, index) => (
               <div key={index} className="flex flex-col text-center gap-4 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 ease-in-out transition-all duration-200">
                 <div className="w-16 h-16 bg-gradient-to-br from-indigo-dye/25 to-indigo-dye/85 rounded-full flex items-center justify-center mx-auto">
-                  <User className="w-8 h-8 text-white" />
+                  <Image src={value.image} alt={value.name} width={50} height={50} />
                 </div>
                 <span className="flex flex-col">
                   <h4 className="!font-semibold !text-indigo-dye/85">

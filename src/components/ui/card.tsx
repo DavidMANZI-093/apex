@@ -51,7 +51,7 @@ type PropsEx = {
 
 const CardEx = (props: PropsEx) => {
     return (
-      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !shadow-md !shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
+      <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !shadow-md !max-w-128 !shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
           <div className='flex gap-2 rounded-t-lg w-full bg-placeholder overflow-hidden'>
             {props.image && <Image className='!w-full !h-full !object-cover !rounded-t-lg group-hover:!scale-110 transition-all duration-3000 ease-in-out' src={props.image} alt={props.title} width={500} height={500} blurDataURL={props.blurhash} placeholder="blur" />}
             <span className='absolute text-xs !py-0.5 !px-2.5 !ml-2 !mt-2 rounded-xl font-medium !text-white bg-indigo-dye'>{props.category}</span>
@@ -116,7 +116,7 @@ const CardEx = (props: PropsEx) => {
 
   const CardSx = (props: PropsSx) => {
     return (
-        <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
+        <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white max-w-128 !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
             <div className='flex justify-between'>
                 <div className="flex flex-col w-fit justify-center !p-3 !rounded-lg bg-indigo-dye/50 group-hover:!scale-110 transition-all delay-100 duration-200">
                     <props.icon className='w-8 h-8 text-white' />

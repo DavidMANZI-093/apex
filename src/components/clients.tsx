@@ -86,7 +86,7 @@ const Clients = () => {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 !mx-auto gap-8">
           {clients.map((client, index) => (
             <CardSx key={index} {...client} />
           ))}

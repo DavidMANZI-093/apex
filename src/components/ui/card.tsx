@@ -108,7 +108,7 @@ const CardEx = (props: PropsEx) => {
   type PropsSx = {
     name: string;
     acronym: string;
-    sector: string;
+    sector: "Private" | "Government";
     description: string;
     services: string[];
     icon: LucideIcon;
@@ -118,25 +118,30 @@ const CardEx = (props: PropsEx) => {
     return (
         <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
             <div className='flex justify-between'>
-                <div className="flex flex-col w-fit justify-center !p-3 !rounded-lg !bg-gradient-to-br from-indigo-dye/20 to-indigo-dye/80 group-hover:!scale-110 transition-all delay-100 duration-200">
+                <div className="flex flex-col w-fit justify-center !p-3 !rounded-lg bg-indigo-dye/50 group-hover:!scale-110 transition-all delay-100 duration-200">
                     <props.icon className='w-8 h-8 text-white' />
                 </div>
-                <span className='text-xs !py-0.5 !px-2.5 max-w-fit max-h-fit !ml-2 !mt-2 rounded-xl font-medium !text-white bg-indigo-dye/85'>{props.sector}</span>
-            </div>
-            <div className='flex items-center gap-1'>
-                <h3 className='!text-lg !font-medium !text-indigo-dye/85'>{props.acronym}</h3>
-                <hr className='border-t-slate-gray/20 w-full' />
+                <span className={`text-xs !py-0.5 !px-2.5 max-w-fit max-h-fit !ml-2 !mt-2 rounded-xl font-medium !text-white ${props.sector === "Government" ? "bg-indigo-dye/80" : "bg-dutch-white"}`}>{props.sector}</span>
             </div>
 
             <div className='flex flex-col gap-1'>
-                <h4 className='!text-base !font-medium !text-indigo-dye/85'>Key Applications:</h4>
-                <ul className='!list-disc !list-inside text-slate-gray !ml-2'>
+                <div className='flex items-center gap-1'>
+                    <h3 className='!text-lg !font-semibold !text-indigo-dye/85'>{props.acronym}</h3>
+                    <hr className='!border-t-dutch-white/60 w-full' />
+                </div>
+
+                <h4 className='!text-sm !font-medium !text-indigo-dye/75'>{props.name}</h4>
+            </div>
+
+            <p className='!text-sm text-slate-gray/80 leading-relaxed'>{props.description}</p>
+
+            <div className='flex flex-col gap-2'>
+                <h4 className='!text-xs !font-medium !text-indigo-dye/85'>SERVICES PROVIDED</h4>
+                <div className='flex flex-wrap gap-2'>
                     {props.services.map((service, index) => (
-                        <li className='' key={index}>
-                            <span className='!text-slate-gray/80'>{service}</span>
-                        </li>
+                        <span className='text-xs !py-0.5 !px-2.5 max-w-fit max-h-fit rounded-xl font-medium !text-indigo-dye/70 !border !border-indigo-dye/50' key={index}>{service}</span>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     )

@@ -110,7 +110,7 @@ const CardEx = (props: PropsEx) => {
     acronym: string;
     sector: "Private" | "Government";
     description: string;
-    services: string[];
+    services: readonly string[];
     icon: LucideIcon;
   }
 

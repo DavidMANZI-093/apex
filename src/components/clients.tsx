@@ -52,7 +52,7 @@ const Clients = () => {
             services: ["Strategic Planning", "Infrastructure Development"],
             icon: TrendingUp,
         },
-    ]
+    ] as const;
   return (
     <section
       id="clients"

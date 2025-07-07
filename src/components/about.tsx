@@ -41,7 +41,7 @@ const about = () => {
       name: "Rungano Didie",
       position: "Urban & Regional Planning Specialist",
       bio: "Master's in Geo-information Science, Bachelor's in Urban Planning, RUPI member, over 5 years of field and consultancy experience.",
-      image: "",
+      image: "/team/didier.jpg",
     },
     {
       name: "Ruth Kabarungi",

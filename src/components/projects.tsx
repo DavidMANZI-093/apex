@@ -31,7 +31,7 @@ const Projects = () => {
       solution: "Produced topographic profiles and cut-fill analysis.",
       outcomes: ["NULL"],
       metrics: "NULL",
-      image: "",
+      image: "/projects/excavation-masoro.jpg",
       blurhash: "",
     },
     {

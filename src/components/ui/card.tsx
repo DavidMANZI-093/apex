@@ -105,6 +105,40 @@ const CardEx = (props: PropsEx) => {
     )
   };
 
+  type PropsSx = {
+    name: string;
+    acronym: string;
+    sector: string;
+    description: string;
+    services: string[];
+    icon: LucideIcon;
+  }
+
+  const CardSx = (props: PropsSx) => {
+    return (
+        <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
+            <div className="flex flex-col w-fit justify-center !p-3 !rounded-lg !bg-gradient-to-br from-indigo-dye/20 to-indigo-dye/80 group-hover:!scale-110 transition-all delay-100 duration-200">
+                <props.icon className='w-8 h-8 text-white' />
+            </div>
+            <div className='flex flex-col justify-center gap-1'>
+                <h3 className='!text-lg !font-medium !text-indigo-dye/85'>{props.name}</h3>
+                <p className='text-slate-gray/80 leading-relaxed'>{props.description}</p>
+            </div>
+
+            <div className='flex flex-col gap-1'>
+                <h4 className='!text-base !font-medium !text-indigo-dye/85'>Key Applications:</h4>
+                <ul className='!list-disc !list-inside text-slate-gray !ml-2'>
+                    {props.services.map((service, index) => (
+                        <li className='' key={index}>
+                            <span className='!text-slate-gray/80'>{service}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    )
+  }
+
   type PropsTx = {
     quote: string;
     author: string;
@@ -143,4 +177,4 @@ const CardEx = (props: PropsEx) => {
     )
   };
 
-export {Card, CardEx, CardTx};
+export {Card, CardEx, CardSx, CardTx};

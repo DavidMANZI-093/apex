@@ -3,7 +3,7 @@ import { Caveat, Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { preload } from "react-dom";
+// import { preload } from "react-dom";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,15 +41,15 @@ export const metadata: Metadata = {
   authors: [{ name: "Echelon Landworks" }, { name: "MANZI David" }],
 };
 
-preload("/placeholder.png");
-preload("/web-app-manifest-192x192.png");
-preload("/web-app-manifest-512x512.png");
-preload("/clip-1.webm");
-preload("/project-1.jpg");
-preload("/project-2.jpeg");
-preload("/project-3.webp");
-preload("/project-4.jpg");
-preload("/thumbnail-1.webp");
+// preload("/placeholder.png");
+// preload("/web-app-manifest-192x192.png");
+// preload("/web-app-manifest-512x512.png");
+// preload("/clip-1.webm");
+// preload("/project-1.jpg");
+// preload("/project-2.jpeg");
+// preload("/project-3.webp");
+// preload("/project-4.jpg");
+// preload("/thumbnail-1.webp");
 
 export default function RootLayout({
   children,

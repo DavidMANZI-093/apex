@@ -67,7 +67,7 @@ const about = () => {
           </p>
         </div>
 
-        <div className="flex gap-8 justify-center flex-wrap">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 !mx-auto gap-8">
           <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 ease-in-out transition-all duration-200">
             <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
               <Target className="w-8 h-8 !text-white" />

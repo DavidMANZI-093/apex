@@ -157,7 +157,7 @@ const CardEx = (props: PropsEx) => {
 
   const CardTx = (props: PropsTx) => {
     return (
-      <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
+      <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white max-w-128 !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
           <div className='flex flex-col gap-4'>
             <div className='flex items-center gap-2'>
                 {Array.from({ length: (props.rating) }, (_, index) => (

@@ -139,7 +139,7 @@ const CardEx = (props: PropsEx) => {
                 <h4 className='!text-xs !font-medium !text-indigo-dye/85'>SERVICES PROVIDED</h4>
                 <div className='flex flex-wrap gap-2'>
                     {props.services.map((service, index) => (
-                        <span className='text-xs !py-0.5 !px-2.5 max-w-fit max-h-fit rounded-xl font-medium !text-indigo-dye/70 !border !border-indigo-dye/50' key={index}>{service}</span>
+                        <span className='text-xs !py-0.5 !px-2.5 max-w-fit max-h-fit rounded-xl !text-indigo-dye/70 !border !border-indigo-dye/50' key={index}>{service}</span>
                     ))}
                 </div>
             </div>

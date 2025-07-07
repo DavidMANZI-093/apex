@@ -123,9 +123,9 @@ const CardEx = (props: PropsEx) => {
                 </div>
                 <span className='text-xs !py-0.5 !px-2.5 max-w-fit max-h-fit !ml-2 !mt-2 rounded-xl font-medium !text-white bg-indigo-dye/85'>{props.sector}</span>
             </div>
-            <div className='flex flex-col justify-center gap-1'>
-                <h3 className='!text-lg !font-medium !text-indigo-dye/85'>{props.name}</h3>
-                <p className='text-slate-gray/80 leading-relaxed'>{props.description}</p>
+            <div className='flex items-center gap-1'>
+                <h3 className='!text-lg !font-medium !text-indigo-dye/85'>{props.acronym}</h3>
+                <hr className='border-t-slate-gray/20 w-full' />
             </div>
 
             <div className='flex flex-col gap-1'>

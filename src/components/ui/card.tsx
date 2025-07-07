@@ -116,7 +116,7 @@ const CardEx = (props: PropsEx) => {
 
   const CardSx = (props: PropsSx) => {
     return (
-        <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white max-w-128 !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
+        <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white max-w-96 !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
             <div className='flex justify-between'>
                 <div className="flex flex-col w-fit justify-center !p-3 !rounded-lg bg-indigo-dye/50 group-hover:!scale-110 transition-all delay-100 duration-200">
                     <props.icon className='w-8 h-8 text-white' />

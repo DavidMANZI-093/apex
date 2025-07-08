@@ -21,3 +21,20 @@ export interface CardExProps {
     image: string;
     blurhash: string;
 }
+
+export interface CardSxProps {
+    name: string;
+    acronym: string;
+    sector: "Private" | "Government";
+    description: string;
+    services: string[];
+    icon: LucideIcon;
+}
+
+export interface CardTxProps {
+    quote: string;
+    author: string;
+    position: string;
+    company: string;
+    rating: number;
+}

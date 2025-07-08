@@ -1,4 +1,5 @@
 import { ShieldCheck, GraduationCap, Lightbulb, Briefcase, Leaf, Target, Compass, User, Handshake } from "lucide-react";
+import Image from "next/image";
 
 const about = () => {
   const values = [
@@ -34,13 +35,13 @@ const about = () => {
       name: "Elisa Shema",
       position: "Founder & Managing Director",
       bio: "Master's in Geo-information Science, Bachelor's in Land Surveying, Licensed Drone Pilot & GIS Specialist, over 5 years of field and consultancy experience.",
-      image: "",
+      image: "/team/elisa.jpg",
     },
     {
       name: "Rungano Didie",
       position: "Urban & Regional Planning Specialist",
       bio: "Master's in Geo-information Science, Bachelor's in Urban Planning, RUPI member, over 5 years of field and consultancy experience.",
-      image: "",
+      image: "/team/didier.jpg",
     },
     {
       name: "Ruth Kabarungi",
@@ -67,7 +68,7 @@ const about = () => {
           </p>
         </div>
 
-        <div className="flex gap-8 justify-center flex-wrap">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 !mx-auto gap-8">
           <div className="flex flex-col gap-1 min-w-64 w-72 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 ease-in-out transition-all duration-200">
             <span className="flex w-16 h-16 items-center justify-center !rounded-full !bg-slate-gray !mb-4">
               <Target className="w-8 h-8 !text-white" />
@@ -131,8 +132,12 @@ const about = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((value, index) => (
               <div key={index} className="flex flex-col text-center gap-4 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 ease-in-out transition-all duration-200">
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-dye/25 to-indigo-dye/85 rounded-full flex items-center justify-center mx-auto">
-                  <User className="w-8 h-8 text-white" />
+                <div className="w-20 h-20 bg-gradient-to-br from-indigo-dye/25 to-indigo-dye/85 rounded-full flex items-center justify-center mx-auto">
+                  {value.image ? (
+                    <Image className="object-cover !w-full !h-full !rounded-full" src={value.image} alt={value.name} width={50} height={50} />
+                  ) : (
+                    <User className="w-8 h-8 text-white" />
+                  )}
                 </div>
                 <span className="flex flex-col">
                   <h4 className="!font-semibold !text-indigo-dye/85">

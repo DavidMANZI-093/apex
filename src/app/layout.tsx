@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Caveat, Inter } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { Analytics } from "@vercel/analytics/react";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 import { preload } from "react-dom";
 
 const inter = Inter({
@@ -44,11 +44,6 @@ export const metadata: Metadata = {
 preload("/placeholder.png");
 preload("/web-app-manifest-192x192.png");
 preload("/web-app-manifest-512x512.png");
-preload("/clip-1.webm");
-preload("/project-1.jpg");
-preload("/project-2.jpeg");
-preload("/project-3.webp");
-preload("/project-4.jpg");
 preload("/thumbnail-1.webp");
 
 export default function RootLayout({
@@ -62,8 +57,8 @@ export default function RootLayout({
         className={`relative flex ${inter.variable} ${caveat.variable} antialiased`}
       >
         {children}
-        <Analytics />
-        <SpeedInsights />
+        {/* <Analytics /> */}
+        {/* <SpeedInsights /> */}
       </body>
     </html>
   );

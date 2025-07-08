@@ -4,14 +4,9 @@ import React from 'react';
 import { CardSx } from './ui/card';
 import Button from './ui/button';
 import { clients } from "../data/clients.ts";
+import stats from "../data/stats.json";
 
 const Clients = () => {
-    const stats = [
-        { number: "50+", label: "Trusted Partners", description: "Government and private sector clients" },
-        { number: "200+", label: "Projects Completed", description: "Across construction and surveying" },
-        { number: "15,000+", label: "Hectares Mapped", description: "Using advanced drone technology" },
-        { number: "99.8%", label: "Client Satisfaction", description: "Based on project completion rates" },
-    ];
 
   return (
     <section

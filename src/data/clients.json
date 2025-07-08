@@ -5,7 +5,7 @@
         "sector": "Government",
         "description": "Leading Rwanda's transport infrastructure development with precision mapping and surveying services.",
         "services": ["Drone Surveying", "GIS Mapping"],
-        "icon": MapPin
+        "icon": "map-pin"
     },
     {
         "name": "Kigali Infrastructure Development",
@@ -13,7 +13,7 @@
         "sector": "Private",
         "description": "Transforming Kigali's skyline through innovative construction consultancy and project management.",
         "services": ["Construction Consultancy", "Site Supervision"],
-        "icon": Building2
+        "icon": "building-2"
     },
     {
         "name": "Rwanda Agriculture Board",
@@ -21,7 +21,7 @@
         "sector": "Government",
         "description": "Optimizing agricultural land use through advanced surveying and precision mapping technologies.",
         "services": ["Land Surveying", "Agricultural Mapping"],
-        "icon": Sprout
+        "icon": "sprout"
     },
     {
         "name": "Kigali City Council",
@@ -29,7 +29,7 @@
         "sector": "Government",
         "description": "Ensuring urban development compliance through comprehensive monitoring and supervision services.",
         "services": ["Urban Planning", "Development Monitoring"],
-        "icon": Landmark
+        "icon": "landmark"
     },
     {
         "name": "Private Developers Consortium",
@@ -37,7 +37,7 @@
         "sector": "Private",
         "description": "Supporting private sector growth with end-to-end construction consultancy and technical expertise.",
         "services": ["Project Management", "Technical Consulting"],
-        "icon": Users
+        "icon": "users"
     },
     {
         "name": "Rwanda Development Board",
@@ -45,6 +45,6 @@
         "sector": "Government",
         "description":"Facilitating national development through strategic infrastructure planning and implementation support.",
         "services": ["Strategic Planning", "Infrastructure Development"],
-        "icon": TrendingUp
+        "icon": "trending-up"
     }
 ]

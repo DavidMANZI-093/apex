@@ -1,6 +1,7 @@
 import { MapPin, Building2, Sprout, Landmark, Users, TrendingUp } from "lucide-react";
+import { CardSxProps } from "../types";
 
-export const clients = [
+export const clients: CardSxProps[] = [
     {
         name: "Rwanda Transport Development Agency",
         acronym: "RTDA",

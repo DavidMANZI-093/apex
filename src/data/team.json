@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Elisa Shema",
+        "position": "Founder & Managing Director",
+        "bio": "Master's in Geo-information Science, Bachelor's in Land Surveying, Licensed Drone Pilot & GIS Specialist, over 5 years of field and consultancy experience.",
+        "image": "/team/elisa.jpg"
+    },
+    {
+        "name": "Rungano Didie",
+        "position": "Urban & Regional Planning Specialist",
+        "bio": "Master's in Geo-information Science, Bachelor's in Urban Planning, RUPI member, over 5 years of field and consultancy experience.",
+        "image": "/team/didier.jpg"
+    },
+    {
+        "name": "Ruth Kabarungi",
+        "position": "Permanent Secretary",
+        "bio": "ACCA Certificate & Member, Bachelor's Degree in Economics.",
+        "image": ""
+    }
+]

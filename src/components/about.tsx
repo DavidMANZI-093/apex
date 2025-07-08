@@ -1,56 +1,9 @@
-import { ShieldCheck, GraduationCap, Lightbulb, Briefcase, Leaf, Target, Compass, User, Handshake } from "lucide-react";
+import { Target, Compass, User, Handshake } from "lucide-react";
 import Image from "next/image";
+import { values } from "../data/values";
+import team from "../data/team.json";
 
 const about = () => {
-  const values = [
-    {
-      icon: ShieldCheck,
-      name: "Trusted",
-      description: "8+ Years of Practical Experience",
-    },
-    {
-      icon: GraduationCap,
-      name: "Certified",
-      description: "Technically Skilled and Certified Professionals",
-    },
-    {
-      icon: Lightbulb,
-      name: "Innovative",
-      description: "Cutting-edge Surveying Technology",
-    },
-    {
-      icon: Briefcase,
-      name: "Proven",
-      description: "Strong Government & Private Sector Track Record",
-    },
-    {
-      icon: Leaf,
-      name: "Sustainable",
-      description: "Environmentally Responsible & Standards Compliant",
-    },
-  ];
-
-  const team = [
-    {
-      name: "Elisa Shema",
-      position: "Founder & Managing Director",
-      bio: "Master's in Geo-information Science, Bachelor's in Land Surveying, Licensed Drone Pilot & GIS Specialist, over 5 years of field and consultancy experience.",
-      image: "/team/elisa.jpg",
-    },
-    {
-      name: "Rungano Didie",
-      position: "Urban & Regional Planning Specialist",
-      bio: "Master's in Geo-information Science, Bachelor's in Urban Planning, RUPI member, over 5 years of field and consultancy experience.",
-      image: "/team/didier.jpg",
-    },
-    {
-      name: "Ruth Kabarungi",
-      position: "Permanent Secretary",
-      bio: "ACCA Certificate & Member, Bachelor's Degree in Economics.",
-      image: "",
-    },
-  ];
-
   return (
     <section
       id="about"

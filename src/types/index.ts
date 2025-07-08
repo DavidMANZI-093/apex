@@ -13,7 +13,7 @@ export interface CardExProps {
     client: string;
     timeline: string;
     services: string[];
-    challenges: string;
+    challenge: string;
     solution: string;
     outcomes: string[];
     metrics: string;

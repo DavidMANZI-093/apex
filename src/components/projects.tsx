@@ -2,6 +2,7 @@ import { CardEx } from "./ui/card";
 import projects from "../data/projects.json";
 
 const Projects = () => {
+
   return (
     <section
       id="projects"

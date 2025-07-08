@@ -84,7 +84,6 @@ const CardEx = (props: CardExProps) => {
     )
   };
 
-
   const CardSx = (props: CardSxProps) => {
     return (
         <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white max-w-96 !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>

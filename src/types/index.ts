@@ -15,7 +15,7 @@ export interface CardExProps {
     services: string[];
     challenges: string;
     solution: string;
-    outcomes: string;
+    outcomes: string[];
     metrics: string;
     icon?: LucideIcon;
     image: string;

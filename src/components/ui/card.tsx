@@ -1,7 +1,7 @@
-import { Calendar, ChartNoAxesCombined, LucideIcon, MapPin, Quote, Star } from 'lucide-react';
+import { Calendar, ChartNoAxesCombined, MapPin, Quote, Star } from 'lucide-react';
 import React from 'react';
 import Image from 'next/image';
-import { CardProps } from '@/types';
+import { CardExProps, CardProps, CardSxProps, CardTxProps } from '@/types';
 
 const Card = (props: CardProps) => {
   return (
@@ -28,22 +28,7 @@ const Card = (props: CardProps) => {
   )
 };
 
-type PropsEx = {
-    title: string;
-    category: string;
-    client: string;
-    timeline: string;
-    services: string[];
-    challenge: string;
-    solution: string;
-    outcomes: string[];
-    metrics: string;
-    icon?: LucideIcon;
-    image: string;
-    blurhash: string;
-};
-
-const CardEx = (props: PropsEx) => {
+const CardEx = (props: CardExProps) => {
     return (
       <div className='grid grid-rows-[5fr_6fr] !rounded-lg !bg-white !shadow-md !max-w-128 !shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
           <div className='flex gap-2 rounded-t-lg w-full bg-placeholder overflow-hidden'>
@@ -99,16 +84,8 @@ const CardEx = (props: PropsEx) => {
     )
   };
 
-  type PropsSx = {
-    name: string;
-    acronym: string;
-    sector: "Private" | "Government";
-    description: string;
-    services: readonly string[];
-    icon: LucideIcon;
-  }
 
-  const CardSx = (props: PropsSx) => {
+  const CardSx = (props: CardSxProps) => {
     return (
         <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white max-w-96 !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
             <div className='flex justify-between'>
@@ -141,15 +118,7 @@ const CardEx = (props: PropsEx) => {
     )
   }
 
-  type PropsTx = {
-    quote: string;
-    author: string;
-    position: string;
-    company: string;
-    rating: number;
-  };
-
-  const CardTx = (props: PropsTx) => {
+  const CardTx = (props: CardTxProps) => {
     return (
       <div className='flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white max-w-128 !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200'>
           <div className='flex flex-col gap-4'>

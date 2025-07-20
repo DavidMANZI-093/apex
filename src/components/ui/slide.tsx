@@ -8,32 +8,34 @@ const Slide = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setCurrentSlide((prev) => (prev + 1) % slides.length);
-			console.log(currentSlide);
-		}, 2000); // Change slide every 3 seconds
+			setCurrentSlide((prev) => {
+				const nextSlide = (prev + 1) % slides.length;
+				console.log(`Changing to slide: ${nextSlide}`);
+				return nextSlide;
+			});
+		}, 2000);
 
-		// return () => clearInterval(interval);
+		return () => clearInterval(interval);
 	}, [slides.length]);
 
 	return (
 		<div
 			id="container"
-			className="flex flex-col gap-8 rounded-2xl overflow-hidden scale-75"
+			className="relative rounded-2xl overflow-hidden scale-75 w-full h-[350px] md:h-[500px]"
 		>
 			{slides.map((slide, index) => {
-				console.log(slide);
 				return (
 					<Image
 						key={slide}
 						id={slide}
 						src={`/slides/${slide}.png`}
-						className={`!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1] transition-opacity duration-1000 ${
-							index === currentSlide ? "opacity-100" : "opacity-0 absolute"
+						className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+							index === currentSlide ? "opacity-100" : "opacity-0"
 						}`}
-						alt="about"
+						alt={`Slide ${index + 1}`}
 						width={500}
 						height={500}
-						priority={true}
+						priority={index === 0} // Only prioritize the first image
 					/>
 				);
 			})}

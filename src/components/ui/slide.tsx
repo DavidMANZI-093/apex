@@ -23,7 +23,7 @@ const Slide = () => {
 		>
 			<Image
 				id="slide-1"
-				src={`/slides/slide-1.png`}
+				src="/slides/slide-1.png"
 				className="!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1]"
 				alt="about"
 				width={500}
@@ -33,7 +33,7 @@ const Slide = () => {
 			/>
             <Image
 				id="slide-2"
-				src={`/slides/slide-2.png`}
+				src="/slides/slide-2.png"
 				className="!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1]"
 				alt="about"
 				width={500}
@@ -43,7 +43,7 @@ const Slide = () => {
 			/>
             <Image
 				id="slide-3"
-				src={`/slides/slide-3.png`}
+				src="/slides/slide-3.png"
 				className="!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1]"
 				alt="about"
 				width={500}
@@ -53,7 +53,7 @@ const Slide = () => {
 			/>
             <Image
 				id="slide-4"
-				src={`/slides/slide-4.png`}
+				src="/slides/slide-4.png"
 				className="!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1]"
 				alt="about"
 				width={500}

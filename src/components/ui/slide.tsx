@@ -16,7 +16,7 @@ const Slide = () => {
 		<div id="container" className="flex flex-col gap-8 rounded-2xl overflow-hidden scale-75">
 			<Image
             id="slide-1"
-				src="/about/about.jpeg"
+				src="/slides/slide-1.png"
 				className="!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1]"
 				alt="about"
 				width={500}
@@ -26,7 +26,7 @@ const Slide = () => {
 			/>
             <Image
             id="slide-2"
-				src="/about/about.jpeg"
+				src="/slides/slide-2.png"
 				className="!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1]"
 				alt="about"
 				width={500}
@@ -36,7 +36,7 @@ const Slide = () => {
 			/>
             <Image
             id="slide-3"
-				src="/about/about.jpeg"
+				src="/slides/slide-3.png"
 				className="!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1]"
 				alt="about"
 				width={500}
@@ -46,7 +46,7 @@ const Slide = () => {
 			/>
             <Image
             id="slide-4"
-				src="/about/about.jpeg"
+				src="/slides/slide-4.png"
 				className="!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1]"
 				alt="about"
 				width={500}

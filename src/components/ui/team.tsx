@@ -3,8 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import { User } from "lucide-react";
-import team from "../data/team.json";
-import Button from "./ui/button";
+import team from "../../data/team.json";
+import Button from "./button";
 
 const Team = () => {
 	return (

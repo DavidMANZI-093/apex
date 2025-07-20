@@ -9,6 +9,7 @@ const Slide = () => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrentSlide((prev) => (prev + 1) % slides.length);
+			console.log(currentSlide);
 		}, 2000); // Change slide every 3 seconds
 
 		return () => clearInterval(interval);

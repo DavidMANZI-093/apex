@@ -19,9 +19,7 @@ const Card = (props: CardProps) => {
 				<h3 className="!text-lg !font-medium !text-indigo-dye/85">
 					{props.title}
 				</h3>
-				<p className="text-slate-gray leading-relaxed">
-					{props.description}
-				</p>
+				<p className="text-slate-gray leading-relaxed">{props.description}</p>
 			</div>
 
 			<div className="flex flex-col gap-1">

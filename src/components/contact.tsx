@@ -129,9 +129,7 @@ const Contact = () => {
 									<p className="!text-sm !font-medium !text-indigo-dye/85">
 										Phone
 									</p>
-									<p className="!text-sm !text-slate-gray">
-										+250 788 609 349
-									</p>
+									<p className="!text-sm !text-slate-gray">+250 788 609 349</p>
 								</div>
 							</div>
 

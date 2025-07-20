@@ -86,9 +86,7 @@ const about = () => {
 								<h4 className="!font-medium !text-indigo-dye/85">
 									{value.name}
 								</h4>
-								<p className="text-sm text-slate-gray">
-									{value.description}
-								</p>
+								<p className="text-sm text-slate-gray">{value.description}</p>
 							</div>
 						))}
 					</div>

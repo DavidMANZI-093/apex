@@ -17,7 +17,7 @@ const Slide = () => {
     return (
         <div 
             id="container"
-            className="flex flex-col gap-8 rounded-2xl overflow-hidden scale-75"
+            className="relative flex flex-col gap-8 rounded-2xl overflow-hidden scale-75"
         >
             {slides.map((slide, index) => (
                 <Image
@@ -25,7 +25,7 @@ const Slide = () => {
                     id={slide}
                     src={`/slides/${slide}.png`}
                     className={`!w-full !h-full object-cover min-h-[350px] max-h-[500px] aspect-[1/1] transition-opacity duration-1000 ${
-                        index === currentSlide ? 'opacity-100' : 'opacity-0 absolute'
+                        index === currentSlide ? 'opacity-100' : 'opacity-0 absolute top-0 left-0'
                     }`}
                     alt="about"
                     width={500}

@@ -2,6 +2,7 @@ import { Target, Compass, Handshake } from "lucide-react";
 import Image from "next/image";
 import { values } from "../data/values";
 import Team from "./ui/team";
+import Slide from "./ui/slide";
 
 const about = () => {
 	return (
@@ -23,7 +24,7 @@ const about = () => {
 								"planning — earning a trusted reputation for precision and innovation."}
 						</p>
 					</div>
-					{/* wait */}
+					<Slide />
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 !mx-auto gap-16">

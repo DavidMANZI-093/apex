@@ -1,15 +1,12 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 
 const Slide = () => {
     const [currentSlide, setCurrentSlide] = React.useState(1);
 
-    const handleSlideChange = (slideNumber: number) => {
-        setCurrentSlide(slideNumber);
-    };
-
     setInterval(() => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % 4);
+        // setCurrentSlide((currentSlide) => (currentSlide + 1) % 3);
     }, 5000);
 
 	return (

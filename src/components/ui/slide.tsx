@@ -12,7 +12,7 @@ const Slide = () => {
 			console.log(currentSlide);
 		}, 2000); // Change slide every 3 seconds
 
-		return () => clearInterval(interval);
+		// return () => clearInterval(interval);
 	}, [slides.length]);
 
 	return (

@@ -9,19 +9,19 @@ import Footer from "@/components/footer";
 import Clients from "@/components/clients";
 
 const Home = () => {
-  return (
-    <main className="relative flex flex-col w-full h-full z-0 bg-transparent">
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Clients />
-      <Projects />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </main>
-  );
+	return (
+		<main className="relative flex flex-col w-full h-full z-0 bg-transparent">
+			<Header />
+			<Hero />
+			<About />
+			<Services />
+			<Clients />
+			<Projects />
+			<Testimonials />
+			<Contact />
+			<Footer />
+		</main>
+	);
 };
 
 export default Home;

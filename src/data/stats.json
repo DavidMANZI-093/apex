@@ -1,22 +1,22 @@
 [
-    {
-        "number": "50+",
-        "label": "Trusted Partners",
-        "description": "Government and private sector clients"
-    },
-    {
-        "number": "200+",
-        "label": "Projects Completed",
-        "description": "Across construction and surveying"
-    },
-    {
-        "number": "15,000+",
-        "label": "Hectares Mapped",
-        "description": "Using advanced drone technology"
-    },
-    {
-        "number": "99.8%",
-        "label": "Client Satisfaction",
-        "description": "Based on project completion rates"
-    }
+	{
+		"number": "50+",
+		"label": "Trusted Partners",
+		"description": "Government and private sector clients"
+	},
+	{
+		"number": "200+",
+		"label": "Projects Completed",
+		"description": "Across construction and surveying"
+	},
+	{
+		"number": "15,000+",
+		"label": "Hectares Mapped",
+		"description": "Using advanced drone technology"
+	},
+	{
+		"number": "99.8%",
+		"label": "Client Satisfaction",
+		"description": "Based on project completion rates"
+	}
 ]

@@ -10,11 +10,12 @@ const Testimonials = () => {
 			<div className="relative w-full flex flex-col gap-16 container !mx-auto !px-4 sm:!px-6 lg:!px-8 xl:!px-16">
 				<div className="flex flex-col max-w-4xl !mx-auto text-center mb-16 !gap-4">
 					<h2 className="!text-2xl md:!text-3xl !font-medium !text-indigo-dye/85 mb-6">
-						What Our Clients Say
+						Our Amazing Clients
 					</h2>
 					<p className="text-slate-gray leading-relaxed">
-						{"Don't just take our word for it. Here's what our " +
-							"satisfied clients have to say about our services."}
+						{
+							"We're proud to work with a diverse range of clients. See who trusts us."
+						}
 					</p>
 				</div>
 

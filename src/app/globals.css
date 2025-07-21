@@ -137,10 +137,11 @@ textarea:focus-visible {
 
 #slide-1 {
 	animation: slide-1 10s infinite ease-in-out;
+	display: none;
 }
 #slide-2 {
 	animation: slide-2 10s infinite ease-in-out;
-	display: none;
+	/* display: none; */
 }
 #slide-3 {
 	animation: slide-3 10s infinite ease-in-out;

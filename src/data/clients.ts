@@ -2,8 +2,8 @@ import { CardSxProps } from "../types";
 
 export const certifiers: CardSxProps[] = [
 	{
-		name: "Rwanda Civil Aviation",
-		acronym: "RCA",
+		name: "Rwanda Civil Aviation Authority",
+		acronym: "RCAA",
 		sector: "Government",
 		description:
 			"Leading Rwanda's transport infrastructure development with precision mapping and surveying services.",

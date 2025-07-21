@@ -1,7 +1,4 @@
-"use client";
-
-import { ArrowRight, Search } from "lucide-react";
-import Button from "./ui/button";
+import CTAHome from "./ui/cta";
 
 const Hero = () => {
 	return (
@@ -26,23 +23,7 @@ const Hero = () => {
 							</p>
 						</div>
 
-						<div className="flex flex-col sm:flex-row gap-4">
-							<Button
-								onClick={() => (window.location.href = "#contact")}
-								iconPosition="right"
-								icon={ArrowRight}
-							>
-								Get&nbsp;a&nbsp;Free&nbsp;Consultation
-							</Button>
-							<Button
-								onClick={() => (window.location.href = "#services")}
-								iconPosition="left"
-								icon={Search}
-								variant="outline"
-							>
-								Explore&nbsp;Our&nbsp;Services
-							</Button>
-						</div>
+						<CTAHome />
 					</div>
 
 					<div className="relative flex items-center w-full h-full !pb-12 lg:!py-16">

@@ -6,7 +6,7 @@ const Slide = () => {
 	return (
 		<div
 			id="container"
-			className="relative rounded-2xl overflow-hidden scale-75 w-full h-[350px] md:h-[500px] !animate-[slide-show_2s_infinite]"
+			className="relative rounded-2xl overflow-hidden scale-75 w-full h-[350px] md:h-[500px]"
 		>
 			{slides.map((slide, index) => {
 				return (
@@ -14,7 +14,7 @@ const Slide = () => {
 						key={slide}
 						id={slide}
 						src={`/slides/${slide}.png`}
-						className={`absolute top-0 left-0 !w-full !h-full object-cover !animate-[slide-show_2s_infinite] transition-opacity duration-1000`}
+						className={`absolute top-0 left-0 !w-full !h-full object-cover transition-opacity duration-1000`}
 						alt={`Slide ${index + 1}`}
 						width={500}
 						height={500}

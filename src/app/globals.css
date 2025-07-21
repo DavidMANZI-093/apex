@@ -45,28 +45,75 @@ textarea:focus-visible {
 	background-repeat: no-repeat;
 }
 
-@keyframes slide-show {
+@keyframes slide-1 {
 	0% {
 		opacity: 1;
 	}
 	25% {
 		opacity: 0;
 	}
-	100% {
+	50% {
+		opacity: 0;
+	}
+	75% {
 		opacity: 0;
 	}
 }
 
-/* Then apply to individual slides with different delays */
+@keyframes slide-2 {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+}
+
+@keyframes slide-3 {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+}
+
+@keyframes slide-4 {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+	}
+}
+
 #slide-1 {
-	animation: slide-show 8s infinite;
+	animation: slide-1 16s infinite;
 }
 #slide-2 {
-	animation: slide-show 8s infinite 2s;
+	animation: slide-2 16s infinite;
 }
 #slide-3 {
-	animation: slide-show 8s infinite 4s;
+	animation: slide-3 16s infinite;
 }
 #slide-4 {
-	animation: slide-show 8s infinite 6s;
+	animation: slide-4 16s infinite;
 }

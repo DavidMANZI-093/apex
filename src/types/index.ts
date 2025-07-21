@@ -29,8 +29,7 @@ export interface CardSxProps {
 	acronym: string;
 	sector: "Private" | "Government";
 	description: string;
-	services: string[];
-	icon: LucideIcon;
+	logo: string;
 }
 
 export interface CardTxProps {

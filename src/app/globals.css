@@ -136,4 +136,5 @@ textarea:focus-visible {
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	transition: opacity 1s ease-in-out;
+	opacity: 0;
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Slide = () => {
-	const slides = ["slide-1", "slide-2", "slide-3", "slide-4"];
+	const slides = ["slide-1", "slide-2", "slide-3", "slide-4", "slide-5"];
 
 	return (
 		<div

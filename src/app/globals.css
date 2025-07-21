@@ -58,6 +58,9 @@ textarea:focus-visible {
 	75% {
 		opacity: 0;
 	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes slide-2 {
@@ -71,6 +74,9 @@ textarea:focus-visible {
 		opacity: 0;
 	}
 	75% {
+		opacity: 0;
+	}
+	100% {
 		opacity: 0;
 	}
 }
@@ -88,6 +94,9 @@ textarea:focus-visible {
 	75% {
 		opacity: 0;
 	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes slide-4 {
@@ -103,6 +112,27 @@ textarea:focus-visible {
 	75% {
 		opacity: 1;
 	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes slide-5 {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 #slide-1 {
@@ -116,4 +146,7 @@ textarea:focus-visible {
 }
 #slide-4 {
 	animation: slide-4 16s infinite;
+}
+#slide-5 {
+	animation: slide-5 16s infinite;
 }

@@ -127,7 +127,15 @@ const CardSx = (props: CardSxProps) => {
 		<div className="flex flex-col !p-6 justify-between gap-4 !rounded-lg !bg-white max-w-96 !shadow-md shadow-slate-gray/20 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200">
 			<div className="flex justify-between">
 				<div className="flex flex-col w-fit justify-center !p-3 !rounded-lg bg-indigo-dye/50 group-hover:!scale-110 transition-all delay-100 duration-200">
-					<props.icon className="w-8 h-8 text-white" />
+					<Image
+						className="w-16 h-16"
+						src={props.logo}
+						alt={props.name}
+						width={50}
+						height={50}
+						blurDataURL={props.blurhash}
+						placeholder="blur"
+					/>
 				</div>
 				<span
 					className={`text-xs !py-0.5 !px-2.5 max-w-fit max-h-fit !ml-2 !mt-2 rounded-xl font-medium !text-white ${props.sector === "Government" ? "bg-indigo-dye/80" : "bg-dutch-white"}`}
@@ -152,22 +160,6 @@ const CardSx = (props: CardSxProps) => {
 			<p className="!text-sm text-slate-gray leading-relaxed">
 				{props.description}
 			</p>
-
-			<div className="flex flex-col gap-2">
-				<h4 className="!text-xs !font-medium !text-indigo-dye/85">
-					SERVICES PROVIDED
-				</h4>
-				<ul className="flex gap-2 flex-wrap">
-					{props.services.map((service, index) => (
-						<li
-							className="text-xs !py-0.5 !px-2.5 rounded-xl font-medium !text-indigo-dye/70 bg-indigo-dye/5"
-							key={index}
-						>
-							{service}
-						</li>
-					))}
-				</ul>
-			</div>
 		</div>
 	);
 };

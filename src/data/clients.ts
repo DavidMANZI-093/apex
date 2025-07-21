@@ -1,66 +1,40 @@
-import {
-	MapPin,
-	Building2,
-	Sprout,
-	Landmark,
-	Users,
-	TrendingUp,
-} from "lucide-react";
 import { CardSxProps } from "../types";
 
-export const clients: CardSxProps[] = [
+export const certifiers: CardSxProps[] = [
 	{
-		name: "Rwanda Transport Development Agency",
-		acronym: "RTDA",
+		name: "Rwanda Civil Aviation",
+		acronym: "RCA",
 		sector: "Government",
 		description:
 			"Leading Rwanda's transport infrastructure development with precision mapping and surveying services.",
-		services: ["Drone Surveying", "GIS Mapping"],
-		icon: MapPin,
+		logo: "",
+		blurhash: "",
 	},
 	{
-		name: "Kigali Infrastructure Development",
-		acronym: "KID",
-		sector: "Private",
+		name: "MInistry ...",
+		acronym: "MINICOM",
+		sector: "Government",
 		description:
 			"Transforming Kigali's skyline through innovative construction consultancy and project management.",
-		services: ["Construction Consultancy", "Site Supervision"],
-		icon: Building2,
+		logo: "",
+		blurhash: "",
 	},
 	{
-		name: "Rwanda Agriculture Board",
-		acronym: "RAB",
+		name: "Rwanda Organization of Land Surveyors",
+		acronym: "ROLS",
 		sector: "Government",
 		description:
 			"Optimizing agricultural land use through advanced surveying and precision mapping technologies.",
-		services: ["Land Surveying", "Agricultural Mapping"],
-		icon: Sprout,
+		logo: "",
+		blurhash: "",
 	},
 	{
-		name: "Kigali City Council",
-		acronym: "KCC",
+		name: "Rwanda Urban Planning Instituation",
+		acronym: "RUPI",
 		sector: "Government",
 		description:
 			"Ensuring urban development compliance through comprehensive monitoring and supervision services.",
-		services: ["Urban Planning", "Development Monitoring"],
-		icon: Landmark,
-	},
-	{
-		name: "Private Developers Consortium",
-		acronym: "PDC",
-		sector: "Private",
-		description:
-			"Supporting private sector growth with end-to-end construction consultancy and technical expertise.",
-		services: ["Project Management", "Technical Consulting"],
-		icon: Users,
-	},
-	{
-		name: "Rwanda Development Board",
-		acronym: "RDB",
-		sector: "Government",
-		description:
-			"Facilitating national development through strategic infrastructure planning and implementation support.",
-		services: ["Strategic Planning", "Infrastructure Development"],
-		icon: TrendingUp,
+		logo: "",
+		blurhash: "",
 	},
 ];

@@ -30,6 +30,7 @@ export interface CardSxProps {
 	sector: "Private" | "Government";
 	description: string;
 	logo: string;
+	blurhash: string;
 }
 
 export interface CardTxProps {

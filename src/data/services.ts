@@ -13,6 +13,8 @@ export const services: CardProps[] = [
 			"GNSS/DGPS, RTK & Total Station Operations",
 			"UAV/Drone Mapping & Photogrammetry",
 		],
+		image: "",
+		blurhash: "",
 	},
 	{
 		icon: Hammer, // construction theme
@@ -29,6 +31,8 @@ export const services: CardProps[] = [
 			"Contract Management & Procurement",
 			"Quality Assurance & Risk Assessment",
 		],
+		image: "",
+		blurhash: "",
 	},
 	{
 		icon: Globe, // geospatial/GIS theme
@@ -41,6 +45,8 @@ export const services: CardProps[] = [
 			"Advanced GIS Mapping & Spatial Analysis",
 			"Digital Terrain Models (DTMs) & 3D Visualization",
 		],
+		image: "",
+		blurhash: "",
 	},
 	{
 		icon: Droplets, // environment & water
@@ -54,6 +60,8 @@ export const services: CardProps[] = [
 			"Industrial Park Surveying & Zoning",
 			"Environmental Monitoring & Agricultural Surveys",
 		],
+		image: "",
+		blurhash: "",
 	},
 	{
 		icon: Eye, // supervision & monitoring
@@ -67,5 +75,7 @@ export const services: CardProps[] = [
 			"Real-time Asset Tracking & Inventory",
 			"Safety Inspection of Hard-to-Reach Areas",
 		],
+		image: "",
+		blurhash: "",
 	},
 ];

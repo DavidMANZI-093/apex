@@ -11,34 +11,38 @@ import { CardExProps, CardProps, CardSxProps, CardTxProps } from "@/types";
 
 const Card = (props: CardProps) => {
 	return (
-		<div className="flex flex-col !p-8 gap-6 !rounded-lg !bg-white !shadow-slate-gray/20 !shadow-md !max-w-116 group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200">
-			<Image
-				className="!w-full !h-full !object-cover !rounded-t-lg group-hover:!scale-110 transition-all duration-3000 ease-in-out"
-				src={props.image ? props.image : "/placeholder.png"}
-				alt={props.title}
-				width={500}
-				height={500}
-				blurDataURL={props.blurhash}
-				{props.blurhash ? { placeholder: "blur" } : {}}
-			/>
-			<div className="flex flex-col justify-center gap-1">
-				<h3 className="!text-lg !font-medium !text-indigo-dye/85">
-					{props.title}
-				</h3>
-				<p className="text-slate-gray leading-relaxed">{props.description}</p>
+		<div className="flex flex-col !rounded-lg !bg-white !shadow-slate-gray/20 !shadow-md !max-w-116 overflow-hidden group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200">
+			<div className="relative !w-full !h-full max-w-[500px] max-h-[300px] overflow-hidden">
+				<Image
+					className="!w-full !h-full !object-cover !rounded-t-lg !aspect-[3/2] group-hover:!scale-110 transition-all duration-3000 ease-in-out"
+					src={props.image ? props.image : "/placeholder.png"}
+					alt={props.title}
+					width={500}
+					height={500}
+					blurDataURL={props.blurhash}
+					{...(props.blurhash ? { placeholder: "blur" } : {})}
+				/>
 			</div>
+			<div className="flex flex-col justify-center gap-6 !p-8">
+				<div className="flex flex-col justify-center gap-1">
+					<h3 className="!text-lg !font-medium !text-indigo-dye/85">
+						{props.title}
+					</h3>
+					<p className="text-slate-gray leading-relaxed">{props.description}</p>
+				</div>
 
-			<div className="flex flex-col gap-1">
-				<h4 className="!text-base !font-medium !text-indigo-dye/85">
-					Key Applications:
-				</h4>
-				<ul className="!list-disc !list-inside text-slate-gray !ml-2">
-					{props.deliverables.map((deliverable, index) => (
-						<li className="" key={index}>
-							<span className="!text-slate-gray">{deliverable}</span>
-						</li>
-					))}
-				</ul>
+				<div className="flex flex-col gap-1">
+					<h4 className="!text-base !font-medium !text-indigo-dye/85">
+						Key Applications:
+					</h4>
+					<ul className="!list-disc !list-inside text-slate-gray !ml-2">
+						{props.deliverables.map((deliverable, index) => (
+							<li className="" key={index}>
+								<span className="!text-slate-gray">{deliverable}</span>
+							</li>
+						))}
+					</ul>
+				</div>
 			</div>
 		</div>
 	);

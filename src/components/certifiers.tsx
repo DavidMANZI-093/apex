@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import { CardSx } from "./ui/card";
-import Button from "./ui/button";
+import { CardSx } from "./ui/card.tsx";
+import Button from "./ui/button.tsx";
 import { certifiers } from "../data/certifiers.ts";
 import stats from "../data/stats.json";
 
-const Clients = () => {
+const Certifiers = () => {
 	return (
 		<section
 			id="clients"
@@ -75,4 +75,4 @@ const Clients = () => {
 	);
 };
 
-export default Clients;
+export default Certifiers;

@@ -18,9 +18,9 @@ const Clients = () => {
 						Trusted & Certified by Leading Organizations
 					</h2>
 					<p className="!text-base text-slate-gray leading-relaxed">
-						{"From government agencies to private developers, Rwanda's most " +
-							"respected organizations choose Echelon Landworks for their " +
-							"construction consultancy and surveying needs."}
+						{"Our high standards are validated by key government bodies, reputable " +
+							"professional associations, and respected organizations across " +
+							"Rwanda for all land surveying needs."}
 					</p>
 				</div>
 

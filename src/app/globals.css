@@ -136,17 +136,17 @@ textarea:focus-visible {
 }
 
 #slide-1 {
-	animation: slide-1 16s infinite ease-in-out;
+	animation: slide-1 10s infinite ease-in-out;
 }
 #slide-2 {
-	animation: slide-2 16s infinite ease-in-out;
+	animation: slide-2 10s infinite ease-in-out;
 }
 #slide-3 {
-	animation: slide-3 16s infinite ease-in-out;
+	animation: slide-3 10s infinite ease-in-out;
 }
 #slide-4 {
-	animation: slide-4 16s infinite ease-in-out;
+	animation: slide-4 10s infinite ease-in-out;
 }
 #slide-5 {
-	animation: slide-5 16s infinite ease-in-out;
+	animation: slide-5 10s infinite ease-in-out;
 }

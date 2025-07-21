@@ -5,6 +5,8 @@ export interface CardProps {
 	title: string;
 	description: string;
 	deliverables: string[];
+	image: string;
+	blurhash: string;
 }
 
 export interface CardExProps {

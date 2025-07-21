@@ -18,7 +18,7 @@ const Services = () => {
 					</p>
 				</div>
 
-				<div className="grid md:grid-cols-2 !mx-auto gap-8">
+				<div className="grid md:grid-cols-2 !mx-auto gap-10">
 					{services.map((service, index) => (
 						<Card key={index} {...service} />
 					))}

@@ -19,7 +19,7 @@ const Projects = () => {
 					</p>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 !mx-auto gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 !mx-auto gap-10">
 					{projects.map((project, index) => (
 						<CardEx key={index} {...project} />
 					))}

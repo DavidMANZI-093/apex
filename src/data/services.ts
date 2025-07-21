@@ -6,18 +6,16 @@ export const services: CardProps[] = [
 		icon: Ruler, // precise measurement theme
 		title: "Advanced Surveying & Aerial LiDAR",
 		description:
-			"High-precision land and engineering surveying leveraging **cutting-edge Aerial LiDAR** for unparalleled accuracy in mapping and analysis, particularly effective in areas with dense vegetation. We also utilize GNSS, RTK, Total Stations, and UAV/Drone photogrammetry to provide comprehensive solutions.",
+			"High-precision land and engineering surveying using Aerial LiDAR for unparalleled accuracy, GNSS, RTK, Total Stations, and UAV/Drone photogrammetry for comprehensive mapping.",
 		deliverables: [
 			"Aerial LiDAR Surveys (Bare Earth & Classified Point Clouds)",
-			"High-Resolution Digital Terrain Models (DTMs) & Digital Surface Models (DSMs)",
 			"Topographic & Cadastral Surveys",
 			"Engineering Surveys",
 			"GNSS/DGPS, RTK & Total Station Operations",
 			"UAV/Drone Mapping & Photogrammetry",
-			"3D Visualization & Contour Mapping",
 		],
-		image: "", // You'll want to add a relevant image here
-		blurhash: "", // And a blurhash for the image
+		image: "",
+		blurhash: "",
 	},
 	{
 		icon: Hammer, // construction theme

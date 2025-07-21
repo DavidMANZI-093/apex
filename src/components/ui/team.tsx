@@ -12,7 +12,7 @@ const Team = () => {
 			{team.map((value, index) => (
 				<div
 					key={index}
-					className="flex flex-col text-center gap-4 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center hover:shadow-lg hover:scale-101 ease-in-out transition-all duration-200"
+					className="flex flex-col text-center gap-4 !p-6 rounded-lg shadow shadow-slate-gray/20 items-center justify-between hover:shadow-lg hover:scale-101 ease-in-out transition-all duration-200"
 				>
 					<div className="w-28 h-28 bg-gradient-to-br from-indigo-dye/25 to-indigo-dye/85 rounded-full flex items-center justify-center mx-auto">
 						{value.image ? (

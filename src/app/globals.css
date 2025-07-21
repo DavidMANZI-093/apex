@@ -47,51 +47,26 @@ textarea:focus-visible {
 
 @keyframes slide-show {
 	0% {
-		#slide-1 {
-			opacity: 1;
-			z-index: 1;
-		}
-		#slide-2,
-		#slide-3,
-		#slide-4 {
-			opacity: 0;
-			z-index: 0;
-		}
+		opacity: 1;
 	}
 	25% {
-		#slide-2 {
-			opacity: 1;
-			z-index: 1;
-		}
-		#slide-1,
-		#slide-3,
-		#slide-4 {
-			opacity: 0;
-			z-index: 0;
-		}
+		opacity: 0;
 	}
-	50% {
-		#slide-3 {
-			opacity: 1;
-			z-index: 1;
-		}
-		#slide-1,
-		#slide-2,
-		#slide-4 {
-			opacity: 0;
-			z-index: 0;
-		}
+	100% {
+		opacity: 0;
 	}
-	75% {
-		#slide-4 {
-			opacity: 1;
-			z-index: 1;
-		}
-		#slide-1,
-		#slide-2,
-		#slide-3 {
-			opacity: 0;
-			z-index: 0;
-		}
-	}
+}
+
+/* Then apply to individual slides with different delays */
+#slide-1 {
+	animation: slide-show 8s infinite;
+}
+#slide-2 {
+	animation: slide-show 8s infinite 2s;
+}
+#slide-3 {
+	animation: slide-show 8s infinite 4s;
+}
+#slide-4 {
+	animation: slide-show 8s infinite 6s;
 }

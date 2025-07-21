@@ -11,8 +11,8 @@ import { CardExProps, CardProps, CardSxProps, CardTxProps } from "@/types";
 
 const Card = (props: CardProps) => {
 	return (
-		<div className="flex flex-col !rounded-lg !bg-white !shadow-slate-gray/20 !shadow-md !max-w-116 overflow-hidden group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200">
-			<div className="relative !w-full !h-full max-w-[500px] max-h-[300px] overflow-hidden">
+		<div className="flex flex-col !rounded-lg !bg-white !shadow-slate-gray/20 !shadow-md !max-w-128 overflow-hidden group hover:!shadow-lg hover:!scale-101 ease-in-out transition-all duration-200">
+			<div className="relative !w-full !h-full max-w-[512px] max-h-[300px] overflow-hidden">
 				<Image
 					className="!w-full !h-full !object-cover !rounded-t-lg !aspect-[3/2] group-hover:!scale-110 transition-all duration-3000 ease-in-out"
 					src={props.image ? props.image : "/placeholder.png"}

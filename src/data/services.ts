@@ -1,9 +1,7 @@
 import { CardProps } from "@/types";
-import { Ruler, Hammer, Globe, Droplets, Eye } from "lucide-react";
 
 export const services: CardProps[] = [
 	{
-		icon: Ruler, // precise measurement theme
 		title: "Advanced Surveying & Aerial LiDAR",
 		description:
 			"High-precision land and engineering surveying using Aerial LiDAR for unparalleled accuracy, GNSS, RTK, Total Stations, and UAV/Drone photogrammetry for comprehensive mapping.",
@@ -18,10 +16,9 @@ export const services: CardProps[] = [
 		blurhash: "",
 	},
 	{
-		icon: Hammer, // construction theme
-		title: "Construction Support",
+		title: "Construction Support & Site Surveys", // Slightly modified title
 		description:
-			"Professional support throughout construction projects, ensuring sites are accurately set out, monitored, and compliant with regulations.",
+			"Professional support throughout construction projects, ensuring sites are accurately set out, monitored, and drone-assisted mapping for roads and infrastructure development.", // Incorporating drone road mapping
 		deliverables: [
 			"Pre-construction Feasibility Studies",
 			"Detailed Project Planning & Cost Estimation",
@@ -31,12 +28,12 @@ export const services: CardProps[] = [
 			"Real-time Construction Monitoring & Reporting",
 			"Contract Management & Procurement",
 			"Quality Assurance & Risk Assessment",
+			"Drone-based Progress Mapping & As-built Surveys for Roads", // Added specific drone deliverable
 		],
-		image: "",
+		image: "/services/service-2.jpeg", // Assigning drone mapping a road image here
 		blurhash: "",
 	},
 	{
-		icon: Globe, // geospatial/GIS theme
 		title: "Geospatial Data Analysis",
 		description:
 			"In-depth GIS mapping, remote sensing, and spatial data analysis for informed decision-making and sustainable land development.",
@@ -50,22 +47,21 @@ export const services: CardProps[] = [
 		blurhash: "",
 	},
 	{
-		icon: Droplets, // environment & water
-		title: "Environmental & Infrastructure Projects",
+		title: "Environmental & Agricultural Solutions", // Updated title
 		description:
-			"Supporting sustainable infrastructure with flood mapping, wetland restoration, and industrial zoning through advanced surveying and modeling.",
+			"Supporting sustainable infrastructure, environmental protection, and precision agriculture through advanced surveying and drone-based monitoring.", // Emphasize agriculture and drones
 		deliverables: [
 			"Flood Control Mapping",
 			"Wetland & Land Use Restoration Surveys",
 			"Drainage & Watercourse Delineation",
 			"Industrial Park Surveying & Zoning",
-			"Environmental Monitoring & Agricultural Surveys",
+			"Agricultural Surveys & Crop Health Monitoring (Drone-assisted)", // Clarify drone assistance for plants
+			"Environmental Monitoring & Impact Assessment Support", // Rephrased/combined
 		],
-		image: "",
+		image: "/services/service-4.png", // Assigning drone irrigating plants image here
 		blurhash: "",
 	},
 	{
-		icon: Eye, // supervision & monitoring
 		title: "Site Supervision & Monitoring",
 		description:
 			"Comprehensive site oversight enhanced with drone technology, providing real-time progress tracking, quality control, and safety inspections.",

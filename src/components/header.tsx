@@ -45,7 +45,7 @@ const Header = () => {
 						</span>
 					</div>
 					{/* Desktop Navigation */}
-					<nav className="hidden lg:flex items-center gap-6 lg:gap-8">
+					<nav className="hidden xl:flex items-center gap-6 xl:gap-8">
 						{navLinks.map((link) => {
 							return (
 								<a
@@ -68,7 +68,7 @@ const Header = () => {
 
 					{/* Mobile Navigation */}
 					<button
-						className="lg:hidden !p-2 cursor-pointer hover:!bg-indigo-dye/5 !rounded-lg transition-colors duration-200"
+						className="xl:hidden !p-2 cursor-pointer hover:!bg-indigo-dye/5 !rounded-lg transition-colors duration-200"
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 					>
 						{isMenuOpen ? (
@@ -81,7 +81,7 @@ const Header = () => {
 
 				{/* Mobile Navigation */}
 				{isMenuOpen && (
-					<div className="lg:hidden !py-4 !border-t !border-slate-gray/20">
+					<div className="xl:hidden !py-4 !border-t !border-slate-gray/20">
 						<nav className="flex flex-col gap-1 transition-colors duration-200">
 							{navLinks.map((link) => {
 								return (

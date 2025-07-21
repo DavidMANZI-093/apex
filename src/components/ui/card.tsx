@@ -19,7 +19,7 @@ const Card = (props: CardProps) => {
 				width={500}
 				height={500}
 				blurDataURL={props.blurhash}
-				placeholder="blur"
+				{props.blurhash ? { placeholder: "blur" } : {}}
 			/>
 			<div className="flex flex-col justify-center gap-1">
 				<h3 className="!text-lg !font-medium !text-indigo-dye/85">

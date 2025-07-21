@@ -14,7 +14,7 @@ const Slide = () => {
 						key={slide}
 						id={slide}
 						src={`/slides/${slide}.png`}
-						className={`absolute top-0 left-0 !w-full !h-full object-cover transition-opacity duration-1000`}
+						className={`absolute top-0 left-0 !w-full !h-full object-cover animate-[slide-show_2s_infinite] transition-opacity duration-1000`}
 						alt={`Slide ${index + 1}`}
 						width={500}
 						height={500}

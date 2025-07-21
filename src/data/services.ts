@@ -14,7 +14,7 @@ export const services: CardProps[] = [
 			"GNSS/DGPS, RTK & Total Station Operations",
 			"UAV/Drone Mapping & Photogrammetry",
 		],
-		image: "",
+		image: "/services/service-1.jpeg",
 		blurhash: "",
 	},
 	{

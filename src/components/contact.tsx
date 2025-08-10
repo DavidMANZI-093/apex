@@ -142,7 +142,7 @@ const Contact = () => {
 										Email
 									</p>
 									<p className="!text-sm !text-slate-gray">
-										shemakalinda11@gmail.com
+										info@echelonlandworks.com
 									</p>
 								</div>
 							</div>

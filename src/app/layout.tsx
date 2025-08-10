@@ -16,6 +16,10 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://echelonlandworks.com'),
+	alternates: {
+		canonical: '/',
+	},
 	title: "Echelon Landworks - Construction Consultancy & Surveying Solutions",
 	description:
 		"Echelon Landworks Ltd is a Rwandan-based leader in land surveying, construction " +

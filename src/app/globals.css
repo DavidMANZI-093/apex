@@ -47,10 +47,10 @@ textarea:focus-visible {
 
 @keyframes slide-1 {
 	0%,
-	20% {
+	12% {
 		opacity: 1;
 	}
-	25%,
+	14%,
 	100% {
 		opacity: 0;
 	}
@@ -58,51 +58,72 @@ textarea:focus-visible {
 
 @keyframes slide-2 {
 	0%,
-	20%,
-	95%,
+	14%,
 	100% {
 		opacity: 0;
 	}
-	25%,
-	40% {
+	16%,
+	28% {
 		opacity: 1;
 	}
 }
 
 @keyframes slide-3 {
 	0%,
-	40%,
-	95%,
+	28%,
 	100% {
 		opacity: 0;
 	}
-	45%,
-	60% {
+	30%,
+	42% {
 		opacity: 1;
 	}
 }
 
 @keyframes slide-4 {
 	0%,
-	60%,
-	95%,
+	42%,
 	100% {
 		opacity: 0;
 	}
-	65%,
-	80% {
+	44%,
+	56% {
 		opacity: 1;
 	}
 }
 
 @keyframes slide-5 {
 	0%,
-	80%,
+	56%,
 	100% {
 		opacity: 0;
 	}
-	85%,
-	95% {
+	58%,
+	70% {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-6 {
+	0%,
+	70%,
+	100% {
+		opacity: 0;
+	}
+	72%,
+	84% {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-7 {
+	0%,
+	84%,
+	100% {
+		opacity: 0;
+	}
+	86%,
+	98% {
 		opacity: 1;
 	}
 }
@@ -110,28 +131,32 @@ textarea:focus-visible {
 #slide-1 {
 	animation: slide-1 20s infinite ease-in-out;
 }
-
 #slide-2 {
 	animation: slide-2 20s infinite ease-in-out;
 }
-
 #slide-3 {
 	animation: slide-3 20s infinite ease-in-out;
 }
-
 #slide-4 {
 	animation: slide-4 20s infinite ease-in-out;
 }
-
 #slide-5 {
 	animation: slide-5 20s infinite ease-in-out;
+}
+#slide-6 {
+	animation: slide-6 20s infinite ease-in-out;
+}
+#slide-7 {
+	animation: slide-7 20s infinite ease-in-out;
 }
 
 #slide-1,
 #slide-2,
 #slide-3,
 #slide-4,
-#slide-5 {
+#slide-5,
+#slide-6,
+#slide-7 {
 	animation-duration: 20s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;

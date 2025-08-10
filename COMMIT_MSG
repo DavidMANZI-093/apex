@@ -1,0 +1,13 @@
+feat: enhance content and visual assets across the platform
+
+- Added 2 new slideshow images (slide-6.png, slide-7.png) to the carousel
+- Added 3 new certifier entities with detailed information and blurhash placeholders:
+  - SABA Engineering P.L.C
+  - Food and Agriculture Organization of the United Nations (FAO)
+  - RAB (Rwanda Agriculture Board)
+- Updated project-10 image from JPG to PNG format for better quality
+- Added corresponding blurhash placeholders for all new images
+- Updated project data with more detailed descriptions and metadata
+- Improved content structure and organization across the site
+- Added comprehensive dummy/demo data for better demonstration purposes
+- Enhanced visual consistency with updated image assets and placeholders

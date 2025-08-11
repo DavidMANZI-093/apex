@@ -56,7 +56,7 @@ const CardEx = (props: CardExProps) => {
 					<Image
 						className="!w-full !h-full !object-cover !rounded-t-lg group-hover:!scale-110 transition-all duration-3000 ease-in-out"
 						src={props.image}
-						alt={props.title}
+						alt={props.alt}
 						width={500}
 						height={500}
 						blurDataURL={props.blurhash}
@@ -130,7 +130,7 @@ const CardSx = (props: CardSxProps) => {
 					<Image
 						className="w-18 h-18"
 						src={props.logo}
-						alt={props.name}
+						alt={props.alt}
 						width={50}
 						height={50}
 						blurDataURL={props.blurhash}

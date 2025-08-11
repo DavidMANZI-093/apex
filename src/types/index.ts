@@ -5,6 +5,7 @@ export interface CardProps {
 	description: string;
 	deliverables: string[];
 	image: string;
+	alt: string;
 	blurhash: string;
 }
 
@@ -20,6 +21,7 @@ export interface CardExProps {
 	metrics: string;
 	icon?: LucideIcon;
 	image: string;
+	alt: string;
 	blurhash: string;
 }
 
@@ -29,6 +31,7 @@ export interface CardSxProps {
 	sector: "Private" | "Government" | "Professional Body";
 	description: string;
 	logo: string;
+	alt: string;
 	blurhash: string;
 }
 

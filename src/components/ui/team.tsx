@@ -20,7 +20,7 @@ const Team = () => {
 								<Image
 									className="object-cover !w-full !h-full !rounded-full"
 									src={value.image}
-									alt={value.name}
+									alt={`${value.name}'s profile picture`}
 									width={100}
 									height={100}
 								/>

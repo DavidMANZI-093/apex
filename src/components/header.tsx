@@ -26,7 +26,7 @@ const Header = () => {
 						<Image
 							className="rounded-full"
 							src="/web-app-manifest-192x192.png"
-							alt="Echelon Landworks icon"
+							alt="Echelon Landworks Logo"
 							placeholder="blur"
 							priority={true}
 							blurDataURL={

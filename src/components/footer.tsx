@@ -24,7 +24,7 @@ const Footer = () => {
 							<Image
 								className="rounded-full"
 								src="/web-app-manifest-192x192.png"
-								alt="Echelon Landworks icon"
+								alt="Echelon Landworks logo"
 								width={60}
 								height={60}
 								placeholder="blur"

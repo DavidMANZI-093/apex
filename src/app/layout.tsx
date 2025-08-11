@@ -25,6 +25,28 @@ export const metadata: Metadata = {
 		"Echelon Landworks Ltd is a Rwandan-based leader in land surveying, construction " +
 		"support, and geospatial solutions. We deliver accurate, efficient, and technology-driven " +
 		"services including UAV mapping, GIS analysis, and sustainable infrastructure planning.",
+	openGraph: {
+		title: "Echelon Landworks - Construction Consultancy & Surveying Solutions",
+		description: "Rwandan-based leader in land surveying, construction support, and geospatial solutions.",
+		url: 'https://echelonlandworks.com',
+		siteName: 'Echelon Landworks',
+		images: [
+			{
+				url: '/thumbnail.jpg',
+				width: 1200,
+				height: 630,
+				alt: 'Echelon Landworks - Professional Land Surveying Services',
+			},
+		],
+		locale: 'en_US',
+		type: 'website',
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Echelon Landworks - Professional Surveying Solutions',
+		description: 'Expert land surveying and geospatial solutions in Rwanda',
+		images: ['/thumbnail.jpg'],
+	},
 	keywords: [
 		"Echelon Landworks",
 		"Rwanda",

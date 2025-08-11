@@ -28,7 +28,7 @@ export interface CardExProps {
 export interface CardSxProps {
 	name: string;
 	acronym: string;
-	sector: "Private" | "Government" | "Professional Body";
+	sector: "Private" | "Government" | "Professional Body" | "N.G.O";
 	description: string;
 	logo: string;
 	alt: string;

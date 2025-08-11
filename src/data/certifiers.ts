@@ -70,7 +70,7 @@ export const certifiers: CardSxProps[] = [
 	{
 		name: "Food and Agriculture Organization of the United Nations",
 		acronym: "FAO",
-		sector: "Government",
+		sector: "N.G.O",
 		description:
 			"A specialized agency of the United Nations leading international efforts to defeat hunger and improve nutrition and food security for all.",
 		logo: "/certs/fao.jpeg",

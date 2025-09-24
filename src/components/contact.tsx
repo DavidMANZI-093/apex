@@ -1,8 +1,8 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import Button from "./ui/button";
 import { LuLinkedin } from "react-icons/lu";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { RiTwitterXLine } from "react-icons/ri";
+import Form from "./ui/form";
 
 const Contact = () => {
 	return (
@@ -23,96 +23,7 @@ const Contact = () => {
 
 				<div className="grid lg:grid-cols-2 gap-12">
 					{/* Contact form */}
-					<div className="flex flex-col gap-6 !p-8 !rounded-lg !bg-white !shadow-md shadow-slate-gray/20">
-						<div className="flex flex-col">
-							<h4 className="!text-lg !font-medium !text-indigo-dye/85 mb-6">
-								Send us a message
-							</h4>
-							<p className="!text-sm !text-slate-gray leading-relaxed">
-								{"Fill out the form below and we'll get back " +
-									"to you within 24 hours."}
-							</p>
-						</div>
-
-						<div className="flex flex-col gap-4">
-							<div className="grid sm:grid-cols-2 gap-6">
-								<div className="flex flex-col w-full gap-2">
-									<label
-										className="!text-sm !font-medium !text-indigo-dye/85"
-										htmlFor="fullName"
-									>
-										Full Name
-									</label>
-									<input
-										className="flex !text-sm !p-2 !rounded-lg !border !border-slate-gray/30"
-										id="fullName"
-										type="text"
-										placeholder="Your full name"
-									/>
-								</div>
-								<div className="flex flex-col w-full gap-2">
-									<label
-										className="!text-sm !font-medium !text-indigo-dye/85"
-										htmlFor="company"
-									>
-										Company/Organization
-									</label>
-									<input
-										className="flex !text-sm !p-2 !rounded-lg !border !border-slate-gray/30"
-										id="company"
-										type="text"
-										placeholder="Your company"
-									/>
-								</div>
-							</div>
-
-							<div className="grid sm:grid-cols-2 gap-6">
-								<div className="flex flex-col w-full gap-2">
-									<label
-										className="!text-sm !font-medium !text-indigo-dye/85"
-										htmlFor="email"
-									>
-										Email
-									</label>
-									<input
-										className="flex !text-sm !p-2 !rounded-lg !border !border-slate-gray/30"
-										id="email"
-										type="email"
-										placeholder="your@email.com"
-									/>
-								</div>
-								<div className="flex flex-col gap-2">
-									<label
-										className="!text-sm !font-medium !text-indigo-dye/85"
-										htmlFor="phone"
-									>
-										Phone Number
-									</label>
-									<input
-										className="flex !text-sm !p-2 !rounded-lg !border !border-slate-gray/30"
-										id="phone"
-										placeholder="+250 7XX XXX XXX"
-									/>
-								</div>
-							</div>
-
-							<div className="flex flex-col gap-2">
-								<label
-									className="!text-sm !font-medium !text-indigo-dye/85"
-									htmlFor="message"
-								>
-									Message
-								</label>
-								<textarea
-									className="flex w-full !h-24 !text-sm !p-2 !rounded-lg !border !border-slate-gray/30"
-									id="message"
-									placeholder="Tell us about your project or inquiry..."
-									rows={5}
-								/>
-							</div>
-						</div>
-						<Button>Send Message</Button>
-					</div>
+					<Form />
 
 					{/* Social Media */}
 					<div className="flex flex-col gap-6 !p-8 !rounded-lg !bg-white">

@@ -16,31 +16,33 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://echelonlandworks.com'),
+	metadataBase: new URL("https://echelonlandworks.com"),
 	openGraph: {
 		title: "Echelon Landworks - Construction Consultancy & Surveying Solutions",
-		description: "Echelon Landworks Ltd is a Rwandan-based leader in land surveying, construction support, and geospatial solutions.",
+		description:
+			"Echelon Landworks Ltd is a Rwandan-based leader in land surveying, construction support, and geospatial solutions.",
 		url: "https://echelonlandworks.com",
 		siteName: "Echelon Landworks",
 		images: [
-		  {
-			url: "https://echelonlandworks.com/web-app-manifest-512x512.png",
-			width: 512,
-			height: 512,
-			alt: "Echelon Landworks Logo"
-		  }
+			{
+				url: "https://echelonlandworks.com/web-app-manifest-512x512.png",
+				width: 512,
+				height: 512,
+				alt: "Echelon Landworks Logo",
+			},
 		],
 		locale: "en_US",
 		type: "website",
-	  },
-	  twitter: {
+	},
+	twitter: {
 		card: "summary_large_image",
 		title: "Echelon Landworks - Construction Consultancy & Surveying Solutions",
-		description: "Rwandan-based leader in land surveying and construction support",
+		description:
+			"Rwandan-based leader in land surveying and construction support",
 		images: ["https://echelonlandworks.com/web-app-manifest-512x512.png"],
-	  },
+	},
 	alternates: {
-		canonical: '/',
+		canonical: "/",
 	},
 	title: "Echelon Landworks - Construction Consultancy & Surveying Solutions",
 	description:

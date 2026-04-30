@@ -110,7 +110,7 @@ const Contact = () => {
 								</a>
 								<a
 									className="w-11 h-11 bg-indigo-dye/4 !text-indigo-dye/80 hover:!bg-indigo-dye hover:!text-white transition-colors duration-200 rounded-lg flex items-center justify-center"
-									href="https://www.instagram.com/echelonlandworksrwanda"
+									href="https://www.instagram.com/echelon_landworks_ltd"
 									target="_blank"
 									rel="noopener noreferrer"
 								>

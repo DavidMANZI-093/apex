@@ -105,7 +105,7 @@ const Footer = () => {
 						</a>
 						<a
 							className="w-11 h-11 !text-white/60 hover:!text-dutch-white/90 transition-colors duration-200 rounded-lg flex items-center justify-center"
-							href="https://www.instagram.com/echelonlandworksrwanda"
+							href="https://www.instagram.com/echelon_landworks_ltd"
 							target="_blank"
 							rel="noopener noreferrer"
 						>

@@ -22,10 +22,12 @@ export async function POST(req: NextRequest) {
 
 		const transporter = nodemailer.createTransport({
 			service: "gmail",
-			auth: {
-				user: process.env.GMAIL_USER,
-				pass: process.env.GMAIL_PASS,
-			},
+			port: 465,
+    		secure: true,
+    		auth: {
+        		user: process.env.GMAIL_USER,
+        		pass: process.env.GMAIL_PASS,
+    		},
 		});
 
 		const emailHtml = `
